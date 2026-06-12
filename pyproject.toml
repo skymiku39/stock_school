@@ -1,0 +1,14 @@
+[project]
+name = "stock-school"
+version = "0.1.0"
+description = "台股教學靜態網站 — MkDocs 課程"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs>=1.6",
+    "mkdocs-material>=9.5",
+    "mkdocs-mermaid2-plugin>=1.1",
+]
+
+[tool.uv]
+package = false

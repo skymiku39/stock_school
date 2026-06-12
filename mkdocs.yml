@@ -1,0 +1,182 @@
+site_name: Stock School — 台股教學
+site_description: 台股入門、術語、看表、看圖與實戰案例
+site_author: Stock School
+dev_addr: 127.0.0.1:8800
+
+theme:
+  name: material
+  language: zh
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切換深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切換淺色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - 首頁: index.md
+  - 入門:
+    - 01-basics/index.md
+    - 股票基礎:
+      - 01-basics/what-is-stock.md
+      - 01-basics/price-and-cap.md
+      - 01-basics/quote-screen.md
+    - 01-basics/market-overview.md
+    - 01-basics/trading-flow.md
+    - 01-basics/settlement-fees.md
+    - 01-basics/roles.md
+    - 01-basics/open-account.md
+    - 01-basics/dividend.md
+    - 01-basics/etf-intro.md
+    - ETF 費用與折溢價: 01-basics/etf-costs-and-premium.md
+    - 01-basics/mutual-fund-intro.md
+    - 期貨入門: 01-basics/futures-intro.md
+  - 術語詞典:
+    - 02-glossary/index.md
+    - 完整詞條總表: 02-glossary/dictionary.md
+    - 行情與報價: 02-glossary/quotes.md
+    - 交易行為與心態: 02-glossary/trading-terms.md
+    - 損益與停損: 02-glossary/pnl.md
+    - 持倉與交易: 02-glossary/position.md
+    - 法人與籌碼: 02-glossary/chips.md
+    - 基本面: 02-glossary/fundamentals.md
+    - 技術面: 02-glossary/technical.md
+    - 市場進階: 02-glossary/market-terms.md
+    - 風控: 02-glossary/risk.md
+  - 怎麼看表:
+    - 03-tables/watchlist.md
+    - 03-tables/deep-dive-tabs.md
+    - 03-tables/revenue.md
+    - 03-tables/institutional.md
+    - 03-tables/margin.md
+    - 03-tables/valuation.md
+    - 03-tables/financials.md
+    - 03-tables/scoring.md
+    - 03-tables/dividend-schedule.md
+    - 03-tables/block-trade.md
+  - 怎麼看圖:
+    - 04-charts/index.md
+    - 價格走勢:
+      - 線圖與美國線: 04-charts/line-charts.md
+      - 分時與即時圖: 04-charts/intraday-charts.md
+      - K 線基礎: 04-charts/kline-basics.md
+      - 三招讀懂 K 線: 04-charts/kline-reading.md
+      - 16 種 K 棒型態: 04-charts/candle-patterns.md
+      - 型態速查表: 04-charts/candle-quickref.md
+      - K 線組合型態: 04-charts/candle-combinations.md
+    - 量價圖: 04-charts/volume-price.md
+    - 籌碼圖表: 04-charts/chips-charts.md
+    - 基本面圖表: 04-charts/fundamental-charts.md
+    - 大盤與類股圖: 04-charts/market-charts.md
+    - 技術指標:
+      - 指標速查表: 04-charts/indicator-quickref.md
+      - 均線 MA: 04-charts/ma.md
+      - MACD: 04-charts/macd.md
+      - RSI: 04-charts/rsi.md
+      - KD: 04-charts/kd.md
+      - 布林通道: 04-charts/bollinger.md
+  - 分析思維:
+    - 05-analysis/three-pillars.md
+    - 05-analysis/fundamental-framework.md
+    - 05-analysis/timeframes.md
+    - 05-analysis/conference.md
+    - 05-analysis/cross-market.md
+    - 05-analysis/active-etf.md
+  - 投資模式:
+    - 08-investing/index.md
+    - 08-investing/choose-style.md
+    - 投資模式與心態: 08-investing/mode-psychology.md
+    - 08-investing/day-trade.md
+    - 08-investing/overnight.md
+    - 08-investing/swing-short.md
+    - 08-investing/swing-mid.md
+    - 08-investing/long-term.md
+    - 08-investing/dividend-investing.md
+    - 08-investing/etf-investing.md
+    - 0050 與定期定額: 08-investing/etf-passive-dca.md
+    - 高股息 ETF: 08-investing/etf-high-dividend.md
+    - 投資型保單: 08-investing/investment-linked-policy.md
+    - 外幣帳戶: 08-investing/insurance-fx-products.md
+  - 對號入座:
+    - 我是誰，該怎麼投？: 10-persona/index.md
+  - 風險與紀律:
+    - 06-risk/capital.md
+    - 06-risk/trading-costs.md
+    - 06-risk/stop-loss.md
+    - 06-risk/discipline.md
+  - 老手專區:
+    - 09-advanced/index.md
+    - 09-advanced/research-workflow.md
+    - 09-advanced/multi-timeframe.md
+    - 09-advanced/portfolio.md
+    - 09-advanced/macro-rotation.md
+    - 09-advanced/advanced-chips.md
+    - 09-advanced/event-playbook.md
+    - 09-advanced/futures-signal.md
+    - 09-advanced/veteran-pitfalls.md
+  - 實戰案例:
+    - 07-cases/revenue-turn.md
+    - 07-cases/hammer-ma.md
+    - 07-cases/institutional-flow.md
+    - 07-cases/day-trade-risk.md
+    - 07-cases/valuation-trap.md
+    - 07-cases/macd-divergence.md
+    - 07-cases/conference-chips.md
+    - 07-cases/gap-breakout.md
+    - 07-cases/short-squeeze.md
+    - 07-cases/dividend-play.md
+    - 0050 定額遇大跌: 07-cases/etf-dca-drawdown.md
+  - 附錄:
+    - 架構說明: ARCHITECTURE.md
+    - 基本資料書: appendix/reference-book.md
+    - appendix/formulas.md
+    - appendix/abbreviations.md
+    - appendix/disclaimer.md
+    - appendix/data-sources.md
+    - appendix/stock-tool-map.md
+    - appendix/dev-glossary.md
+    - appendix/video-resources.md
+
+extra:
+  social: []
