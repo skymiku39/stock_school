@@ -54,6 +54,8 @@ flowchart LR
 
 完整案例：[除權息參與與填息](../07-cases/dividend-play.md)
 
+**五種實戰策略**（滾息、填息、現金流、核心衛星、配股）→ [配股配息投資策略](dividend-strategies.md)
+
 ---
 
 ## 成本與稅
@@ -88,4 +90,4 @@ flowchart LR
 
 - 存股看**配息品質**，不是只看殖利率數字。
 - 填息是結果，需營收與籌碼配合。
-- 延伸：[長期投資](long-term.md) · [深入分析→股利政策](../03-tables/deep-dive-tabs.md)
+- 延伸：[長期投資](long-term.md) · [配股配息策略](dividend-strategies.md) · [深入分析→股利政策](../03-tables/deep-dive-tabs.md)
