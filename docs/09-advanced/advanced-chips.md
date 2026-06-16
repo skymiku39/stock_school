@@ -87,6 +87,17 @@
 | 3 | 鉅額與分點無明顯高檔出貨？ |
 | 4 | 與 [多週期](multi-timeframe.md) 技術不衝突？ |
 
+```mermaid
+flowchart TD
+    Start[單一籌碼訊號] --> Cont{5 日連續同向?}
+    Cont -->|否| Wait[列觀察, 不進場]
+    Cont -->|是| Combo{融資/分點/鉅額是否一致?}
+    Combo -->|衝突| Wait
+    Combo -->|一致| Price{與價格背離?}
+    Price -->|背離| Caution[降低權重, 等確認]
+    Price -->|同向| Confirm[作為 thesis 確認層]
+```
+
 ---
 
 ## 重點回顧

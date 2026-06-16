@@ -46,6 +46,18 @@
 | 連續虧損 | 降槓桿、檢討是否框架混用 |
 | 連續獲利 | 警惕過度自信，勿放大部位 |
 
+```mermaid
+flowchart TD
+    Review[月度複盤] --> Find{發現重複錯誤?}
+    Find -->|否| Keep[維持現有系統]
+    Find -->|是| Type{屬紀律或框架問題?}
+    Type -->|紀律| Discipline[暫停交易, 重讀紀律]
+    Type -->|框架| Framework[縮小部位, 只做高確信 thesis]
+    Discipline --> Log[寫入交易日誌]
+    Framework --> Log
+    Log --> Review
+```
+
 ---
 
 ## 重點回顧
