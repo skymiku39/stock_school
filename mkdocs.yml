@@ -181,6 +181,7 @@ nav:
     - 架構說明（開發者）: ARCHITECTURE.md
     - 寫作規範（維護者）: STYLE-GUIDE.md
     - 圖表檢查清單（維護者）: CHART-CHECKLIST.md
+    - 投資審查檢核表（維護者）: INVESTMENT-REVIEW-CHECKLIST.md
     - 基本資料書: appendix/reference-book.md
     - appendix/formulas.md
     - appendix/abbreviations.md
