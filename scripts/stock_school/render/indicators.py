@@ -1,6 +1,8 @@
 """Indicator reference SVG renderers."""
 from __future__ import annotations
 
+import logging
+
 from stock_school.core.protocols import MarketDataSource
 from stock_school.indicators.calculator import IndicatorCalculator
 from stock_school.render.svg_primitives import (
@@ -35,6 +37,10 @@ BLUE, BORDER, GRAY, GREEN, ORANGE, PURPLE, RED, TEAL = (
 
 CODE, NAME = "2330", "台積電"
 W, H = 640, 360
+
+MIN_BARS = 30
+
+logger = logging.getLogger(__name__)
 
 
 def ma_svg(bars) -> str:
@@ -368,7 +374,13 @@ def market_index_svg(bars) -> str:
 def build_all_indicator_svgs(data_source: MarketDataSource) -> dict[str, str]:
     """Return filename → SVG content for indicator assets."""
     bars = data_source.fetch_bars(CODE, months=8, tail=45)
-    if len(bars) < 30:
+    if len(bars) < MIN_BARS:
+        logger.warning(
+            "指標 SVG 略過：%s 僅取得 %d 根 K 線（需 >= %d），可能因 TWSE 無回應或假日無資料",
+            CODE,
+            len(bars),
+            MIN_BARS,
+        )
         return {}
     files = {
         "2330-ma.svg": ma_svg(bars),
@@ -383,4 +395,6 @@ def build_all_indicator_svgs(data_source: MarketDataSource) -> dict[str, str]:
     bars_50 = data_source.fetch_bars("0050", months=6, tail=40)
     if bars_50:
         files["0050-market.svg"] = market_index_svg(bars_50)
+    else:
+        logger.warning("0050 大盤 SVG 略過：TWSE 無回應，將沿用既有檔案")
     return files
