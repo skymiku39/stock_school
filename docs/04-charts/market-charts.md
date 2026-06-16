@@ -40,6 +40,8 @@
 | **熱力圖（Heatmap）** | 一眼看大小股漲跌分布 |
 | **國際股市對照** | 美股、亞股隔夜表現 |
 
+![類股漲跌排行示意：紅漲綠跌，先看類股再選股（教學）](../assets/concepts/sector-performance.svg)
+
 [短線](../08-investing/swing-short.md) 選股前先看類股是否同步強勢。
 
 ---

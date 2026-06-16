@@ -50,6 +50,10 @@ K 線與指標描述**市場行為**；基本面圖描述**公司營運數字隨
 | 毛利率曲線 | 產品競爭力 |
 | 營益率 | 本業賺錢能力 |
 
+![季 EPS 趨勢柱狀與折線示意（教學合成）](../assets/concepts/eps-trend.svg)
+
+![毛利率、營益率、淨利率三率趨勢示意（教學合成）](../assets/concepts/profit-margins.svg)
+
 對照 [財報摘要](../03-tables/financials.md) · [三率術語](../02-glossary/fundamentals.md#三率)。
 
 ---
@@ -61,6 +65,8 @@ K 線與指標描述**市場行為**；基本面圖描述**公司營運數字隨
 | PER 歷史帶 | 目前 PER 在歷史高位還是低位 |
 | PBR 走勢 | 資產型或金融股常參考 |
 | 殖利率曲線 | [存股](../08-investing/dividend-investing.md) 參考 |
+
+![本益比河流圖（估值帶）示意：股價落在便宜/合理/昂貴帶（教學）](../assets/concepts/valuation-band.svg)
 
 !!! warning
     景氣循環股在獲利頂峰時 PER 可能**看起來很低**——這是陷阱，見 [估值陷阱案例](../07-cases/valuation-trap.md)。

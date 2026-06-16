@@ -16,6 +16,8 @@
 | 股價漲 + 累計向上 | 籌碼與價格一致 |
 | 股價漲 + 累計向下 | 價漲量縮籌碼，警惕 |
 
+![法人累計買賣超與股價對照示意（教學）](../assets/concepts/institutional-cumulative.svg)
+
 對照 [三大法人表](../03-tables/institutional.md)。
 
 ## 融資餘額趨勢圖
@@ -25,6 +27,8 @@
 | 融資餘額攀升 + 股價漲 | 散戶槓桿增加 |
 | 融資餘額急降 + 股價跌 | 可能斷頭或停損潮 |
 | 融資餘額橫盤 | 籌碼安定 |
+
+![融資餘額趨勢與股價對照示意（教學）](../assets/concepts/margin-balance.svg)
 
 對照 [融資融券表](../03-tables/margin.md)。
 

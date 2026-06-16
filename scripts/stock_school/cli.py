@@ -9,6 +9,7 @@ from stock_school.core.events import PipelineCompleted
 from stock_school.data.twse import TwseDataSource
 from stock_school.generators.candles import CandleSvgGenerator
 from stock_school.generators.cases import CaseSvgGenerator
+from stock_school.generators.concepts import ConceptSvgGenerator
 from stock_school.generators.indicators import IndicatorSvgGenerator
 from stock_school.generators.quotes import QuoteSvgGenerator
 from stock_school.services.pipeline import GenerationPipeline
@@ -34,6 +35,7 @@ def _all_generators(data_source: TwseDataSource):
         CandleSvgGenerator(output_dir=ASSETS / "candles"),
         IndicatorSvgGenerator(data_source=data_source, output_dir=ASSETS / "indicators"),
         CaseSvgGenerator(output_dir=ASSETS / "cases"),
+        ConceptSvgGenerator(output_dir=ASSETS / "concepts"),
     ]
 
 
@@ -41,7 +43,7 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Generate Stock School SVG assets")
     parser.add_argument(
         "--only",
-        choices=["quotes", "candles", "indicators", "cases"],
+        choices=["quotes", "candles", "indicators", "cases", "concepts"],
         help="Run a single generator",
     )
     parser.add_argument(

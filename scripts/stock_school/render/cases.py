@@ -254,6 +254,124 @@ def etf_vs_stock_svg() -> str:
     return svg_header("ETF vs 個股", W, H, "".join(parts))
 
 
+def valuation_trap_svg() -> str:
+    """High-yield value trap: price falls while dividend yield rises (synthetic)."""
+    months = ["1月", "3月", "5月", "7月", "9月", "11月", "次年"]
+    price = [80, 74, 68, 63, 58, 53, 50]
+    yld = [4.0, 4.4, 4.8, 5.2, 5.7, 6.2, 6.5]
+    parts = title_block("案例：高殖利率的估值陷阱（合成數據）", W, "E 公司 · 股價↓ 但殖利率↑")
+    x0, y0, pw, ph = 56, 70, W - 112, 230
+    parts.append(f'<rect x="{x0}" y="{y0}" width="{pw}" height="{ph}" fill="#fafafa" stroke="{BORDER}"/>')
+    n = len(price)
+    p_lo, p_hi = 45, 85
+    ppts = [
+        f"{x0 + pw * (i + 0.5) / n:.1f},{y0 + ph * (p_hi - p) / (p_hi - p_lo):.1f}"
+        for i, p in enumerate(price)
+    ]
+    parts.append(f'<polyline fill="none" stroke="{RED}" stroke-width="2" points="{" ".join(ppts)}"/>')
+    y_lo, y_hi = 3.5, 7.0
+    ypts = [
+        f"{x0 + pw * (i + 0.5) / n:.1f},{y0 + ph * (y_hi - v) / (y_hi - y_lo):.1f}"
+        for i, v in enumerate(yld)
+    ]
+    parts.append(
+        f'<polyline fill="none" stroke="{BLUE}" stroke-width="2" stroke-dasharray="5 3" points="{" ".join(ypts)}"/>'
+    )
+    parts.append(f'<text x="{x0 + 4}" y="{y0 + 16}" font-size="10" fill="{RED}">— 股價（左）</text>')
+    parts.append(f'<text x="{x0 + 4}" y="{y0 + 30}" font-size="10" fill="{BLUE}">- - 殖利率（右）</text>')
+    for i, m in enumerate(months):
+        px = x0 + pw * (i + 0.5) / n
+        parts.append(
+            f'<text x="{px:.1f}" y="{y0 + ph + 16:.1f}" font-size="8" fill="{GRAY}" text-anchor="middle">{m}</text>'
+        )
+    parts.append(
+        f'<text x="{x0 + pw - 168:.0f}" y="{y0 + ph - 10:.0f}" font-size="10" fill="{ORANGE}">價跌墊高殖利率 ≠ 便宜</text>'
+    )
+    parts.append(footer_note(W, H, "合成教學數據 · 高殖利率可能是價值陷阱"))
+    return svg_header("估值陷阱案例", W, H, "".join(parts))
+
+
+def conference_chips_svg() -> str:
+    """Optimistic earnings call vs institutional net selling (synthetic)."""
+    bars = [
+        _bar("法說前", 99.5, 100.5, 99, 100),
+        _bar("法說日", 100, 104, 99.5, 103, 5200),
+        _bar("D+1", 103, 103.5, 101, 101.5, 4200),
+        _bar("D+2", 101.5, 102, 99.5, 100, 3800),
+        _bar("D+3", 100, 100.5, 98, 98.5, 3600),
+    ]
+    cum_sell = [0, -800, -1600, -2300, -3000]
+    price_h = int(H * 0.6)
+    pad_p = ChartPad(top=44, bottom=8)
+    lo, hi = 97, 105
+    parts = title_block("案例：法說樂觀 vs 法人賣超（合成數據）", W, "G 公司 · 利多上漲後回落 · 法人連賣")
+    candle_parts, _, _ = draw_candles(bars, width=W, height=price_h, pad=pad_p, y_lo=lo, y_hi=hi)
+    parts.extend(candle_parts)
+    parts.append(f'<line x1="48" y1="{price_h}" x2="{W - 16}" y2="{price_h}" stroke="{BORDER}"/>')
+    n = len(bars)
+    gap = (W - 64) / n
+    smin = min(cum_sell) or -1
+    parts.append(
+        f'<text x="52" y="{price_h + 14}" font-size="10" fill="{GREEN}">法人累計買賣超（張 · 往下＝賣超）</text>'
+    )
+    for i, v in enumerate(cum_sell):
+        px = 48 + gap * i + gap * 0.25
+        h = (H - 52 - (price_h + 20)) * abs(v) / abs(smin)
+        parts.append(
+            f'<rect x="{px:.1f}" y="{price_h + 20:.1f}" width="{gap * 0.5:.1f}" '
+            f'height="{h:.1f}" fill="{GREEN}" opacity="0.7"/>'
+        )
+        parts.append(
+            f'<text x="{px + gap * 0.25:.1f}" y="{price_h + 20 + h + 12:.1f}" font-size="8" '
+            f'fill="{GRAY}" text-anchor="middle">{v}</text>'
+        )
+    cx = 48 + gap * 1.5
+    parts.append(
+        f'<text x="{cx:.1f}" y="{pad_p.top + 12}" font-size="9" fill="{RED}" text-anchor="middle">法說 +3%</text>'
+    )
+    parts.append(footer_note(W, H, "合成教學數據 · 籌碼行為 > 法說語氣"))
+    return svg_header("法說籌碼背離案例", W, H, "".join(parts))
+
+
+def institutional_flow_svg() -> str:
+    """Five sessions of consecutive foreign net buying with rising price (synthetic)."""
+    bars = [
+        _bar("D-4", 83.5, 84.5, 83, 84),
+        _bar("D-3", 84, 85.2, 83.8, 85),
+        _bar("D-2", 85, 86.3, 84.8, 86),
+        _bar("D-1", 86, 87.5, 85.8, 87),
+        _bar("D0", 87, 88.4, 86.8, 88),
+    ]
+    cum = [550, 930, 1170, 1870, 2330]
+    price_h = int(H * 0.6)
+    pad_p = ChartPad(top=44, bottom=8)
+    lo, hi = 82, 90
+    parts = title_block("案例：三大法人連續買超（合成數據）", W, "C 公司 · 法人連買 · 股價緩漲")
+    candle_parts, _, _ = draw_candles(bars, width=W, height=price_h, pad=pad_p, y_lo=lo, y_hi=hi)
+    parts.extend(candle_parts)
+    parts.append(f'<line x1="48" y1="{price_h}" x2="{W - 16}" y2="{price_h}" stroke="{BORDER}"/>')
+    n = len(bars)
+    gap = (W - 64) / n
+    base_y = H - 32
+    ch = base_y - (price_h + 24)
+    cmax = max(cum)
+    parts.append(
+        f'<text x="52" y="{price_h + 14}" font-size="10" fill="{RED}">外資累計買超（張 · 往上＝買超）</text>'
+    )
+    pts = []
+    for i, v in enumerate(cum):
+        px = 48 + gap * (i + 0.5)
+        py = base_y - ch * v / cmax
+        pts.append(f"{px:.1f},{py:.1f}")
+        parts.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="3" fill="{RED}"/>')
+        parts.append(
+            f'<text x="{px:.1f}" y="{py - 6:.1f}" font-size="8" fill="{RED}" text-anchor="middle">{v}</text>'
+        )
+    parts.append(f'<polyline fill="none" stroke="{RED}" stroke-width="2" points="{" ".join(pts)}"/>')
+    parts.append(footer_note(W, H, "合成教學數據 · 連續性與價量配合是重點"))
+    return svg_header("法人連買案例", W, H, "".join(parts))
+
+
 def build_all_case_svgs() -> dict[str, str]:
     """Return filename → SVG content for case-study assets."""
     return {
@@ -262,4 +380,7 @@ def build_all_case_svgs() -> dict[str, str]:
         "gap-breakout.svg": gap_breakout_svg(),
         "etf-dca-drawdown.svg": dca_drawdown_svg(),
         "etf-vs-stock.svg": etf_vs_stock_svg(),
+        "valuation-trap.svg": valuation_trap_svg(),
+        "conference-chips.svg": conference_chips_svg(),
+        "institutional-flow.svg": institutional_flow_svg(),
     }
