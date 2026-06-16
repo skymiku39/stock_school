@@ -19,6 +19,12 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
+      - name: Run chart/asset tests
+        run: uv run pytest tests/ -v
+
+      - name: Audit links and anchors
+        run: uv run python scripts/check_links.py --strict
+
       - name: Validate docs (strict build)
         run: uv run mkdocs build --strict
 
