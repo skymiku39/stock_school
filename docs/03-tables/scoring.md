@@ -69,7 +69,7 @@
 勿把分數當買賣按鈕。建議流程見 [系統化研究流程](../09-advanced/research-workflow.md)：
 
 1. 用**對應時間刻度**分數粗篩候選。
-2. 對候選寫 thesis，用 [深入分析分頁](deep-dive-tabs.md) 驗證。
+2. 對候選寫投資論點（thesis），用 [深入分析分頁](deep-dive-tabs.md) 驗證。
 3. 納入 [組合管理](../09-advanced/portfolio.md) 檢查集中度。
 
 ---

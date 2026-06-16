@@ -123,7 +123,7 @@
     | 第 1 週 | [長期專章](long-term.md) + [基本面框架](../05-analysis/fundamental-framework.md) |
     | 第 2 週 | [財報表](../03-tables/financials.md) + [估值表](../03-tables/valuation.md) + [法說會](../05-analysis/conference.md) |
     | 第 3 週 | [深入分析分頁](../03-tables/deep-dive-tabs.md) + [基本面圖](../04-charts/fundamental-charts.md) |
-    | 第 4 週 | [估值陷阱案例](../07-cases/valuation-trap.md)；寫一檔 thesis 與賣出條件 |
+    | 第 4 週 | [估值陷阱案例](../07-cases/valuation-trap.md)；寫一檔投資論點（thesis）與賣出條件 |
 
 === "存股除權息"
 

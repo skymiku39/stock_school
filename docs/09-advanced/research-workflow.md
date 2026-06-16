@@ -3,7 +3,7 @@
 ## 本篇你會學到
 
 - 從發想到出場的完整檢查清單
-- 投資備忘錄（thesis）怎麼寫
+- 投資論點（thesis）怎麼寫
 - 如何用本站各章節填滿流程
 
 [← 老手專區](index.md)
@@ -34,7 +34,7 @@ flowchart LR
 
 | 來源 | 工具 |
 |------|------|
-| 評分 / watchlist | [個股總覽](../03-tables/watchlist.md)、[評分](../03-tables/scoring.md) |
+| 評分 / 觀察清單（watchlist） | [個股總覽](../03-tables/watchlist.md)、[評分](../03-tables/scoring.md) |
 | 類股強勢 | [大盤類股圖](../04-charts/market-charts.md) |
 | ETF 共識 | [主動 ETF](../05-analysis/active-etf.md) |
 | 營收轉折 | [月營收表](../03-tables/revenue.md) |

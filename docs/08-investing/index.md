@@ -37,7 +37,7 @@
 | **短線** | 數日～2 週 | 技術＋籌碼是否同步？ | [短線](swing-short.md) |
 | **中線波段** | 數週～數月 | 營收與法人趨勢是否成立？ | [中線波段](swing-mid.md) |
 | **長期價值** | 數月～年 | 公司值不值得長抱？ | [長期投資](long-term.md) |
-| **存股除權息** | 年為單位 | 配息穩定、能否填息？ | [存股除權息](dividend-investing.md) |
+| **存股除權息** | 年為單位 | 配息穩定、能否填息？ | [存股除權息](dividend-investing.md) · [配股配息策略](dividend-strategies.md) |
 | **ETF 配置** | 依目標 | 大盤或產業配置即可？ | [ETF 投資](etf-investing.md) · [0050 定期定額](etf-passive-dca.md) |
 | **另類管道** | 依契約 | 保單、外幣定存值得嗎？ | [投資型保單](investment-linked-policy.md) · [共同基金](../01-basics/mutual-fund-intro.md) · [外幣帳戶](insurance-fx-products.md) |
 
@@ -66,7 +66,7 @@ flowchart TD
 | 隔日沖 | 賭延續，但隔日不符就走 | [隔日沖心態](mode-psychology.md#隔日沖心態) |
 | 短線 | 小賠快砍，不講長線故事 | [短線心態](mode-psychology.md#短線心態) |
 | 中線 | 每週檢視，忍受洗盤 | [中線心態](mode-psychology.md#中線心態) |
-| 長期 | 賣看 thesis，不看日漲跌 | [長期心態](mode-psychology.md#長期心態) |
+| 長期 | 賣看投資論點（thesis），不看日漲跌 | [長期心態](mode-psychology.md#長期心態) |
 | 存股 | 配息品質優於殖利率數字 | [存股心態](mode-psychology.md#存股心態) |
 | ETF | 閒錢定額，少預測短期 | [ETF 心態](mode-psychology.md#etf心態) |
 
@@ -118,7 +118,7 @@ flowchart TD
 | 層次 | 必讀 | 深入 |
 |------|------|------|
 | 分析 | [基本面框架](../05-analysis/fundamental-framework.md#好公司好股票) | [財報](../03-tables/financials.md) |
-| 存股 | [除權息入門](../01-basics/dividend.md) | [存股專章](dividend-investing.md)、[填息案例](../07-cases/dividend-play.md) |
+| 存股 | [除權息入門](../01-basics/dividend.md) | [存股專章](dividend-investing.md)、[配股配息策略](dividend-strategies.md)、[填息案例](../07-cases/dividend-play.md) |
 | 風控 | [資金配置](../06-risk/capital.md) | 基本面失效停損 |
 
 ### ETF
@@ -140,6 +140,7 @@ flowchart TD
 | 標的 | [共同基金入門](../01-basics/mutual-fund-intro.md) | 淨值、申購費、經理費 |
 | 結構 | [投資型保單](investment-linked-policy.md) | 「投資」是什麼、三方獲利、建議 |
 | 對照 | [ETF 定期定額](etf-passive-dca.md) | [交易成本](../06-risk/trading-costs.md) |
+| 實戰 | [基金與保單問答](../07-cases/fund-policy-faq.md) | 話術對照、決策情境 |
 | 配置 | [資金配置](../06-risk/capital.md) | [組合管理](../09-advanced/portfolio.md) |
 
 ### 外幣帳戶
