@@ -43,4 +43,7 @@
 
 - 估值是**相對**概念，需同業、歷史、成長一起比。
 - 沒有「PER 15 就便宜」的萬用規則。
-- 搭配 [基本面術語](../02-glossary/fundamentals.md) 與 [財報表](financials.md)。
+
+## 相關
+
+- [基本面術語](../02-glossary/fundamentals.md) · [財報摘要表](financials.md) · [估值陷阱案例](../07-cases/valuation-trap.md)
