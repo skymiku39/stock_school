@@ -17,7 +17,8 @@
 
 ![2330 MACD 示意](../assets/indicators/2330-macd.svg)
 
-更新圖表：`uv run python scripts/generate_all.py --only indicators`
+??? note "圖表來源（維護者）"
+    示意圖由腳本繪製，產圖指令見 [架構說明](../ARCHITECTURE.md)。
 
 ## 讀圖方式
 

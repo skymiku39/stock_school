@@ -31,7 +31,7 @@ flowchart TB
 
 ### 2330 台積電 — 報價畫面示意
 
-下方為**教學用布局圖**：數字來自 TWSE 最近一個交易日收盤價，五檔與 Tick 為**示意**（非即時掛單）。更新圖表：`uv run python scripts/generate_all.py --only quotes`
+下方為**教學用布局圖**：數字來自 TWSE 最近一個交易日收盤價，五檔與 Tick 為**示意**（非即時掛單）。
 
 ![2330 報價畫面布局示意](../assets/quotes/2330-quote-screen.svg)
 
@@ -181,13 +181,8 @@ ETF 報價欄位與個股相同（5 碼代號、盤中像股票買賣）。用 0
 
 ## 圖表如何更新
 
-本站範例圖由腳本從 [TWSE 日行情](../appendix/data-sources.md) 抓取後繪製：
-
-```bash
-uv run python scripts/generate_all.py --only quotes
-```
-
-輸出目錄：`docs/assets/quotes/`。重新建置網站後即可看到最新收盤價。
+??? note "圖表來源（維護者）"
+    本站範例圖由腳本從 [TWSE 日行情](../appendix/data-sources.md) 抓取後繪製，產圖指令與流程見 [架構說明](../ARCHITECTURE.md)。
 
 ---
 

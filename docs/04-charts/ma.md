@@ -28,7 +28,8 @@
 
 ![2330 均線示意（MA5/MA20/MA60）](../assets/indicators/2330-ma.svg)
 
-更新圖表：`uv run python scripts/generate_all.py --only indicators`
+??? note "圖表來源（維護者）"
+    示意圖由腳本繪製，產圖指令見 [架構說明](../ARCHITECTURE.md)。
 
 ## 訊號流程
 
