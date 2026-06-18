@@ -181,6 +181,9 @@
 | 詞條 | 英文 | 一句話 | 詳見 |
 |------|------|--------|------|
 | 上市 / 上櫃 | Listed / OTC | 台交所 / 櫃買掛牌 | [市場概覽](../01-basics/market-overview.md) |
+| IPO 公開申購 | IPO subscription | 新股上市櫃前隨機抽籤申購 | [IPO 公開申購](../01-basics/ipo-subscription.md) |
+| ADR | American Depositary Receipt | 美國掛牌之海外股權憑證 | [跨市場（ADR 折溢價）](../05-analysis/cross-market.md#adr-折溢價怎麼算) |
+| 集保戶股權分散表 | TDCC shareholder distribution | 每週大戶／散戶持股分級 | [進階籌碼](../09-advanced/advanced-chips.md#集保大戶) |
 | 注意股 | Attention stock | 價量異常需提高警覺 | [交易限制](../01-basics/trading-restrictions.md) |
 | 處置股 | Disposal stock | 交易所實施處置、交易受限 | [交易限制](../01-basics/trading-restrictions.md) |
 | 全額交割 | Full cash settlement | 買進須全額付清不得信用 | [交易限制](../01-basics/trading-restrictions.md) |
@@ -227,6 +230,9 @@
 | 對衝 / 避險 | Hedge | 反向部位抵銷風險 | [對衝避險](macro.md#對衝避險) |
 | 強制平倉 / 清算 | Liquidation | 斷頭（個人）或公司清算（企業） | [強制平倉與清算](macro.md#強制平倉與清算) |
 | 選擇權 | Options (call / put) | 買賣特定價格之權利（衍生品） | [選擇權](macro.md#選擇權) |
+| 殖利率曲線倒掛 | Yield curve inversion | 長天期殖利率低於短天期，衰退領先指標 | [殖利率曲線倒掛](macro.md#殖利率曲線倒掛) |
+| CPI / 核心 CPI | Consumer Price Index | 消費者物價指數（剔除蔬果能源為核心） | [CPI](macro.md#cpi) |
+| GDP | GDP growth | 經濟成長率 | [GDP](macro.md#gdp) |
 
 ---
 

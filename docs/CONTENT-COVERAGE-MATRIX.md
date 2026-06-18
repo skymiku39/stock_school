@@ -16,10 +16,11 @@
 | 詞典條目 | 0 個未處理 D/E（邊界除外） | **達成**（選擇權為邊界） |
 | 看表章節（10 篇） | 10 A | **10/10 A** |
 | 主題群案例 | 覆蓋率 100% | **達成**（16 篇，群群有案例） |
-| 詞典外缺口 | 補入詞典或邊界化 | 國債/升降息/槓桿/對衝/liquidation/ROE/護城河/DCF 已補；選擇權邊界化 |
+| 詞典外缺口 | 補入詞典或邊界化 | 國債/升降息/槓桿/對衝/liquidation/ROE/護城河/DCF/CPI/GDP/IPO/ADR 已補；選擇權邊界化 |
+| 外部官方資料源 | 關鍵主題接官方來源 | **已補**：TDCC、央行、FRED、DGBAS、MOPS 重訊、TWSE OpenAPI、第三方平台映射 |
 
 !!! success "全站 A 級升級已完成主體"
-    估值表重寫、總經詞包、看表 10 篇 A 模板、實務閉環頁、案例主題群、模式章自檢均已交付。剩餘 IPO 抽籤、QE/CPI 等屬選配深化，非 A 級驗收阻礙項。
+    估值表重寫、總經詞包、看表 10 篇 A 模板、實務閉環頁、案例主題群、模式章自檢均已交付；並已將外部官方資料源（集保 TDCC、央行/FRED 利率、DGBAS、MOPS 重大訊息、ADR/夜盤、IPO、OpenAPI）整合進對應章節。
 
 ---
 
@@ -85,7 +86,8 @@
 |------|------|-----------|
 | 三大法人/融資/融券 | A | chips、institutional、案例 |
 | 維持率/追繳/斷頭 | A | margin-trading |
-| 外資/投信/自營商/買超賣超/借券/券資比/分點/集保大戶/期現價差/鉅額交易 | B | chips、margin、block-trade |
+| 外資/投信/自營商/買超賣超/借券/券資比/分點/期現價差/鉅額交易 | B | chips、margin、block-trade |
+| 集保大戶/股權分散表 | A | advanced-chips#集保大戶（TDCC、ID 歸戶、設質專戶） |
 
 ### 基本面
 
@@ -144,10 +146,27 @@
 | DCF 現金流折現 | A | [fundamentals#dcf](02-glossary/fundamentals.md#dcf現金流折現) |
 | ROE | A | [fundamentals#roe](02-glossary/fundamentals.md#roe股東權益報酬率) |
 | 選擇權 / 期權 | 邊界 | [macro#選擇權](02-glossary/macro.md#選擇權)（定義 + 不教操作） |
-| IPO 抽籤 | D | FAQ 級 |
+| IPO 抽籤 | A | [ipo-subscription](01-basics/ipo-subscription.md)（機制+退款+資金虹吸+自檢） |
 | 綜所稅 / 股利申報 | 邊界 | taxes 邊界說明 |
-| QE / CPI / GDP / VIX / ADR | C | abbreviations + 連結 |
+| CPI / GDP | A | [macro#cpi](02-glossary/macro.md#cpi)、[#gdp](02-glossary/macro.md#gdp)（DGBAS 來源） |
+| ADR / 夜盤 | A | [cross-market](05-analysis/cross-market.md#adr-折溢價怎麼算)（換算/折溢價/ATS） |
+| 殖利率曲線倒掛 | A | [macro#殖利率曲線倒掛](02-glossary/macro.md#殖利率曲線倒掛)（FRED T10Y2Y） |
+| QE / VIX | C | abbreviations + 連結 |
 | Priced In | B | fundamental-framework（待進詞典） |
+
+### 外部官方資料源整合對照
+
+| 外部源 | 接入章節 |
+|--------|----------|
+| 集保 TDCC 股權分散表 | [advanced-chips#集保大戶](09-advanced/advanced-chips.md#集保大戶)、[chips](02-glossary/chips.md) |
+| 央行三大政策利率 | [macro#升息](02-glossary/macro.md#升息) |
+| FRED 美債（DGS10/T10Y2Y/T10Y3M/DFII10） | [macro#國債](02-glossary/macro.md#國債)、[data-sources](appendix/data-sources.md#fred-常用代碼) |
+| 主計總處 DGBAS（CPI/GDP） | [macro#cpi](02-glossary/macro.md#cpi) |
+| MOPS 重大訊息 | [conference](05-analysis/conference.md) |
+| 官方估值防呆 / OpenAPI 估值端點 | [valuation#官方計算與防呆](03-tables/valuation.md#官方計算與防呆) |
+| ADR 換算 / 美股夜盤 ATS | [cross-market](05-analysis/cross-market.md) |
+| IPO 申購（證交所/櫃買承銷） | [ipo-subscription](01-basics/ipo-subscription.md) |
+| TWSE OpenAPI / 第三方平台映射 | [data-sources](appendix/data-sources.md#twse-openapi自動化串接) |
 
 ---
 
