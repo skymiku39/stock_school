@@ -18,12 +18,13 @@
 | 主題群案例 | 覆蓋率 100% | **達成**（16 篇，群群有案例） |
 | 詞典外缺口 | 補入詞典或邊界化 | 國債/升降息/槓桿/對衝/liquidation/ROE/護城河/DCF/CPI/GDP/IPO/ADR 已補；選擇權邊界化 |
 | 外部官方資料源 | 關鍵主題接官方來源 | **已補**：TDCC、央行、FRED、DGBAS、MOPS 重訊、TWSE OpenAPI、第三方平台映射 |
+| P2 canonical 自檢 | 14 頁章末自檢 | **已補**（見下方 P2 清單） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
 
 !!! note "全站其餘主題"
-    詞典條目、模式專章、04-charts 等仍有部分「矩陣標 A、嚴格三層未滿」項目，見下方備註與 P2 待辦。
+    詞典條目、模式專章、04-charts 等仍有部分「矩陣標 A、嚴格三層未滿」項目；**P2 canonical 頁**（入門、流程、模式、跨市場、法說、籌碼、詞包）已補章末自檢。04-charts 待 P3。
 
 ---
 
@@ -43,6 +44,25 @@
 | [scoring.md](03-tables/scoring.md) | A | 手算框架分差 + 低於 50 查證流程 |
 | [dividend-schedule.md](03-tables/dividend-schedule.md) | A | 手算殖利率反推 + 連案例 |
 | [block-trade.md](03-tables/block-trade.md) | A | 手算鉅額金額 + 連案例 |
+
+### P2 canonical 頁（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [what-is-stock](01-basics/what-is-stock.md) | 常見誤區 + 自檢 |
+| [research-workflow](09-advanced/research-workflow.md) | 常見誤區 + 自檢 |
+| [discipline](06-risk/discipline.md) | 自檢 |
+| [capital](06-risk/capital.md) | 自檢 |
+| [mode-psychology](08-investing/mode-psychology.md) | 自檢 |
+| [etf-passive-dca](08-investing/etf-passive-dca.md) | 自檢 |
+| [10-persona/index](10-persona/index.md) | 自檢 |
+| [cross-market](05-analysis/cross-market.md) | 常見誤區 + 自檢 |
+| [conference](05-analysis/conference.md) | 常見誤區 + 自檢 |
+| [advanced-chips](09-advanced/advanced-chips.md) | 自檢 |
+| [etf-intro](01-basics/etf-intro.md) | 常見誤區 + 自檢 |
+| [trading-restrictions](01-basics/trading-restrictions.md) | 自檢 |
+| [macro](02-glossary/macro.md) | 頁末自檢 |
+| [fundamentals](02-glossary/fundamentals.md) | 頁末自檢 |
 
 ---
 
