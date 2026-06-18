@@ -14,32 +14,35 @@
 | 區塊 | 目標 | 現況 |
 |------|------|------|
 | 詞典條目 | 0 個未處理 D/E（邊界除外） | **達成**（選擇權為邊界） |
-| 看表章節（10 篇） | 10 A | **10/10 A** |
+| 看表章節（10 篇） | 10 嚴格 A | **10/10 嚴格 A**（含手算／導覽練習，`test_table_coverage.py` 把關） |
 | 主題群案例 | 覆蓋率 100% | **達成**（16 篇，群群有案例） |
 | 詞典外缺口 | 補入詞典或邊界化 | 國債/升降息/槓桿/對衝/liquidation/ROE/護城河/DCF/CPI/GDP/IPO/ADR 已補；選擇權邊界化 |
 | 外部官方資料源 | 關鍵主題接官方來源 | **已補**：TDCC、央行、FRED、DGBAS、MOPS 重訊、TWSE OpenAPI、第三方平台映射 |
 
-!!! success "全站 A 級升級已完成主體"
-    估值表重寫、總經詞包、看表 10 篇 A 模板、實務閉環頁、案例主題群、模式章自檢均已交付；並已將外部官方資料源（集保 TDCC、央行/FRED 利率、DGBAS、MOPS 重大訊息、ADR/夜盤、IPO、OpenAPI）整合進對應章節。
+!!! success "看表嚴格 A 已達標"
+    看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
+
+!!! note "全站其餘主題"
+    詞典條目、模式專章、04-charts 等仍有部分「矩陣標 A、嚴格三層未滿」項目，見下方備註與 P2 待辦。
 
 ---
 
 ## 一、看表章節（03-tables）
 
-所有看表章節已對齊 [看表頁 A 模板](STYLE-GUIDE.md#看表頁-a-模板)，並由 `tests/test_table_coverage.py` 把關。
+所有看表章節已對齊 [看表頁 A 模板](STYLE-GUIDE.md#看表頁-a-模板)，並由 `tests/test_table_coverage.py` 把關（含 `## 手算一例` 或 `## 導覽練習一例`）。
 
 | 章節 | 等級 | 備註 |
 |------|------|------|
-| [watchlist.md](03-tables/watchlist.md) | A | 在哪看 + 手算漲跌幅 + 連案例 |
-| [deep-dive-tabs.md](03-tables/deep-dive-tabs.md) | A | 全站「在哪看」樞紐 |
-| [revenue.md](03-tables/revenue.md) | A | 在哪看 + 手算 MoM + 連案例 |
-| [institutional.md](03-tables/institutional.md) | A | 在哪看 + 連案例 |
+| [watchlist.md](03-tables/watchlist.md) | A | 手算漲跌幅 + 連案例 |
+| [deep-dive-tabs.md](03-tables/deep-dive-tabs.md) | A | 樞紐頁；**導覽練習一例**（豁免單欄手算） |
+| [revenue.md](03-tables/revenue.md) | A | 手算 MoM + 連案例 |
+| [institutional.md](03-tables/institutional.md) | A | 手算法人合計 + 連案例 |
 | [margin.md](03-tables/margin.md) | A | 手算券資比 + 連信用交易 |
-| [valuation.md](03-tables/valuation.md) | A | 手算 + 同業比 + 在哪看 + 連案例 |
-| [financials.md](03-tables/financials.md) | A | ROE 欄 + 在哪看 + 連案例 |
-| [scoring.md](03-tables/scoring.md) | A | 分數低於 50 查證流程 |
-| [dividend-schedule.md](03-tables/dividend-schedule.md) | A | 在哪看 + 連案例 |
-| [block-trade.md](03-tables/block-trade.md) | A | 在哪看資料源 + 連案例 |
+| [valuation.md](03-tables/valuation.md) | A | 手算 PER/PBR/殖利率 + 連案例 |
+| [financials.md](03-tables/financials.md) | A | 手算淨利率 + `## 常見誤區` + 連案例 |
+| [scoring.md](03-tables/scoring.md) | A | 手算框架分差 + 低於 50 查證流程 |
+| [dividend-schedule.md](03-tables/dividend-schedule.md) | A | 手算殖利率反推 + 連案例 |
+| [block-trade.md](03-tables/block-trade.md) | A | 手算鉅額金額 + 連案例 |
 
 ---
 

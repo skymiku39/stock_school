@@ -79,7 +79,7 @@ flowchart LR
 
 | 框架 | 跨市場權重 |
 |------|------------|
-| 當沖 | 高——開盤_gap 常受夜盤影響 |
+| 當沖 | 高——開盤缺口常受夜盤影響 |
 | 短線 | 中 |
 | 中長期 | 低——仍以基本面與法人為主 |
 
@@ -90,4 +90,4 @@ flowchart LR
 - 夜盤走 ATS、只接限價單、流動性僅 1～5%，是領先參考非保證。
 - 決策仍須回到 [三大支柱](three-pillars.md) 與個股 [K 線](../04-charts/kline-basics.md)。
 
-相關：[四種時間框架](timeframes.md) · [評分量表](../03-tables/scoring.md) · [折溢價／ETF](../01-basics/etf-costs-and-premium.md) · [資料來源](../appendix/data-sources.md#跨市場參考用)
+相關：[四種時間框架](timeframes.md) · [評分量表](../03-tables/scoring.md) · [ETF 費用與折溢價](../01-basics/etf-costs-and-premium.md) · [資料來源](../appendix/data-sources.md#跨市場參考用)
