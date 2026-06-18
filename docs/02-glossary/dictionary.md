@@ -136,7 +136,7 @@
 | 營益率 | Operating margin | 營業利益/營收 | [三率](fundamentals.md#三率) |
 | 淨利率 | Net margin | 淨利/營收 | [三率](fundamentals.md#三率) |
 | 營運現金流 | Operating cash flow (OCF) | 本業經營之現金流入 | [營運現金流](fundamentals.md#營運現金流) |
-| 自由現金流 | Free cash flow (FCF) | 營運現金流扣資本支出 | [現金流量表](../03-tables/financials.md#現金流量表) |
+| 自由現金流 | Free cash flow (FCF) | 營運現金流扣資本支出 | [FCF](fundamentals.md#fcf自由現金流) |
 | 負債比 | Debt ratio | 總負債/總資產 | [資產負債表](../03-tables/financials.md#資產負債表) |
 | 現金股利 | Cash dividend | 配發現金 | [除權息](../01-basics/dividend.md) |
 | 股票股利 | Stock dividend | 配發股票 | [除權息](../01-basics/dividend.md) |
@@ -198,6 +198,7 @@
 | 破底 | Breakdown to new low | 跌破支撐低點 | [破底](market-terms.md#破底) |
 | 主力 | Big player (market mover) | 能影響股價之大戶 | [主力抬轎](market-terms.md#主力抬轎) |
 | 洗盤 | Shakeout | 震盪洗出散戶 | [洗盤](market-terms.md#洗盤) |
+| Priced In | Priced in | 利多已反映在股價 | [Priced In](market-terms.md#priced-in) |
 | 利多出盡 | Buy the rumor, sell the news | 消息落地反向走 | [利多利空出盡](market-terms.md#利多利空出盡) |
 | 量價背離 | Price-volume divergence | 價與量方向不一致 | [量價背離](market-terms.md#量價背離) |
 | ETF | Exchange Traded Fund | 交易所買賣之基金 | [ETF](../01-basics/etf-intro.md) |
@@ -233,6 +234,8 @@
 | 殖利率曲線倒掛 | Yield curve inversion | 長天期殖利率低於短天期，衰退領先指標 | [殖利率曲線倒掛](macro.md#殖利率曲線倒掛) |
 | CPI / 核心 CPI | Consumer Price Index | 消費者物價指數（剔除蔬果能源為核心） | [CPI](macro.md#cpi) |
 | GDP | GDP growth | 經濟成長率 | [GDP](macro.md#gdp) |
+| QE | Quantitative easing | 央行買債注入流動性 | [量化寬鬆](macro.md#量化寬鬆qe) |
+| VIX | CBOE Volatility Index | 美股波動率恐慌指數 | [VIX](macro.md#vix) |
 
 ---
 

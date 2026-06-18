@@ -64,7 +64,8 @@
 | ADR | American Depositary Receipt | 美國存託憑證 | [跨市場](../05-analysis/cross-market.md) |
 | OI | Open Interest | 未平倉量（期貨） | [期貨輔助](../09-advanced/futures-signal.md) |
 | TDCC | Taiwan Depository & Clearing | 集保（大戶持股） | [chips](../02-glossary/chips.md) |
-| QE | Quantitative Easing | 量化寬鬆 | [基本面框架](../05-analysis/fundamental-framework.md) |
+| QE | Quantitative Easing | 量化寬鬆 | [量化寬鬆](../02-glossary/macro.md#量化寬鬆qe) |
+| VIX | CBOE Volatility Index | 恐慌指數 | [VIX](../02-glossary/macro.md#vix) |
 | CPI | Consumer Price Index | 消費者物價指數 | [CPI](../02-glossary/macro.md#cpi) |
 | GDP | Gross Domestic Product | 國內生產毛額 | [GDP](../02-glossary/macro.md#gdp) |
 | Treasury | Government bond / Treasury | 國債（殖利率為無風險參考） | [國債](../02-glossary/macro.md#國債) |

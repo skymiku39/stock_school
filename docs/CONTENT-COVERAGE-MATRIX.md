@@ -19,12 +19,14 @@
 | 詞典外缺口 | 補入詞典或邊界化 | 國債/升降息/槓桿/對衝/liquidation/ROE/護城河/DCF/CPI/GDP/IPO/ADR 已補；選擇權邊界化 |
 | 外部官方資料源 | 關鍵主題接官方來源 | **已補**：TDCC、央行、FRED、DGBAS、MOPS 重訊、TWSE OpenAPI、第三方平台映射 |
 | P2 canonical 自檢 | 14 頁章末自檢 | **已補**（見下方 P2 清單） |
+| P3 技術面 canonical | 8 頁圖表自檢 | **已補**（見下方 P3 清單） |
+| P4 詞典缺口 | FCF、最大回撤、Priced In、QE/VIX | **已補**（見下方 P4 清單） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
 
 !!! note "全站其餘主題"
-    詞典條目、模式專章、04-charts 等仍有部分「矩陣標 A、嚴格三層未滿」項目；**P2 canonical 頁**（入門、流程、模式、跨市場、法說、籌碼、詞包）已補章末自檢。04-charts 待 P3。
+    `04-charts` 其餘速查／專題頁（如 `candle-patterns`、quickref）與邊界主題（綜所稅申報）維持原等級；P0～P4 主軸已交付。
 
 ---
 
@@ -63,6 +65,28 @@
 | [trading-restrictions](01-basics/trading-restrictions.md) | 自檢 |
 | [macro](02-glossary/macro.md) | 頁末自檢 |
 | [fundamentals](02-glossary/fundamentals.md) | 頁末自檢 |
+
+### P3 技術面 canonical（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [kline-basics](04-charts/kline-basics.md) | 常見誤區 + 自檢 |
+| [kline-reading](04-charts/kline-reading.md) | 常見誤區 + 自檢 |
+| [ma](04-charts/ma.md) | 自檢 |
+| [macd](04-charts/macd.md) | 自檢 |
+| [rsi](04-charts/rsi.md) | 自檢 |
+| [kd](04-charts/kd.md) | 自檢 |
+| [bollinger](04-charts/bollinger.md) | 自檢 |
+| [volume-price](04-charts/volume-price.md) | 常見誤區 + 自檢 |
+
+### P4 詞典／進階缺口（已補）
+
+| 主題 | 頁面 |
+|------|------|
+| FCF 五表 | [fundamentals#fcf](02-glossary/fundamentals.md#fcf自由現金流) |
+| 最大回撤試算 | [portfolio#最大回撤試算](09-advanced/portfolio.md#最大回撤試算) |
+| Priced In | [market-terms#priced-in](02-glossary/market-terms.md#priced-in) |
+| QE / VIX | [macro#量化寬鬆](02-glossary/macro.md#量化寬鬆qe)、[#vix](02-glossary/macro.md#vix) |
 
 ---
 
@@ -118,7 +142,7 @@
 |------|------|-----------|
 | 月營收/殖利率/毛利率/營益率/淨利率/現金股利/除權息/填息 | A | fundamentals、revenue、dividend、案例 |
 | YoY/MoM/QoQ/EPS/PER/PBR/OCF/負債比/股票股利/市值 | B | fundamentals、financials |
-| FCF | B | financials（待補獨立五表） |
+| FCF | A | [fundamentals#fcf](02-glossary/fundamentals.md#fcf自由現金流) |
 | ROE | A | [fundamentals#roe](02-glossary/fundamentals.md#roe股東權益報酬率) |
 | 護城河 / DCF | A | [fundamentals](02-glossary/fundamentals.md#護城河) |
 
@@ -145,7 +169,7 @@
 |------|------|-----------|
 | 紀律 | A | discipline、mode-psychology |
 | 曝險/資金上限 | B | risk、capital |
-| 最大回撤 | C | risk |
+| 最大回撤 | A | [risk](02-glossary/risk.md) + [portfolio#最大回撤試算](09-advanced/portfolio.md#最大回撤試算) |
 
 ### 投資模式
 
@@ -174,8 +198,8 @@
 | CPI / GDP | A | [macro#cpi](02-glossary/macro.md#cpi)、[#gdp](02-glossary/macro.md#gdp)（DGBAS 來源） |
 | ADR / 夜盤 | A | [cross-market](05-analysis/cross-market.md#adr-折溢價怎麼算)（換算/折溢價/ATS） |
 | 殖利率曲線倒掛 | A | [macro#殖利率曲線倒掛](02-glossary/macro.md#殖利率曲線倒掛)（FRED T10Y2Y） |
-| QE / VIX | C | abbreviations + 連結 |
-| Priced In | B | fundamental-framework（待進詞典） |
+| QE / VIX | A | [macro#量化寬鬆](02-glossary/macro.md#量化寬鬆qe)、[#vix](02-glossary/macro.md#vix) |
+| Priced In | A | [market-terms#priced-in](02-glossary/market-terms.md#priced-in) |
 
 ### 外部官方資料源整合對照
 
