@@ -35,7 +35,7 @@
     看表 10/10 嚴格 A、主題群案例 100%、canonical 教學頁與 04-charts 延伸自檢、稅務邊界、投資模式 14 章自檢均已補齊；詞典大量 B 為刻意設計（五表 + canonical 連結），邊界詞維持 C／邊界。
 
 !!! note "全站其餘主題"
-    `04-charts` 速查頁（`indicator-quickref`、`candle-quickref`）維持 C 級；邊界主題（綜所稅申報）已於 [稅務試算](appendix/taxes-for-costing.md#綜所稅與申報邊界) 標示邊界與站外查詢；P0～P4 主軸已交付。
+    `04-charts` 速查頁（`indicator-quickref`、`candle-quickref`）維持 **C 級速查定位**，已補精簡章末自檢並連結完整教學頁；邊界主題（綜所稅申報）已於 [稅務試算](appendix/taxes-for-costing.md#綜所稅與申報邊界) 標示邊界與站外查詢。
 
 ---
 
@@ -99,6 +99,13 @@
 | [fundamental-charts](04-charts/fundamental-charts.md) | 常見誤區 + 自檢 |
 | [chips-charts](04-charts/chips-charts.md) | 常見誤區 + 自檢 |
 | [market-charts](04-charts/market-charts.md) | 常見誤區 + 自檢 |
+
+### 04-charts 速查頁（C 級 + 精簡自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [indicator-quickref](04-charts/indicator-quickref.md) | 精簡自檢（連結完整指標教學） |
+| [candle-quickref](04-charts/candle-quickref.md) | 精簡自檢（連結 candle-patterns） |
 
 ### Phase 6 投資模式（已補章末自檢）
 
