@@ -15,7 +15,7 @@
 | 方式 | 適合情境 | 從這裡進 |
 |------|----------|----------|
 | **字典查詞** | 「這個詞是什麼？」 | [完整詞條總表](../02-glossary/dictionary.md) |
-| **速查表** | 「公式／縮寫／圖表哪一頁？」 | [公式速查](formulas.md)、[縮寫對照](abbreviations.md)、[圖表總覽](../04-charts/index.md) |
+| **速查表** | 「公式／縮寫／圖表哪一頁？」 | [公式速查](formulas.md)、[稅費總覽](taxes-for-costing.md)、[縮寫對照](abbreviations.md)、[圖表總覽](../04-charts/index.md) |
 | **系統學習** | 從零建立完整觀念 | [入門導覽](../01-basics/index.md) → [對號入座](../10-persona/index.md) → [投資模式](../08-investing/index.md) |
 | **對號查身分** | 「我是誰、該怎麼投？」 | [對號入座](../10-persona/index.md) |
 

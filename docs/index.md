@@ -59,9 +59,10 @@
 
     1. [完整詞條總表](02-glossary/dictionary.md) — `Ctrl+F` 或站內搜尋
     2. [公式速查](appendix/formulas.md) — 漲跌幅、PER、損益
-    3. [縮寫對照](appendix/abbreviations.md) — EPS、YoY、MACD…
-    4. [圖表總覽](04-charts/index.md) — 八大圖表分類
-    5. [基本資料書指南](appendix/reference-book.md) — 全站參考地圖
+    3. [稅費總覽](appendix/taxes-for-costing.md) — 有哪些稅費、怎麼算成本
+    4. [縮寫對照](appendix/abbreviations.md) — EPS、YoY、MACD…
+    5. [圖表總覽](04-charts/index.md) — 八大圖表分類
+    6. [基本資料書指南](appendix/reference-book.md) — 全站參考地圖
 
 === "依模式速查"
 

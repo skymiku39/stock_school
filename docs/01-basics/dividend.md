@@ -46,4 +46,5 @@
 
 - 除權息是權利分配，股價會調整，不是無風險套利。
 - 高殖利率需搭配獲利穩定性，見 [估值陷阱案例](../07-cases/valuation-trap.md)。
+- 領息試算須扣過戶費與稅費，見 [稅費總覽（供成本試算）](../appendix/taxes-for-costing.md)。
 - 相關：[除權息日程表](../03-tables/dividend-schedule.md) · [交易流程](trading-flow.md)

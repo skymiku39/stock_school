@@ -50,6 +50,7 @@ uv run mkdocs build
 |------|------|
 | 查名詞 | [完整詞條總表](docs/02-glossary/dictionary.md) |
 | 查公式 | [公式速查](docs/appendix/formulas.md) |
+| 查稅費（試算用） | [稅費總覽](docs/appendix/taxes-for-costing.md) |
 | 查縮寫 | [縮寫對照](docs/appendix/abbreviations.md) |
 | 使用指南 | [基本資料書](docs/appendix/reference-book.md) |
 | 對號入座 | [我是誰，該怎麼投？](docs/10-persona/index.md) |
