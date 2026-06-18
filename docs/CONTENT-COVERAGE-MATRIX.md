@@ -25,6 +25,7 @@
 | 稅務邊界 | 綜所稅／申報邊界說明 | **已補**（[taxes-for-costing](appendix/taxes-for-costing.md#綜所稅與申報邊界)） |
 | Phase 6 投資模式 | 各模式專章章末自檢 | **已補**（14/14 非 index 頁，見下方清單） |
 | 05-analysis 教學頁 | 6 篇 canonical 自檢 | **已補**（見下方 05-analysis 清單） |
+| 09-advanced portfolio | 組合管理自檢 | **已補**（[portfolio#自我檢查](09-advanced/portfolio.md)） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
