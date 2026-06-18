@@ -70,7 +70,7 @@
 
 ### Phase B — 引用完整性（每次改 Markdown 後）
 
-- [ ] 所有 `![](...)` 圖片路徑對應到實際檔案（`uv run pytest tests/ -k images`）
+- [ ] 所有 Markdown 圖片引用路徑對應到實際檔案（`uv run pytest tests/ -k images`）
 - [ ] 教學 SVG 至少被一篇 Markdown 引用（`logo.svg` 除外）
 - [ ] `uv run mkdocs build --strict` 通過
 

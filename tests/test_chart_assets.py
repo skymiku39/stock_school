@@ -14,6 +14,8 @@ from stock_school.render.concepts import build_all_concept_svgs
 from stock_school.render.indicators import build_all_indicator_svgs
 
 _IMAGE_RE = re.compile(r"!\[[^\]]*\]\(\s*([^)\s]+)(?:\s+\"[^\"]*\")?\s*\)")
+_INLINE_CODE_RE = re.compile(r"`[^`]*`")
+_FENCE_RE = re.compile(r"^\s*(```|~~~)")
 _EXTERNAL_PREFIXES = ("http://", "https://", "//", "data:")
 
 EXPECTED_INDICATOR_FILES = {
@@ -73,14 +75,21 @@ def test_svg_wellformed(svg_path: Path) -> None:
 def _markdown_image_targets() -> list[tuple[Path, str]]:
     targets: list[tuple[Path, str]] = []
     for md_path in DOCS_DIR.rglob("*.md"):
-        text = md_path.read_text(encoding="utf-8")
-        for match in _IMAGE_RE.finditer(text):
-            href = match.group(1)
-            if href.startswith(_EXTERNAL_PREFIXES):
+        in_fence = False
+        for raw in md_path.read_text(encoding="utf-8").splitlines():
+            if _FENCE_RE.match(raw):
+                in_fence = not in_fence
                 continue
-            target = href.split("#", 1)[0]
-            if target:
-                targets.append((md_path, target))
+            if in_fence:
+                continue
+            line = _INLINE_CODE_RE.sub("", raw)
+            for match in _IMAGE_RE.finditer(line):
+                href = match.group(1)
+                if href.startswith(_EXTERNAL_PREFIXES):
+                    continue
+                target = href.split("#", 1)[0]
+                if target:
+                    targets.append((md_path, target))
     return targets
 
 
