@@ -31,6 +31,7 @@
 | 01-basics 入門 | 16 篇章末自檢 | **已補**（見下方 01-basics 清單） |
 | 10-persona 分頁 | 4 篇身分分組自檢 | **已補**（見下方 10-persona 清單） |
 | 附錄教學頁 | 公式／清單／資料源／FAQ 自檢 | **已補**（`taxes-for-costing` 先前已補） |
+| 02-glossary 分類頁 | 8 篇詞典分類自檢 | **已補**（`macro`／`fundamentals` 先前已補） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
@@ -205,6 +206,21 @@
 | [data-sources](appendix/data-sources.md) | 自檢 |
 | [faq](appendix/faq.md) | 綜合自檢 |
 | [taxes-for-costing](appendix/taxes-for-costing.md) | 自檢 + 綜所稅邊界 |
+
+### 02-glossary 分類頁（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [fundamentals](02-glossary/fundamentals.md) | 頁末自檢（P2 canonical） |
+| [macro](02-glossary/macro.md) | 頁末自檢（P2 canonical） |
+| [chips](02-glossary/chips.md) | 自檢 |
+| [trading-terms](02-glossary/trading-terms.md) | 自檢 |
+| [technical](02-glossary/technical.md) | 自檢 |
+| [risk](02-glossary/risk.md) | 自檢 |
+| [position](02-glossary/position.md) | 自檢 |
+| [quotes](02-glossary/quotes.md) | 自檢 |
+| [pnl](02-glossary/pnl.md) | 自檢 |
+| [market-terms](02-glossary/market-terms.md) | 自檢 |
 
 ### P4 詞典／進階缺口（已補）
 
