@@ -17,7 +17,8 @@
 
 ![2330 MACD 示意](../assets/indicators/2330-macd.svg)
 
-更新圖表：`uv run python scripts/generate_all.py --only indicators`
+??? note "圖表來源（維護者）"
+    示意圖由腳本繪製，產圖指令見 [架構說明](../ARCHITECTURE.md)。
 
 ## 讀圖方式
 
@@ -67,6 +68,17 @@ flowchart TD
 | 零軸上金叉 + 量增 | 趨勢延續機率較高 |
 | 零軸下金叉 | 可能只是弱勢反彈 |
 | 頂背離 + 高檔倒鎚 | 不加碼、守停利 |
+
+## 自我檢查
+
+??? question "1.（概念題）MACD 柱狀圖代表什麼？"
+    參考答案：**DIF − Signal**，反映兩線差距與動能強弱。
+
+??? question "2.（判斷題）零軸下方金叉一定是大反轉？"
+    參考答案：不一定，常只是**弱勢反彈**；零軸上方金叉較像趨勢延續。
+
+??? question "3.（情境題）股價新高但 MACD 未新高，這叫什麼、該怎麼做？"
+    參考答案：**頂背離**，動能衰竭警訊；宜守停利、勿盲目加碼，見 [背離案例](../07-cases/macd-divergence.md)。
 
 ## 重點回顧
 

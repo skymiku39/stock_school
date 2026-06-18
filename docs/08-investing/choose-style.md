@@ -123,7 +123,7 @@
     | 第 1 週 | [長期專章](long-term.md) + [基本面框架](../05-analysis/fundamental-framework.md) |
     | 第 2 週 | [財報表](../03-tables/financials.md) + [估值表](../03-tables/valuation.md) + [法說會](../05-analysis/conference.md) |
     | 第 3 週 | [深入分析分頁](../03-tables/deep-dive-tabs.md) + [基本面圖](../04-charts/fundamental-charts.md) |
-    | 第 4 週 | [估值陷阱案例](../07-cases/valuation-trap.md)；寫一檔 thesis 與賣出條件 |
+    | 第 4 週 | [估值陷阱案例](../07-cases/valuation-trap.md)；寫一檔投資論點（thesis）與賣出條件 |
 
 === "存股除權息"
 
@@ -146,6 +146,17 @@
 各模式延伸地圖見 [投資模式總覽](index.md#模式學習地圖融會貫通)。不確定選哪種？→ [對號入座](../10-persona/index.md)
 
 ---
+
+## 自我檢查
+
+??? question "1.（概念題）選模式時五題篩選包含哪些面向？"
+    參考答案：**時間、隔夜風險、成本、選股 vs 配置、紀律**；見本篇開頭對照表。
+
+??? question "2.（判斷題）當沖兩週後覺得賺太慢，改做長期存股，適合嗎？"
+    參考答案：不建議頻繁跳模式。選定主模式後至少 **30 天**不要換，否則無法累積該模式的紀律與經驗。
+
+??? question "3.（情境題）時間少、不想盯盤、願意長期持有，你會優先考慮哪條路線？"
+    參考答案：**ETF 配置／定額**路線，見 [0050 定額專章](etf-passive-dca.md) 或 [ETF 投資模式](etf-investing.md)。
 
 ## 重點回顧
 

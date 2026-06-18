@@ -6,10 +6,10 @@
 - 字典模式 vs 分類詳解
 - 建議閱讀順序
 
-本詞典將台股投資常見名詞整理為**學員版**：每個詞條盡量包含「定義 → 在哪裡看到 → 常見誤解 → 小例子」。
+本詞典將台股投資常見名詞整理為**學員版**：分類頁每個詞條為固定五列表格「英文 → 定義 → 在哪裡看到 → 常見誤解 → 小例子」，[完整詞條總表](dictionary.md) 則附**英文欄**方便中英對照與站內搜尋。
 
 !!! tip "當字典用"
-    快速查詞 → **[完整詞條總表](dictionary.md)**（100+ 條，一句話 + 連結）  
+    快速查詞 → **[完整詞條總表](dictionary.md)**（100+ 條，含英文、一句話 + 連結；可搜中、英文與縮寫）  
     算公式 / 查縮寫 → [公式速查](../appendix/formulas.md)、[縮寫對照](../appendix/abbreviations.md)  
     使用說明 → [基本資料書指南](../appendix/reference-book.md)
 
@@ -25,6 +25,7 @@
 | 基本面 | [fundamentals.md](fundamentals.md) | 月營收、EPS、PER、PBR、殖利率 |
 | 技術面 | [technical.md](technical.md) | MA、MACD、RSI、KD、布林 |
 | 市場進階 | [market-terms.md](market-terms.md) | 多頭空頭、跳空、軋空、洗盤、填息 |
+| 總經與利率 | [macro.md](macro.md) | 國債、升息降息、槓桿、對衝、選擇權 |
 | 風控 | [risk.md](risk.md) | 曝險、資金上限、緊急停機概念 |
 
 ## 建議閱讀順序

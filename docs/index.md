@@ -12,16 +12,17 @@
 | [入門](01-basics/index.md) | 股票是什麼、股價市值、報價畫面、交割稅費 |
 | [術語詞典 / 字典](02-glossary/dictionary.md) | **100+ 詞條總表**、分類詳解、公式與縮寫 |
 | [基本資料書](appendix/reference-book.md) | 查詞、速查、系統學習三種用法 |
-| [怎麼看表](03-tables/watchlist.md) | 營收、法人、融資融券、估值、財報 |
+| [怎麼看表](03-tables/index.md) | 營收、法人、融資融券、估值、財報 |
 | [怎麼看圖](04-charts/index.md) | **八大圖表分類**：K 線、分時、量價、籌碼、基本面、大盤、指標 |
 | [評分量表](03-tables/scoring.md) | 九因子、四時間框架 |
-| [分析思維](05-analysis/three-pillars.md) | 基本面 / 技術面 / 籌碼面、分析框架、跨市場 |
+| [分析思維](05-analysis/index.md) | 基本面 / 技術面 / 籌碼面、分析框架、跨市場 |
 | [**投資模式**](08-investing/index.md) | 當沖、隔日沖、短中長線、存股、ETF — **全站知識地圖** |
 | [**對號入座**](10-persona/index.md) | 我是誰、該怎麼投？— **12 種身分圖鑑** |
 | [影片資源](appendix/video-resources.md) | 五支入門影片 → 術語 → 模式 → 案例 |
 | [深入分析分頁](03-tables/deep-dive-tabs.md) | 單檔股票各分頁欄位地圖 |
-| [風險與紀律](06-risk/capital.md) | 資金配置、停損停利、交易紀律 |
-| [實戰案例](07-cases/revenue-turn.md) | **11 篇**逐步拆解案例（含 0050 定額） |
+| [風險與紀律](06-risk/index.md) | 資金配置、停損停利、交易紀律、突發狀況手冊 |
+| [常見問答](appendix/faq.md) / [檢查清單](appendix/investor-checklist.md) | 新手 FAQ、下單前／除息前／月複盤清單 |
+| [實戰案例](07-cases/index.md) | **13 篇**逐步拆解案例（含總經利率） |
 | [**老手專區**](09-advanced/index.md) | 研究流程、多週期、組合、總經、進階籌碼、事件手冊 |
 
 ## 建議學習路徑
@@ -35,9 +36,12 @@
     2. [報價畫面](01-basics/quote-screen.md) + [圖表總覽](04-charts/index.md)
     3. [台股市場概覽](01-basics/market-overview.md)
     4. [如何選投資模式](08-investing/choose-style.md) → [模式與心態](08-investing/mode-psychology.md)
-    5. [個股總覽表怎麼看](03-tables/watchlist.md)
-    6. [資金配置](06-risk/capital.md) + [交易成本](06-risk/trading-costs.md)
-    7. 依模式讀 [投資模式總覽](08-investing/index.md) 地圖
+    5. [第一筆交易走一遍](01-basics/first-trade-walkthrough.md)（開戶→下單→對帳）
+    6. [個股總覽表怎麼看](03-tables/watchlist.md)
+    7. [三大分析支柱](05-analysis/three-pillars.md)（建立「三面一起看」的框架）
+    8. [資金配置](06-risk/capital.md) + [交易成本](06-risk/trading-costs.md)
+    9. 依模式讀 [投資模式總覽](08-investing/index.md) 地圖
+    10. 卡關時查 [常見問答](appendix/faq.md)；下單前對照 [投資檢查清單](appendix/investor-checklist.md)
 
 === "已有基礎"
 
@@ -59,9 +63,10 @@
 
     1. [完整詞條總表](02-glossary/dictionary.md) — `Ctrl+F` 或站內搜尋
     2. [公式速查](appendix/formulas.md) — 漲跌幅、PER、損益
-    3. [縮寫對照](appendix/abbreviations.md) — EPS、YoY、MACD…
-    4. [圖表總覽](04-charts/index.md) — 八大圖表分類
-    5. [基本資料書指南](appendix/reference-book.md) — 全站參考地圖
+    3. [稅費總覽](appendix/taxes-for-costing.md) — 有哪些稅費、怎麼算成本
+    4. [縮寫對照](appendix/abbreviations.md) — EPS、YoY、MACD…
+    5. [圖表總覽](04-charts/index.md) — 八大圖表分類
+    6. [基本資料書指南](appendix/reference-book.md) — 全站參考地圖
 
 === "依模式速查"
 

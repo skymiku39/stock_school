@@ -50,6 +50,7 @@ uv run mkdocs build
 |------|------|
 | 查名詞 | [完整詞條總表](docs/02-glossary/dictionary.md) |
 | 查公式 | [公式速查](docs/appendix/formulas.md) |
+| 查稅費（試算用） | [稅費總覽](docs/appendix/taxes-for-costing.md) |
 | 查縮寫 | [縮寫對照](docs/appendix/abbreviations.md) |
 | 使用指南 | [基本資料書](docs/appendix/reference-book.md) |
 | 對號入座 | [我是誰，該怎麼投？](docs/10-persona/index.md) |
@@ -66,9 +67,9 @@ uv run mkdocs build
 
 ## 內容規模（約）
 
-- **100 篇** Markdown 章節
+- **約 120 篇** Markdown 章節
 - **21 張** K 線 SVG（含 4 張組合型態）
-- 涵蓋術語、看表、看圖、評分、風控、投資模式、對號入座、**11 篇**實戰案例
+- 涵蓋術語、看表、看圖、評分、風控、投資模式、對號入座、**12 篇**實戰案例
 
 ## 與 Stock Bot 的關係
 

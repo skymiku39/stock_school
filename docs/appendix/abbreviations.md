@@ -7,6 +7,9 @@
 
 [← 基本資料書](reference-book.md) · [完整詞條](../02-glossary/dictionary.md)
 
+!!! note "與詞典的分工"
+    本表是**縮寫**的權威來源；[完整詞條總表](../02-glossary/dictionary.md) 已新增「英文」欄，兩者英文若有出入，一律以本表為準。
+
 ---
 
 ## 行情與交易
@@ -30,8 +33,9 @@
 | YoY | Year over Year | 年增（同比） | [fundamentals](../02-glossary/fundamentals.md) |
 | MoM | Month over Month | 月增（環比） | [fundamentals](../02-glossary/fundamentals.md) |
 | QoQ | Quarter over Quarter | 季增 | [fundamentals](../02-glossary/fundamentals.md) |
-| ROE | Return on Equity | 股東權益報酬率 | [財報](../03-tables/financials.md) |
-| IPO | Initial Public Offering | 初次上市 | [what-is-stock](../01-basics/what-is-stock.md) |
+| ROE | Return on Equity | 股東權益報酬率 | [ROE](../02-glossary/fundamentals.md#roe股東權益報酬率) |
+| DCF | Discounted Cash Flow | 現金流折現估值法 | [DCF](../02-glossary/fundamentals.md#dcf現金流折現) |
+| IPO | Initial Public Offering | 初次上市 / 公開申購 | [IPO 公開申購](../01-basics/ipo-subscription.md) |
 | MOPS | Market Observation Post System | 公開資訊觀測站 | [資料來源](data-sources.md) |
 
 ---
@@ -55,12 +59,22 @@
 | 縮寫 | 英文 / 全名 | 中文 | 詳見 |
 |------|-------------|------|------|
 | ETF | Exchange Traded Fund | 交易所交易基金 | [ETF](../01-basics/etf-intro.md) |
+| NAV | Net Asset Value | 基金淨值 | [共同基金入門](../01-basics/mutual-fund-intro.md) |
+| DCA | Dollar-Cost Averaging | 定期定額 | [0050 與定期定額](../08-investing/etf-passive-dca.md) |
 | ADR | American Depositary Receipt | 美國存託憑證 | [跨市場](../05-analysis/cross-market.md) |
 | OI | Open Interest | 未平倉量（期貨） | [期貨輔助](../09-advanced/futures-signal.md) |
 | TDCC | Taiwan Depository & Clearing | 集保（大戶持股） | [chips](../02-glossary/chips.md) |
-| QE | Quantitative Easing | 量化寬鬆 | [基本面框架](../05-analysis/fundamental-framework.md) |
-| CPI | Consumer Price Index | 消費者物價指數 | [macro](../09-advanced/macro-rotation.md) |
-| GDP | Gross Domestic Product | 國內生產毛額 | [macro](../09-advanced/macro-rotation.md) |
+| QE | Quantitative Easing | 量化寬鬆 | [量化寬鬆](../02-glossary/macro.md#量化寬鬆qe) |
+| VIX | CBOE Volatility Index | 恐慌指數 | [VIX](../02-glossary/macro.md#vix) |
+| CPI | Consumer Price Index | 消費者物價指數 | [CPI](../02-glossary/macro.md#cpi) |
+| GDP | Gross Domestic Product | 國內生產毛額 | [GDP](../02-glossary/macro.md#gdp) |
+| Treasury | Government bond / Treasury | 國債（殖利率為無風險參考） | [國債](../02-glossary/macro.md#國債) |
+| DGS10 / FRED | Federal Reserve Economic Data | 美國 10 年期公債殖利率 / FRED 資料庫 | [資料來源 FRED](data-sources.md#fred-常用代碼) |
+| DGBAS | Directorate-General of Budget, Accounting and Statistics | 行政院主計總處（CPI/GDP）| [資料來源](data-sources.md#總體經濟與利率) |
+| Rate hike / cut | Interest rate hike / cut | 升息 / 降息 | [升息](../02-glossary/macro.md#升息) |
+| Hedge | Hedge | 對衝 / 避險 | [對衝避險](../02-glossary/macro.md#對衝避險) |
+| Options | Options (call / put) | 選擇權（衍生品，本站不教操作） | [選擇權](../02-glossary/macro.md#選擇權) |
+| ATS | Alternative Trading System | 替代交易系統（美股夜盤撮合） | [跨市場（夜盤）](../05-analysis/cross-market.md#美股夜盤overnight-trading) |
 
 ---
 

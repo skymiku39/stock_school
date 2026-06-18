@@ -15,7 +15,7 @@
 | 方式 | 適合情境 | 從這裡進 |
 |------|----------|----------|
 | **字典查詞** | 「這個詞是什麼？」 | [完整詞條總表](../02-glossary/dictionary.md) |
-| **速查表** | 「公式／縮寫／圖表哪一頁？」 | [公式速查](formulas.md)、[縮寫對照](abbreviations.md)、[圖表總覽](../04-charts/index.md) |
+| **速查表** | 「公式／縮寫／圖表哪一頁？」 | [公式速查](formulas.md)、[稅費總覽](taxes-for-costing.md)、[縮寫對照](abbreviations.md)、[圖表總覽](../04-charts/index.md) |
 | **系統學習** | 從零建立完整觀念 | [入門導覽](../01-basics/index.md) → [對號入座](../10-persona/index.md) → [投資模式](../08-investing/index.md) |
 | **對號查身分** | 「我是誰、該怎麼投？」 | [對號入座](../10-persona/index.md) |
 
@@ -36,13 +36,15 @@ flowchart LR
 
 左側搜尋框輸入關鍵字，例如：
 
-- `PER`、`軋空`、`停損`、`晨星`
+- 中文 `軋空`、`停損`、`晨星`，或英文／縮寫 `PER`、`short squeeze`、`stop loss`
+- 詞典已附英文欄，搜英文也能命中對應詞條
 - 可搜到詞條、案例、表格說明
 
 ### 2. 完整詞條總表
 
 [完整詞條總表](../02-glossary/dictionary.md) 收錄 **100+ 詞條**，每條含：
 
+- **英文對照**
 - **一句話定義**
 - **分類**
 - **延伸連結**（詳解章節）
@@ -95,9 +97,12 @@ flowchart LR
 
 | 需求 | 章節 |
 |------|------|
+| 第一次下單 | [第一筆交易走一遍](../01-basics/first-trade-walkthrough.md) |
 | 選模式 | [對號入座](../10-persona/index.md) · [投資模式](../08-investing/index.md) · [模式與心態](../08-investing/mode-psychology.md) |
 | 研究步驟 | [研究流程](../09-advanced/research-workflow.md) |
-| 風控 | [停損](../06-risk/stop-loss.md)、[資金](../06-risk/capital.md) |
+| 風控 | [停損](../06-risk/stop-loss.md)、[資金](../06-risk/capital.md)、[突發狀況手冊](../06-risk/emergency-playbook.md) |
+| 下單前檢查 | [投資檢查清單](investor-checklist.md) |
+| 卡關提問 | [常見問答 FAQ](faq.md) |
 | 案例 | [實戰案例](../07-cases/revenue-turn.md)（含 [0050 定額](../07-cases/etf-dca-drawdown.md)） |
 
 ---

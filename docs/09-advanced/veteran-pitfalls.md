@@ -14,7 +14,7 @@
 
 | # | 陷阱 | 後果 | 對策 |
 |---|------|------|------|
-| 1 | **過度交易** | 成本吃掉獲利 | [交易成本](../06-risk/trading-costs.md)、減少無 thesis 單 |
+| 1 | **過度交易** | 成本吃掉獲利 | [交易成本](../06-risk/trading-costs.md)、減少無投資論點（thesis）的單 |
 | 2 | **框架混用** | 短線進長線抱 | [多週期](multi-timeframe.md)、寫持有天數 |
 | 3 | **錨定成本** | 套牢不認賠 | thesis 失效就出場 |
 | 4 | **確認偏誤** | 只看利多忽略風險 | thesis 必填「看空 2 點」 |
@@ -46,10 +46,25 @@
 | 連續虧損 | 降槓桿、檢討是否框架混用 |
 | 連續獲利 | 警惕過度自信，勿放大部位 |
 
+```mermaid
+flowchart TD
+    Review[月度複盤] --> Find{發現重複錯誤?}
+    Find -->|否| Keep[維持現有系統]
+    Find -->|是| Type{屬紀律或框架問題?}
+    Type -->|紀律| Discipline[暫停交易, 重讀紀律]
+    Type -->|框架| Framework[縮小部位, 只做高確信 thesis]
+    Discipline --> Log[寫入交易日誌]
+    Framework --> Log
+    Log --> Review
+```
+
 ---
 
 ## 重點回顧
 
 - 老手虧損多來自**紀律與系統**，不是少懂一個指標。
 - 每月用本表自檢一次。
-- 回 [老手總覽](index.md) 重排學習計畫。
+
+## 相關
+
+- [老手專區總覽](index.md) · [研究流程](research-workflow.md) · [交易紀律](../06-risk/discipline.md)

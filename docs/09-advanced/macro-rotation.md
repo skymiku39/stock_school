@@ -31,7 +31,7 @@ flowchart TD
 | 外資流向 | 連續買超 | 連續賣超 |
 | [資金行情](../02-glossary/market-terms.md#資金行情) | 熱錢充裕 | 緊縮 |
 
-詳見 [跨市場](../05-analysis/cross-market.md)、[大盤圖](../04-charts/market-charts.md)。
+名詞定義（國債、升息、降息）見 [總經與利率術語](../02-glossary/macro.md)。詳見 [跨市場](../05-analysis/cross-market.md)、[大盤圖](../04-charts/market-charts.md)。
 
 **動作**：總經偏空時，降槓桿、提高現金、縮小衛星部位。
 
@@ -59,7 +59,7 @@ flowchart TD
 | 總經 + 類股 | 個股 |
 |-------------|------|
 | 電子類強 | 再挑營收、法人佳的個股 |
-| 傳產輪動 | 勿死守過時 thesis |
+| 傳產輪動 | 勿死守過時投資論點（thesis） |
 | 大盤破線 | 個股再強也縮部位 |
 
 [行業四維度](../05-analysis/fundamental-framework.md#行業層次) 用於判斷賽道生命週期。

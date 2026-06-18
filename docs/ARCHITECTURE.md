@@ -89,7 +89,8 @@ uv run python scripts/generate_all.py --only cases
 | 證交稅、損益平衡、期望值 | `06-risk/trading-costs.md#費用結構` | `settlement-fees` 只講 T+2 與扣款時點 |
 | ETF 三層費用、折溢價、收益平準金 | `01-basics/etf-costs-and-premium.md` | `trading-costs` 只列賣出稅率；`etf-high-dividend` 誤解 3 只連結 |
 | 基金 vs ETF vs 個股 | `01-basics/mutual-fund-intro.md#基金-vs-etf-vs-個股` | `etf-intro` 只列個股 vs ETF 摘要 |
-| 選模式（問卷） | `08-investing/choose-style.md` | `10-persona` 為身分圖鑑，互指不重複計畫 |
+| 存股除權息 | `08-investing/dividend-investing.md` | 模式總述 |
+| 配股配息五策略 | `08-investing/dividend-strategies.md` | 滾息、填息、現金流等實戰框架 |
 | 全站學習路徑 | `docs/index.md` | 各章 `index` 只列本章順序 |
 
 全站路徑見 [首頁](index.md)；入門章見 [入門導覽](01-basics/index.md)。

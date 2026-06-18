@@ -21,7 +21,7 @@
 | 能區分 K 線、量價、籌碼、基本面圖 | [圖表總覽](../04-charts/index.md) |
 | 已選定主 [投資模式](../08-investing/index.md) | 當沖～ETF 至少精熟一種 |
 | 會用停損與算交易成本 | [風控](../06-risk/stop-loss.md) |
-| 讀過 3 篇以上 [案例](../07-cases/revenue-turn.md) | 能寫出 thesis 與反思 |
+| 讀過 3 篇以上 [案例](../07-cases/revenue-turn.md) | 能寫出投資論點（thesis）與反思 |
 
 若尚不穩，請回 [入門導覽](../01-basics/index.md)、[對號入座](../10-persona/index.md) 或 [如何選模式](../08-investing/choose-style.md)。
 
@@ -100,7 +100,7 @@ flowchart TD
 
 | 資源 | 用途 |
 |------|------|
-| [10 篇案例](../07-cases/revenue-turn.md) | 用 [研究流程](research-workflow.md) 模板複盤 |
+| [12 篇案例](../07-cases/index.md) | 用 [研究流程](research-workflow.md) 模板複盤 |
 | [深入分析分頁](../03-tables/deep-dive-tabs.md) | 單檔完整 3D 資料 |
 | [工具對照](../appendix/stock-tool-map.md) | 用 Bot 跑流程（選用） |
 | [學員↔程式對照](../appendix/dev-glossary.md) | 讀開發文件時 |

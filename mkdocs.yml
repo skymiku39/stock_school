@@ -63,10 +63,13 @@ nav:
       - 01-basics/price-and-cap.md
       - 01-basics/quote-screen.md
     - 01-basics/market-overview.md
+    - 處置股與交易限制: 01-basics/trading-restrictions.md
     - 01-basics/trading-flow.md
     - 01-basics/settlement-fees.md
+    - 第一筆交易走一遍: 01-basics/first-trade-walkthrough.md
     - 01-basics/roles.md
     - 01-basics/open-account.md
+    - IPO 公開申購（抽籤）: 01-basics/ipo-subscription.md
     - 01-basics/dividend.md
     - 01-basics/etf-intro.md
     - ETF 費用與折溢價: 01-basics/etf-costs-and-premium.md
@@ -83,8 +86,10 @@ nav:
     - 基本面: 02-glossary/fundamentals.md
     - 技術面: 02-glossary/technical.md
     - 市場進階: 02-glossary/market-terms.md
+    - 總經與利率: 02-glossary/macro.md
     - 風控: 02-glossary/risk.md
   - 怎麼看表:
+    - 03-tables/index.md
     - 03-tables/watchlist.md
     - 03-tables/deep-dive-tabs.md
     - 03-tables/revenue.md
@@ -117,6 +122,7 @@ nav:
       - KD: 04-charts/kd.md
       - 布林通道: 04-charts/bollinger.md
   - 分析思維:
+    - 05-analysis/index.md
     - 05-analysis/three-pillars.md
     - 05-analysis/fundamental-framework.md
     - 05-analysis/timeframes.md
@@ -133,6 +139,7 @@ nav:
     - 08-investing/swing-mid.md
     - 08-investing/long-term.md
     - 08-investing/dividend-investing.md
+    - 配股配息策略: 08-investing/dividend-strategies.md
     - 08-investing/etf-investing.md
     - 0050 與定期定額: 08-investing/etf-passive-dca.md
     - 高股息 ETF: 08-investing/etf-high-dividend.md
@@ -140,11 +147,18 @@ nav:
     - 外幣帳戶: 08-investing/insurance-fx-products.md
   - 對號入座:
     - 我是誰，該怎麼投？: 10-persona/index.md
+    - 新手・小資・學生: 10-persona/beginner.md
+    - 上班・斜槓・家計: 10-persona/busy.md
+    - 盯盤・追風・重生: 10-persona/active.md
+    - 配息・研究・退休: 10-persona/steady.md
   - 風險與紀律:
+    - 06-risk/index.md
     - 06-risk/capital.md
     - 06-risk/trading-costs.md
+    - 信用交易實務: 06-risk/margin-trading.md
     - 06-risk/stop-loss.md
     - 06-risk/discipline.md
+    - 突發狀況手冊: 06-risk/emergency-playbook.md
   - 老手專區:
     - 09-advanced/index.md
     - 09-advanced/research-workflow.md
@@ -156,6 +170,7 @@ nav:
     - 09-advanced/futures-signal.md
     - 09-advanced/veteran-pitfalls.md
   - 實戰案例:
+    - 07-cases/index.md
     - 07-cases/revenue-turn.md
     - 07-cases/hammer-ma.md
     - 07-cases/institutional-flow.md
@@ -167,15 +182,27 @@ nav:
     - 07-cases/short-squeeze.md
     - 07-cases/dividend-play.md
     - 0050 定額遇大跌: 07-cases/etf-dca-drawdown.md
+    - 基金與保單實戰問答: 07-cases/fund-policy-faq.md
+    - 升息環境估值取捨: 07-cases/macro-rates.md
+    - 零股小資踩雷: 07-cases/odd-lot-mistake.md
+    - 除權息誤操作: 07-cases/ex-dividend-mistake.md
+    - 追飆股追進處置股: 07-cases/disposal-stock-trap.md
   - 附錄:
-    - 架構說明: ARCHITECTURE.md
+    - 架構說明（開發者）: ARCHITECTURE.md
+    - 寫作規範（維護者）: STYLE-GUIDE.md
+    - 內容覆蓋矩陣（維護者）: CONTENT-COVERAGE-MATRIX.md
+    - 圖表檢查清單（維護者）: CHART-CHECKLIST.md
+    - 投資審查檢核表（維護者）: INVESTMENT-REVIEW-CHECKLIST.md
     - 基本資料書: appendix/reference-book.md
+    - 投資檢查清單: appendix/investor-checklist.md
+    - 常見問答 FAQ: appendix/faq.md
     - appendix/formulas.md
+    - 稅費總覽（成本試算）: appendix/taxes-for-costing.md
     - appendix/abbreviations.md
     - appendix/disclaimer.md
     - appendix/data-sources.md
     - appendix/stock-tool-map.md
-    - appendix/dev-glossary.md
+    - 開發詞彙（跨專案）: appendix/dev-glossary.md
     - appendix/video-resources.md
 
 extra:

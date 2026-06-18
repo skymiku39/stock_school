@@ -7,6 +7,9 @@
 
 以下整理自使用者提供的影片摘要，改寫為學員版並**整合進本站各章**；版權歸原頻道所有，請至 YouTube 觀看完整影片。
 
+!!! note "外部連結"
+    影片連結最後驗證日期：2026-06。外部影片可能變更或下架，若連結失效歡迎回報。
+
 ---
 
 ## 快速對照表
@@ -77,7 +80,7 @@
 | 起源 | 18 世紀日本米市，現用於股、期、匯、加密 | [K 線基礎](../04-charts/kline-basics.md) |
 | 00:47 | 開、高、低、收四要素 | [開高低收](../02-glossary/quotes.md#開高低收) |
 | 01:03 | 實體、上影線、下影線 | [K 棒結構](../04-charts/kline-basics.md) |
-| 01:17 | 美股綠漲紅跌 vs 台股紅漲黑跌 | [紅黑 K 慣例](../04-charts/kline-basics.md#紅-k-與黑-k) |
+| 01:17 | 美股綠漲紅跌 vs 台股紅漲黑跌 | [紅黑K 慣例](../04-charts/kline-basics.md#紅-k-與黑-k) |
 | 02:34 | 相同 K 線可能對應不同盤中走勢 | [K 線是簡化的結果](../04-charts/kline-basics.md#k-線是簡化的結果) |
 | 02:58 | 日 K、週 K 過濾雜訊 | [時間週期](../04-charts/kline-basics.md#時間週期) |
 
@@ -118,18 +121,18 @@
 
 ## 小Lin说 分析框架 {#小lin说-分析框架}
 
-**標題**：最干货的一期｜专业股票投资人怎么看门道？  
+**標題**：最干货的一期｜专业股票投资人怎么看门道？（原標為簡體；意即「最乾貨的一期：專業股票投資人怎麼看門道」）  
 **連結**：[YouTube](https://www.youtube.com/watch?v=xnIYIpXKvNM)  
-**頻道**：小Lin说
+**頻道**：小Lin说（簡體原名）
 
 | 段落 | 重點 | 本站延伸 |
 |------|------|----------|
 | 01:18 | 技術分析：看歷史價量找規律 | [三大支柱](../05-analysis/three-pillars.md) |
 | 01:48 | 散戶不宜過度依賴短線技術 | [基本面框架](../05-analysis/fundamental-framework.md) |
 | 04:28 | 基本面：宏觀、行業、公司 | [基本面框架](../05-analysis/fundamental-framework.md) |
-| 05:43 | 貨幣環境與股市水位 | [資金行情](../02-glossary/market-terms.md#資金行情) |
+| 05:43 | 貨幣環境與股市水位 | [資金行情](../02-glossary/market-terms.md#資金行情) · [總經與利率](../02-glossary/macro.md) |
 | 09:37 | 行業四維度 | [行業層次](../05-analysis/fundamental-framework.md#行業層次) |
-| 13:00 | 現金流折現、護城河 | [公司層次](../05-analysis/fundamental-framework.md#公司層次) |
+| 13:00 | 現金流折現、護城河 | [DCF](../02-glossary/fundamentals.md#dcf現金流折現) · [護城河](../02-glossary/fundamentals.md#護城河) · [公司層次](../05-analysis/fundamental-framework.md#公司層次) |
 | 15:31 | 好公司 ≠ 好股票 | [好公司好股票](../05-analysis/fundamental-framework.md#好公司好股票) |
 | 16:20 | PER 與產業差異 | [PER](../02-glossary/fundamentals.md#per本益比) |
 
