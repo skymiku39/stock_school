@@ -23,9 +23,13 @@
 | P3 延伸 04-charts | 7 頁專題圖表自檢 | **已補**（見下方 P3 延伸清單） |
 | P4 詞典缺口 | FCF、最大回撤、Priced In、QE/VIX | **已補**（見下方 P4 清單） |
 | 稅務邊界 | 綜所稅／申報邊界說明 | **已補**（[taxes-for-costing](appendix/taxes-for-costing.md#綜所稅與申報邊界)） |
+| Phase 6 投資模式 | 各模式專章章末自檢 | **已補**（14/14 非 index 頁，見下方清單） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
+
+!!! success "P0～P4 主軸與 Phase 6 模式章已交付"
+    看表 10/10 嚴格 A、主題群案例 100%、canonical 教學頁與 04-charts 延伸自檢、稅務邊界、投資模式 14 章自檢均已補齊；詞典大量 B 為刻意設計（五表 + canonical 連結），邊界詞維持 C／邊界。
 
 !!! note "全站其餘主題"
     `04-charts` 速查頁（`indicator-quickref`、`candle-quickref`）維持 C 級；邊界主題（綜所稅申報）已於 [稅務試算](appendix/taxes-for-costing.md#綜所稅與申報邊界) 標示邊界與站外查詢；P0～P4 主軸已交付。
@@ -92,6 +96,25 @@
 | [fundamental-charts](04-charts/fundamental-charts.md) | 常見誤區 + 自檢 |
 | [chips-charts](04-charts/chips-charts.md) | 常見誤區 + 自檢 |
 | [market-charts](04-charts/market-charts.md) | 常見誤區 + 自檢 |
+
+### Phase 6 投資模式（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [day-trade](08-investing/day-trade.md) | 自檢 |
+| [overnight](08-investing/overnight.md) | 自檢 |
+| [swing-short](08-investing/swing-short.md) | 自檢 |
+| [swing-mid](08-investing/swing-mid.md) | 自檢 |
+| [long-term](08-investing/long-term.md) | 自檢 |
+| [dividend-investing](08-investing/dividend-investing.md) | 自檢 |
+| [dividend-strategies](08-investing/dividend-strategies.md) | 自檢 |
+| [etf-investing](08-investing/etf-investing.md) | 自檢 |
+| [etf-passive-dca](08-investing/etf-passive-dca.md) | 自檢 |
+| [etf-high-dividend](08-investing/etf-high-dividend.md) | 自檢 |
+| [choose-style](08-investing/choose-style.md) | 自檢 |
+| [mode-psychology](08-investing/mode-psychology.md) | 自檢 |
+| [insurance-fx-products](08-investing/insurance-fx-products.md) | 自檢 |
+| [investment-linked-policy](08-investing/investment-linked-policy.md) | 自檢 |
 
 ### P4 詞典／進階缺口（已補）
 
