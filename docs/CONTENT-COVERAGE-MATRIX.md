@@ -28,6 +28,7 @@
 | 09-advanced portfolio | 組合管理自檢 | **已補**（[portfolio#自我檢查](09-advanced/portfolio.md)） |
 | 09-advanced 其餘 5 篇 | 老手專區章末自檢 | **已補**（見下方 09-advanced 清單） |
 | 06-risk 風控專章 | 6 篇章末自檢 | **已補**（見下方 06-risk 清單） |
+| 01-basics 入門 | 16 篇章末自檢 | **已補**（見下方 01-basics 清單） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
@@ -161,6 +162,27 @@
 | [stop-loss](06-risk/stop-loss.md) | 自檢 |
 | [discipline](06-risk/discipline.md) | 自檢 |
 | [capital](06-risk/capital.md) | 自檢 |
+
+### 01-basics 入門專章（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [what-is-stock](01-basics/what-is-stock.md) | 常見誤區 + 自檢 |
+| [open-account](01-basics/open-account.md) | 自檢 |
+| [first-trade-walkthrough](01-basics/first-trade-walkthrough.md) | 自檢 |
+| [trading-flow](01-basics/trading-flow.md) | 自檢 |
+| [settlement-fees](01-basics/settlement-fees.md) | 自檢 |
+| [quote-screen](01-basics/quote-screen.md) | 自檢 |
+| [price-and-cap](01-basics/price-and-cap.md) | 自檢 |
+| [roles](01-basics/roles.md) | 自檢 |
+| [market-overview](01-basics/market-overview.md) | 自檢 |
+| [trading-restrictions](01-basics/trading-restrictions.md) | 自檢 |
+| [dividend](01-basics/dividend.md) | 自檢 |
+| [etf-intro](01-basics/etf-intro.md) | 常見誤區 + 自檢 |
+| [etf-costs-and-premium](01-basics/etf-costs-and-premium.md) | 自檢 |
+| [mutual-fund-intro](01-basics/mutual-fund-intro.md) | 自檢 |
+| [futures-intro](01-basics/futures-intro.md) | 自檢 |
+| [ipo-subscription](01-basics/ipo-subscription.md) | 自檢 |
 
 ### P4 詞典／進階缺口（已補）
 
