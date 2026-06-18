@@ -44,6 +44,17 @@
 
 ---
 
+## 自我檢查
+
+??? question "1.（概念題）配息派與研究狂人的主模式有何不同？"
+    參考答案：配息派重**現金流**（[存股除權息](../08-investing/dividend-investing.md)）；研究狂人重**公司品質與論點**（[長期價值](../08-investing/long-term.md)）。
+
+??? question "2.（判斷題）殖利率 8% 就一定比 4% 好？"
+    參考答案：否。要看**填息紀錄、獲利與股價是否被動墊高**；見 [估值陷阱](../07-cases/valuation-trap.md)。
+
+??? question "3.（情境題）準退休族第一步該做什麼？"
+    參考答案：先 [資金配置](../06-risk/capital.md) 盤點股債比例與流動性，再選配息標的與 ETF。
+
 ## 相關
 
 - [對號入座總覽](index.md) · [存股除權息](../08-investing/dividend-investing.md) · [長期價值投資](../08-investing/long-term.md)

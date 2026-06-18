@@ -46,6 +46,17 @@
 
 ---
 
+## 自我檢查
+
+??? question "1.（概念題）全職盯盤族進場前必算哪兩件事？"
+    參考答案：[交易成本](../06-risk/trading-costs.md) 與 [每日風險上限](../06-risk/capital.md#每日風險預算)。
+
+??? question "2.（判斷題）FOMO 族最適合先學當沖追漲停？"
+    參考答案：否。宜先 **ETF 定額**建立紀律，見 [心態錯配](../08-investing/mode-psychology.md#心態錯配)。
+
+??? question "3.（情境題）重生玩家第一步該檢討什麼？"
+    參考答案：過去是**心態錯配**還是方法問題，並重設 [停損三層](../06-risk/stop-loss.md)。
+
 ## 相關
 
 - [對號入座總覽](index.md) · [投資模式與心態](../08-investing/mode-psychology.md) · [交易紀律](../06-risk/discipline.md)

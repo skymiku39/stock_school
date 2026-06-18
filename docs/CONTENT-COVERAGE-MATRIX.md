@@ -29,6 +29,8 @@
 | 09-advanced 其餘 5 篇 | 老手專區章末自檢 | **已補**（見下方 09-advanced 清單） |
 | 06-risk 風控專章 | 6 篇章末自檢 | **已補**（見下方 06-risk 清單） |
 | 01-basics 入門 | 16 篇章末自檢 | **已補**（見下方 01-basics 清單） |
+| 10-persona 分頁 | 4 篇身分分組自檢 | **已補**（見下方 10-persona 清單） |
+| 附錄教學頁 | 公式／清單／資料源／FAQ 自檢 | **已補**（`taxes-for-costing` 先前已補） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
@@ -183,6 +185,26 @@
 | [mutual-fund-intro](01-basics/mutual-fund-intro.md) | 自檢 |
 | [futures-intro](01-basics/futures-intro.md) | 自檢 |
 | [ipo-subscription](01-basics/ipo-subscription.md) | 自檢 |
+
+### 10-persona 身分分組（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [index](10-persona/index.md) | 自檢（P2 canonical） |
+| [beginner](10-persona/beginner.md) | 自檢 |
+| [steady](10-persona/steady.md) | 自檢 |
+| [busy](10-persona/busy.md) | 自檢 |
+| [active](10-persona/active.md) | 自檢 |
+
+### 附錄教學頁（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [formulas](appendix/formulas.md) | 手算 + 自檢 |
+| [investor-checklist](appendix/investor-checklist.md) | 自檢 |
+| [data-sources](appendix/data-sources.md) | 自檢 |
+| [faq](appendix/faq.md) | 綜合自檢 |
+| [taxes-for-costing](appendix/taxes-for-costing.md) | 自檢 + 綜所稅邊界 |
 
 ### P4 詞典／進階缺口（已補）
 
