@@ -27,6 +27,7 @@
 | 05-analysis 教學頁 | 6 篇 canonical 自檢 | **已補**（見下方 05-analysis 清單） |
 | 09-advanced portfolio | 組合管理自檢 | **已補**（[portfolio#自我檢查](09-advanced/portfolio.md)） |
 | 09-advanced 其餘 5 篇 | 老手專區章末自檢 | **已補**（見下方 09-advanced 清單） |
+| 06-risk 風控專章 | 6 篇章末自檢 | **已補**（見下方 06-risk 清單） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
@@ -149,6 +150,17 @@
 | [multi-timeframe](09-advanced/multi-timeframe.md) | 自檢 |
 | [event-playbook](09-advanced/event-playbook.md) | 自檢 |
 | [futures-signal](09-advanced/futures-signal.md) | 自檢 |
+
+### 06-risk 風控專章（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [trading-costs](06-risk/trading-costs.md) | 自檢 |
+| [margin-trading](06-risk/margin-trading.md) | 常見誤區 + 自檢 |
+| [emergency-playbook](06-risk/emergency-playbook.md) | 自檢 |
+| [stop-loss](06-risk/stop-loss.md) | 自檢 |
+| [discipline](06-risk/discipline.md) | 自檢 |
+| [capital](06-risk/capital.md) | 自檢 |
 
 ### P4 詞典／進階缺口（已補）
 
