@@ -26,6 +26,7 @@
 | Phase 6 投資模式 | 各模式專章章末自檢 | **已補**（14/14 非 index 頁，見下方清單） |
 | 05-analysis 教學頁 | 6 篇 canonical 自檢 | **已補**（見下方 05-analysis 清單） |
 | 09-advanced portfolio | 組合管理自檢 | **已補**（[portfolio#自我檢查](09-advanced/portfolio.md)） |
+| 09-advanced 其餘 5 篇 | 老手專區章末自檢 | **已補**（見下方 09-advanced 清單） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
@@ -128,6 +129,19 @@
 | [cross-market](05-analysis/cross-market.md) | 常見誤區 + 自檢 |
 | [conference](05-analysis/conference.md) | 常見誤區 + 自檢 |
 | [active-etf](05-analysis/active-etf.md) | 自檢 |
+
+### 09-advanced 老手專區（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [research-workflow](09-advanced/research-workflow.md) | 常見誤區 + 自檢 |
+| [advanced-chips](09-advanced/advanced-chips.md) | 自檢 |
+| [portfolio](09-advanced/portfolio.md) | 自檢 |
+| [veteran-pitfalls](09-advanced/veteran-pitfalls.md) | 自檢 |
+| [macro-rotation](09-advanced/macro-rotation.md) | 自檢 |
+| [multi-timeframe](09-advanced/multi-timeframe.md) | 自檢 |
+| [event-playbook](09-advanced/event-playbook.md) | 自檢 |
+| [futures-signal](09-advanced/futures-signal.md) | 自檢 |
 
 ### P4 詞典／進階缺口（已補）
 
