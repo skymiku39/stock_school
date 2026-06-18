@@ -42,6 +42,21 @@
 |------|------|
 | yfinance 等 | 美股、指數、部分 ADR |
 
+## 各看表去哪查
+
+對照 [怎麼看表總覽](../03-tables/index.md)，每張表的資料來源：
+
+| 看表章節 | 主要來源 | 更新 |
+|----------|----------|------|
+| [個股總覽表](../03-tables/watchlist.md) | 券商行情、排行榜 | 即時／盤後 |
+| [月營收表](../03-tables/revenue.md) | MOPS 月營收 | 次月 10 日前 |
+| [三大法人表](../03-tables/institutional.md) | 證交所／櫃買 | T+1 |
+| [融資融券表](../03-tables/margin.md) | 證交所／櫃買 | T+1 |
+| [估值表](../03-tables/valuation.md) | MOPS、財經網站 | 隨財報／每日股價 |
+| [財報摘要表](../03-tables/financials.md) | MOPS 財務報表 | 季報法定時限 |
+| [除權息日程表](../03-tables/dividend-schedule.md) | MOPS、交易所公告 | 公告制 |
+| [鉅額交易表](../03-tables/block-trade.md) | 證交所／櫃買鉅額日報 | 盤後／次日 |
+
 ## 使用原則
 
 1. **以官方公告為準**：媒體標題僅作線索。

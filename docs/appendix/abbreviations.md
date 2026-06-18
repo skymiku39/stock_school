@@ -33,7 +33,8 @@
 | YoY | Year over Year | 年增（同比） | [fundamentals](../02-glossary/fundamentals.md) |
 | MoM | Month over Month | 月增（環比） | [fundamentals](../02-glossary/fundamentals.md) |
 | QoQ | Quarter over Quarter | 季增 | [fundamentals](../02-glossary/fundamentals.md) |
-| ROE | Return on Equity | 股東權益報酬率 | [財報](../03-tables/financials.md) |
+| ROE | Return on Equity | 股東權益報酬率 | [ROE](../02-glossary/fundamentals.md#roe股東權益報酬率) |
+| DCF | Discounted Cash Flow | 現金流折現估值法 | [DCF](../02-glossary/fundamentals.md#dcf現金流折現) |
 | IPO | Initial Public Offering | 初次上市 | [what-is-stock](../01-basics/what-is-stock.md) |
 | MOPS | Market Observation Post System | 公開資訊觀測站 | [資料來源](data-sources.md) |
 
@@ -66,6 +67,10 @@
 | QE | Quantitative Easing | 量化寬鬆 | [基本面框架](../05-analysis/fundamental-framework.md) |
 | CPI | Consumer Price Index | 消費者物價指數 | [macro](../09-advanced/macro-rotation.md) |
 | GDP | Gross Domestic Product | 國內生產毛額 | [macro](../09-advanced/macro-rotation.md) |
+| Treasury | Government bond / Treasury | 國債（殖利率為無風險參考） | [國債](../02-glossary/macro.md#國債) |
+| Rate hike / cut | Interest rate hike / cut | 升息 / 降息 | [升息](../02-glossary/macro.md#升息) |
+| Hedge | Hedge | 對衝 / 避險 | [對衝避險](../02-glossary/macro.md#對衝避險) |
+| Options | Options (call / put) | 選擇權（衍生品，本站不教操作） | [選擇權](../02-glossary/macro.md#選擇權) |
 
 ---
 

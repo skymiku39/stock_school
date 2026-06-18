@@ -130,9 +130,9 @@
 | 01:18 | 技術分析：看歷史價量找規律 | [三大支柱](../05-analysis/three-pillars.md) |
 | 01:48 | 散戶不宜過度依賴短線技術 | [基本面框架](../05-analysis/fundamental-framework.md) |
 | 04:28 | 基本面：宏觀、行業、公司 | [基本面框架](../05-analysis/fundamental-framework.md) |
-| 05:43 | 貨幣環境與股市水位 | [資金行情](../02-glossary/market-terms.md#資金行情) |
+| 05:43 | 貨幣環境與股市水位 | [資金行情](../02-glossary/market-terms.md#資金行情) · [總經與利率](../02-glossary/macro.md) |
 | 09:37 | 行業四維度 | [行業層次](../05-analysis/fundamental-framework.md#行業層次) |
-| 13:00 | 現金流折現、護城河 | [公司層次](../05-analysis/fundamental-framework.md#公司層次) |
+| 13:00 | 現金流折現、護城河 | [DCF](../02-glossary/fundamentals.md#dcf現金流折現) · [護城河](../02-glossary/fundamentals.md#護城河) · [公司層次](../05-analysis/fundamental-framework.md#公司層次) |
 | 15:31 | 好公司 ≠ 好股票 | [好公司好股票](../05-analysis/fundamental-framework.md#好公司好股票) |
 | 16:20 | PER 與產業差異 | [PER](../02-glossary/fundamentals.md#per本益比) |
 

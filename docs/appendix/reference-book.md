@@ -97,9 +97,12 @@ flowchart LR
 
 | 需求 | 章節 |
 |------|------|
+| 第一次下單 | [第一筆交易走一遍](../01-basics/first-trade-walkthrough.md) |
 | 選模式 | [對號入座](../10-persona/index.md) · [投資模式](../08-investing/index.md) · [模式與心態](../08-investing/mode-psychology.md) |
 | 研究步驟 | [研究流程](../09-advanced/research-workflow.md) |
-| 風控 | [停損](../06-risk/stop-loss.md)、[資金](../06-risk/capital.md) |
+| 風控 | [停損](../06-risk/stop-loss.md)、[資金](../06-risk/capital.md)、[突發狀況手冊](../06-risk/emergency-playbook.md) |
+| 下單前檢查 | [投資檢查清單](investor-checklist.md) |
+| 卡關提問 | [常見問答 FAQ](faq.md) |
 | 案例 | [實戰案例](../07-cases/revenue-turn.md)（含 [0050 定額](../07-cases/etf-dca-drawdown.md)） |
 
 ---

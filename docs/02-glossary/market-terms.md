@@ -136,7 +136,9 @@ flowchart LR
 | **常見誤解** | 資金行情永遠不會結束；緊縮或風險偏好下降時，估值可能快速修正 |
 | **小例子** | 低利 + 外資大買 → 大盤量增價漲 |
 
-相關：[基本面框架](../05-analysis/fundamental-framework.md#宏觀層次) · [跨市場](../05-analysis/cross-market.md)
+資金行情背後的利率與升降息機制，見 [總經與利率術語](macro.md)。
+
+相關：[總經與利率](macro.md) · [基本面框架](../05-analysis/fundamental-framework.md#宏觀層次) · [跨市場](../05-analysis/cross-market.md)
 
 ---
 

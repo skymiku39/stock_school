@@ -69,7 +69,7 @@
 | 停損 | Stop loss | 虧損達門檻出場 | [停損](pnl.md#停損) |
 | 認賠殺出 | Capitulation (panic sell) | 被迫或恐慌在低點賣出變現 | [閒錢](../06-risk/capital.md#閒錢與生活費) |
 | 心態錯配 | Mindset mismatch | 用 A 模式進場、B 模式心態出場 | [投資模式與心態](../08-investing/mode-psychology.md#心態錯配) |
-| 停利 | Take profit | 獲利達目標出場 | [損益詞典](pnl.md) |
+| 停利 | Take profit | 獲利達目標出場 | [停利與減碼](../06-risk/stop-loss.md#停利與減碼) |
 | 移動停利 | Trailing stop | 從高點回撤幅度出場 | [移動停利](pnl.md#移動停利) |
 | 損益兩平 | Break-even | 不賺不賠之價位 | [損益詞典](pnl.md) |
 | 風險報酬比 | Risk-reward ratio | 可能獲利 vs 可能虧損 | [風控詞典](risk.md) |
@@ -142,6 +142,9 @@
 | 股票股利 | Stock dividend | 配發股票 | [除權息](../01-basics/dividend.md) |
 | 除息 / 除權 | Ex-dividend / Ex-rights | 股利除權除息調整 | [除權息入門](../01-basics/dividend.md) |
 | 填息 / 填權 | Dividend gap fill / Rights gap fill | 除權息後價格回升 | [填息](market-terms.md#填息) |
+| ROE | ROE (Return on Equity) | 淨利 ÷ 股東權益 | [ROE](fundamentals.md#roe股東權益報酬率) |
+| 護城河 | Economic moat | 難以複製的長期競爭優勢 | [護城河](fundamentals.md#護城河) |
+| DCF | DCF (Discounted Cash Flow) | 未來現金流折現估值法 | [DCF](fundamentals.md#dcf現金流折現) |
 | 市值 | Market cap | 股價 × 流通股數 | [股價市值](../01-basics/price-and-cap.md) |
 
 ---
@@ -210,6 +213,20 @@
 | 小台指 | MTX (mini-TAIEX futures) | 大台1/4規模（MTX） | [期貨入門](../01-basics/futures-intro.md) |
 | 原始保證金 | Initial margin | 期貨建倉前帳戶最低金額 | [期貨入門](../01-basics/futures-intro.md) |
 | 維持保證金 | Maintenance margin | 期貨持倉期間權益底線 | [期貨入門](../01-basics/futures-intro.md) |
+
+---
+
+## 總經與利率
+
+| 詞條 | 英文 | 一句話 | 詳見 |
+|------|------|--------|------|
+| 國債 | Government bond / Treasury | 政府發行之債券，殖利率為無風險參考 | [國債](macro.md#國債) |
+| 升息 | Rate hike | 央行調高政策利率，資金趨緊 | [升息](macro.md#升息) |
+| 降息 | Rate cut | 央行調降政策利率，釋放資金 | [降息](macro.md#降息) |
+| 槓桿 | Leverage | 借資金放大部位，雙向放大盈虧 | [槓桿](macro.md#槓桿) |
+| 對衝 / 避險 | Hedge | 反向部位抵銷風險 | [對衝避險](macro.md#對衝避險) |
+| 強制平倉 / 清算 | Liquidation | 斷頭（個人）或公司清算（企業） | [強制平倉與清算](macro.md#強制平倉與清算) |
+| 選擇權 | Options (call / put) | 買賣特定價格之權利（衍生品） | [選擇權](macro.md#選擇權) |
 
 ---
 

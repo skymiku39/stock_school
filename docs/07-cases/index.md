@@ -2,8 +2,8 @@
 
 ## 本篇你會學到
 
-- 12 篇案例各自示範什麼判斷
-- 哪些案例對應你的 [投資模式](../08-investing/index.md)
+- 16 篇案例各自示範什麼判斷
+- 哪些案例對應你的 [投資模式](../08-investing/index.md) 與**主題群**
 - 案例的共通拆解結構
 
 !!! warning "免責聲明"
@@ -43,6 +43,29 @@ flowchart LR
 | 十 | [除權息參與與填息](dividend-play.md) | 除權息 | 存股 | [除權息日程](../03-tables/dividend-schedule.md) |
 | 十一 | [0050 定期定額遇到大跌](etf-dca-drawdown.md) | 定額心態 | ETF / 長線 | [0050 與定期定額](../08-investing/etf-passive-dca.md) |
 | 十二 | [基金與保單實戰問答](fund-policy-faq.md) | 理財規劃 | 長線 | [投資型保單](../08-investing/investment-linked-policy.md) |
+| 十三 | [升息環境估值取捨](macro-rates.md) | 總經利率 | 長線 / ETF | [總經與利率](../02-glossary/macro.md) |
+| 十四 | [零股小資踩雷](odd-lot-mistake.md) | 零股成本 | 小資 / 長線 | [零股](../01-basics/trading-flow.md#零股) |
+| 十五 | [除權息誤操作](ex-dividend-mistake.md) | 除息誤判 | 存股 | [除權息日程](../03-tables/dividend-schedule.md) |
+| 十六 | [追飆股追進處置股](disposal-stock-trap.md) | 交易限制 | 當沖 / 短線 | [交易限制](../01-basics/trading-restrictions.md) |
+
+---
+
+## 案例 × 主題群
+
+對照 [內容覆蓋矩陣](../CONTENT-COVERAGE-MATRIX.md)，每個主題群至少有一篇案例可練習：
+
+| 主題群 | 案例 | 學會什麼 |
+|--------|------|----------|
+| **基本面轉折** | [月營收轉折](revenue-turn.md) | 營收由弱轉強的判讀 |
+| **估值** | [估值陷阱](valuation-trap.md)、[升息環境估值](macro-rates.md) | 高殖利率陷阱、利率對估值 |
+| **技術型態** | [鎚子線+均線](hammer-ma.md)、[MACD 背離](macd-divergence.md)、[突破缺口](gap-breakout.md) | 反轉、背離、缺口辨識 |
+| **籌碼法人** | [法人連續買超](institutional-flow.md)、[法說 vs 法人](conference-chips.md)、[融券軋空](short-squeeze.md) | 籌碼追蹤與軋空 |
+| **除權息** | [除權息參與](dividend-play.md)、[除權息誤操作](ex-dividend-mistake.md) | 填息與除息誤判 |
+| **ETF / 定額** | [0050 定額遇大跌](etf-dca-drawdown.md) | 定額心態 |
+| **小資 / 零股** | [零股小資踩雷](odd-lot-mistake.md) | 零股成本與流動性 |
+| **交易限制** | [追飆股追進處置股](disposal-stock-trap.md) | 注意處置股風險 |
+| **當沖風控** | [當沖風控決策樹](day-trade-risk.md) | 當沖紀律 |
+| **理財規劃** | [基金與保單問答](fund-policy-faq.md) | 保單與基金 |
 
 ---
 

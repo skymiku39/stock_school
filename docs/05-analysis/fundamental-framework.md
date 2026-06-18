@@ -43,7 +43,7 @@ flowchart TB
 
 | 常見觀察 | 學員怎麼用 |
 |----------|------------|
-| 利率、央行政策 | 理解「資金行情」背景，見 [市場術語](../02-glossary/market-terms.md#資金行情) |
+| 利率、央行政策 | 理解「資金行情」背景，見 [總經與利率術語](../02-glossary/macro.md) 與 [市場術語](../02-glossary/market-terms.md#資金行情) |
 | GDP、CPI、就業 | 判斷景氣位置，非逐日交易 |
 | 台股 vs 美股連動 | [跨市場分析](cross-market.md) |
 

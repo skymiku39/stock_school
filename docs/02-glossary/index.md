@@ -25,6 +25,7 @@
 | 基本面 | [fundamentals.md](fundamentals.md) | 月營收、EPS、PER、PBR、殖利率 |
 | 技術面 | [technical.md](technical.md) | MA、MACD、RSI、KD、布林 |
 | 市場進階 | [market-terms.md](market-terms.md) | 多頭空頭、跳空、軋空、洗盤、填息 |
+| 總經與利率 | [macro.md](macro.md) | 國債、升息降息、槓桿、對衝、選擇權 |
 | 風控 | [risk.md](risk.md) | 曝險、資金上限、緊急停機概念 |
 
 ## 建議閱讀順序

@@ -20,8 +20,9 @@
 | [**對號入座**](10-persona/index.md) | 我是誰、該怎麼投？— **12 種身分圖鑑** |
 | [影片資源](appendix/video-resources.md) | 五支入門影片 → 術語 → 模式 → 案例 |
 | [深入分析分頁](03-tables/deep-dive-tabs.md) | 單檔股票各分頁欄位地圖 |
-| [風險與紀律](06-risk/index.md) | 資金配置、停損停利、交易紀律 |
-| [實戰案例](07-cases/index.md) | **12 篇**逐步拆解案例（含 0050 定額） |
+| [風險與紀律](06-risk/index.md) | 資金配置、停損停利、交易紀律、突發狀況手冊 |
+| [常見問答](appendix/faq.md) / [檢查清單](appendix/investor-checklist.md) | 新手 FAQ、下單前／除息前／月複盤清單 |
+| [實戰案例](07-cases/index.md) | **13 篇**逐步拆解案例（含總經利率） |
 | [**老手專區**](09-advanced/index.md) | 研究流程、多週期、組合、總經、進階籌碼、事件手冊 |
 
 ## 建議學習路徑
@@ -35,9 +36,12 @@
     2. [報價畫面](01-basics/quote-screen.md) + [圖表總覽](04-charts/index.md)
     3. [台股市場概覽](01-basics/market-overview.md)
     4. [如何選投資模式](08-investing/choose-style.md) → [模式與心態](08-investing/mode-psychology.md)
-    5. [個股總覽表怎麼看](03-tables/watchlist.md)
-    6. [資金配置](06-risk/capital.md) + [交易成本](06-risk/trading-costs.md)
-    7. 依模式讀 [投資模式總覽](08-investing/index.md) 地圖
+    5. [第一筆交易走一遍](01-basics/first-trade-walkthrough.md)（開戶→下單→對帳）
+    6. [個股總覽表怎麼看](03-tables/watchlist.md)
+    7. [三大分析支柱](05-analysis/three-pillars.md)（建立「三面一起看」的框架）
+    8. [資金配置](06-risk/capital.md) + [交易成本](06-risk/trading-costs.md)
+    9. 依模式讀 [投資模式總覽](08-investing/index.md) 地圖
+    10. 卡關時查 [常見問答](appendix/faq.md)；下單前對照 [投資檢查清單](appendix/investor-checklist.md)
 
 === "已有基礎"
 
