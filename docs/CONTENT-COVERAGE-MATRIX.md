@@ -20,13 +20,15 @@
 | 外部官方資料源 | 關鍵主題接官方來源 | **已補**：TDCC、央行、FRED、DGBAS、MOPS 重訊、TWSE OpenAPI、第三方平台映射 |
 | P2 canonical 自檢 | 14 頁章末自檢 | **已補**（見下方 P2 清單） |
 | P3 技術面 canonical | 8 頁圖表自檢 | **已補**（見下方 P3 清單） |
+| P3 延伸 04-charts | 7 頁專題圖表自檢 | **已補**（見下方 P3 延伸清單） |
 | P4 詞典缺口 | FCF、最大回撤、Priced In、QE/VIX | **已補**（見下方 P4 清單） |
+| 稅務邊界 | 綜所稅／申報邊界說明 | **已補**（[taxes-for-costing](appendix/taxes-for-costing.md#綜所稅與申報邊界)） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
 
 !!! note "全站其餘主題"
-    `04-charts` 其餘速查／專題頁（如 `candle-patterns`、quickref）與邊界主題（綜所稅申報）維持原等級；P0～P4 主軸已交付。
+    `04-charts` 速查頁（`indicator-quickref`、`candle-quickref`）維持 C 級；邊界主題（綜所稅申報）已於 [稅務試算](appendix/taxes-for-costing.md#綜所稅與申報邊界) 標示邊界與站外查詢；P0～P4 主軸已交付。
 
 ---
 
@@ -78,6 +80,18 @@
 | [kd](04-charts/kd.md) | 自檢 |
 | [bollinger](04-charts/bollinger.md) | 自檢 |
 | [volume-price](04-charts/volume-price.md) | 常見誤區 + 自檢 |
+
+### P3 延伸 04-charts（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [candle-patterns](04-charts/candle-patterns.md) | 常見誤區 + 自檢 |
+| [candle-combinations](04-charts/candle-combinations.md) | 常見誤區 + 自檢 |
+| [intraday-charts](04-charts/intraday-charts.md) | 常見誤區 + 自檢 |
+| [line-charts](04-charts/line-charts.md) | 自檢 |
+| [fundamental-charts](04-charts/fundamental-charts.md) | 常見誤區 + 自檢 |
+| [chips-charts](04-charts/chips-charts.md) | 常見誤區 + 自檢 |
+| [market-charts](04-charts/market-charts.md) | 常見誤區 + 自檢 |
 
 ### P4 詞典／進階缺口（已補）
 
@@ -194,7 +208,7 @@
 | ROE | A | [fundamentals#roe](02-glossary/fundamentals.md#roe股東權益報酬率) |
 | 選擇權 / 期權 | 邊界 | [macro#選擇權](02-glossary/macro.md#選擇權)（定義 + 不教操作） |
 | IPO 抽籤 | A | [ipo-subscription](01-basics/ipo-subscription.md)（機制+退款+資金虹吸+自檢） |
-| 綜所稅 / 股利申報 | 邊界 | taxes 邊界說明 |
+| 綜所稅 / 股利申報 | 邊界 | [taxes-for-costing#綜所稅與申報邊界](appendix/taxes-for-costing.md#綜所稅與申報邊界)（邊界 + 站外查詢 + 自檢） |
 | CPI / GDP | A | [macro#cpi](02-glossary/macro.md#cpi)、[#gdp](02-glossary/macro.md#gdp)（DGBAS 來源） |
 | ADR / 夜盤 | A | [cross-market](05-analysis/cross-market.md#adr-折溢價怎麼算)（換算/折溢價/ATS） |
 | 殖利率曲線倒掛 | A | [macro#殖利率曲線倒掛](02-glossary/macro.md#殖利率曲線倒掛)（FRED T10Y2Y） |
