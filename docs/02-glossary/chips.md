@@ -135,4 +135,4 @@
 - 融資融券反映槓桿與多空，不是單純多空指標。
 - 法人資料 T+1 公布，有時間差。
 
-相關：[融資融券表](../03-tables/margin.md) · [籌碼圖表](../04-charts/chips-charts.md) · [法人案例](../07-cases/institutional-flow.md)
+相關：[融資融券表](../03-tables/margin.md) · [信用交易實務](../06-risk/margin-trading.md) · [籌碼圖表](../04-charts/chips-charts.md) · [法人案例](../07-cases/institutional-flow.md)

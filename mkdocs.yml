@@ -63,6 +63,7 @@ nav:
       - 01-basics/price-and-cap.md
       - 01-basics/quote-screen.md
     - 01-basics/market-overview.md
+    - 處置股與交易限制: 01-basics/trading-restrictions.md
     - 01-basics/trading-flow.md
     - 01-basics/settlement-fees.md
     - 01-basics/roles.md
@@ -151,6 +152,7 @@ nav:
     - 06-risk/index.md
     - 06-risk/capital.md
     - 06-risk/trading-costs.md
+    - 信用交易實務: 06-risk/margin-trading.md
     - 06-risk/stop-loss.md
     - 06-risk/discipline.md
   - 老手專區:

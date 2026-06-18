@@ -27,6 +27,8 @@ flowchart LR
 | **停損** | 什麼時候該認賠出場？ | [停損三層概念](stop-loss.md) |
 | **紀律** | 怎麼讓自己照計畫執行？ | [交易紀律](discipline.md) |
 
+使用**融資融券**者，另必讀 [信用交易實務](margin-trading.md)（維持率、追繳、斷頭、借券費）。
+
 ---
 
 ## 建議閱讀順序
@@ -35,6 +37,7 @@ flowchart LR
 2. [交易成本與期望值](trading-costs.md)：算清楚每筆交易的損益平衡點。
 3. [停損三層概念](stop-loss.md)：設定出場規則。
 4. [交易紀律](discipline.md)：把規則變成習慣。
+5. 若有融資融券：[信用交易實務](margin-trading.md)。
 
 ---
 

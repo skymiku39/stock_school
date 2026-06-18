@@ -46,4 +46,4 @@
 - 變化率與股價方向一起讀。
 - 小市值股融資占比影響更大。
 
-相關：[融資融券術語](../02-glossary/chips.md#融資)（融資、融券兩節） · [籌碼圖表](../04-charts/chips-charts.md)
+相關：[融資融券術語](../02-glossary/chips.md#融資)（融資、融券兩節） · [信用交易實務](../06-risk/margin-trading.md)（維持率、追繳、斷頭） · [籌碼圖表](../04-charts/chips-charts.md)

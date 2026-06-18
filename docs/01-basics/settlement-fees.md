@@ -62,7 +62,7 @@ flowchart LR
 | **融資** | 向券商借款，有利息與維持率 |
 | **融券** | 借券賣出，須後續買回還券 |
 
-見 [融資融券術語](../02-glossary/chips.md#融資融券)。
+見 [融資融券術語](../02-glossary/chips.md#融資融券)；操作與風控見 [信用交易實務](../06-risk/margin-trading.md)。
 
 ---
 

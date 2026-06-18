@@ -111,6 +111,9 @@
 | 融券 | Margin short selling | 借券賣出 | [融資融券](chips.md#融資融券) |
 | 借券 | Securities lending | 借入股票賣出或還券 | [籌碼詞典](chips.md) |
 | 券資比 | Short/margin ratio | 融券/融資比 | [籌碼詞典](chips.md) |
+| 維持率 | Maintenance ratio | 融資擔保品對欠款之安全比例 | [信用交易實務](../06-risk/margin-trading.md) |
+| 追繳 | Margin call | 維持率不足須補保證金 | [信用交易實務](../06-risk/margin-trading.md) |
+| 斷頭 | Forced liquidation | 未補保證金遭強制賣出 | [信用交易實務](../06-risk/margin-trading.md) |
 | 分點 | Broker branch | 券商營業據點 | [分點](chips.md#分點) |
 | 集保大戶 | Major holders (TDCC) | 持股分級之大戶結構 | [籌碼詞典](chips.md) |
 | 期現價差 | Basis (futures − spot) | 期貨價 − 現貨價 | [期現價差](chips.md#期現價差) |
@@ -132,6 +135,9 @@
 | 毛利率 | Gross margin | (營收−成本)/營收 | [三率](fundamentals.md#三率) |
 | 營益率 | Operating margin | 營業利益/營收 | [三率](fundamentals.md#三率) |
 | 淨利率 | Net margin | 淨利/營收 | [三率](fundamentals.md#三率) |
+| 營運現金流 | Operating cash flow (OCF) | 本業經營之現金流入 | [營運現金流](fundamentals.md#營運現金流) |
+| 自由現金流 | Free cash flow (FCF) | 營運現金流扣資本支出 | [現金流量表](../03-tables/financials.md#現金流量表) |
+| 負債比 | Debt ratio | 總負債/總資產 | [資產負債表](../03-tables/financials.md#資產負債表) |
 | 現金股利 | Cash dividend | 配發現金 | [除權息](../01-basics/dividend.md) |
 | 股票股利 | Stock dividend | 配發股票 | [除權息](../01-basics/dividend.md) |
 | 除息 / 除權 | Ex-dividend / Ex-rights | 股利除權除息調整 | [除權息入門](../01-basics/dividend.md) |
@@ -172,6 +178,9 @@
 | 詞條 | 英文 | 一句話 | 詳見 |
 |------|------|--------|------|
 | 上市 / 上櫃 | Listed / OTC | 台交所 / 櫃買掛牌 | [市場概覽](../01-basics/market-overview.md) |
+| 注意股 | Attention stock | 價量異常需提高警覺 | [交易限制](../01-basics/trading-restrictions.md) |
+| 處置股 | Disposal stock | 交易所實施處置、交易受限 | [交易限制](../01-basics/trading-restrictions.md) |
+| 全額交割 | Full cash settlement | 買進須全額付清不得信用 | [交易限制](../01-basics/trading-restrictions.md) |
 | 多頭 / 空頭 | Bull / Bear | 大盤偏多/偏空趨勢 | [多頭空頭](market-terms.md#多頭空頭) |
 | 資金行情 | Liquidity-driven rally | 熱錢推升之行情 | [資金行情](market-terms.md#資金行情) |
 | 跳空 | Gap | 開盤與昨收無成交斷層 | [跳空](market-terms.md#跳空) |

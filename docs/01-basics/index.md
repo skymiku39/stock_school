@@ -19,7 +19,7 @@ flowchart LR
 | 主線 | 章節 | 回答的問題 |
 |------|------|------------|
 | **認識股票** | [股票是什麼](what-is-stock.md) · [股價與市值](price-and-cap.md) · [報價畫面](quote-screen.md) | 我買的是什麼？畫面上數字是什麼？ |
-| **市場規則** | [市場概覽](market-overview.md) · [參與者](roles.md) · [除權息](dividend.md) · [ETF](etf-intro.md) · [ETF 費用](etf-costs-and-premium.md) · [共同基金](mutual-fund-intro.md) · [期貨入門](futures-intro.md) | 上市上櫃、誰在交易、配息、ETF、基金、期貨？ |
+| **市場規則** | [市場概覽](market-overview.md) · [處置股與交易限制](trading-restrictions.md) · [參與者](roles.md) · [除權息](dividend.md) · [ETF](etf-intro.md) · [ETF 費用](etf-costs-and-premium.md) · [共同基金](mutual-fund-intro.md) · [期貨入門](futures-intro.md) | 上市上櫃、注意／處置股、誰在交易、配息、ETF、基金、期貨？ |
 | **實務操作** | [交易流程](trading-flow.md) · [交割與稅費](settlement-fees.md) · [開戶](open-account.md) | 怎麼下單？錢什麼時候扣？ |
 
 選定操作風格後 → [對號入座](../10-persona/index.md) 或 [投資模式總覽](../08-investing/index.md)。  
