@@ -7,6 +7,9 @@
 
 [← 基本資料書](reference-book.md) · [完整詞條](../02-glossary/dictionary.md)
 
+!!! note "與詞典的分工"
+    本表是**縮寫**的權威來源；[完整詞條總表](../02-glossary/dictionary.md) 已新增「英文」欄，兩者英文若有出入，一律以本表為準。
+
 ---
 
 ## 行情與交易
@@ -55,6 +58,8 @@
 | 縮寫 | 英文 / 全名 | 中文 | 詳見 |
 |------|-------------|------|------|
 | ETF | Exchange Traded Fund | 交易所交易基金 | [ETF](../01-basics/etf-intro.md) |
+| NAV | Net Asset Value | 基金淨值 | [共同基金入門](../01-basics/mutual-fund-intro.md) |
+| DCA | Dollar-Cost Averaging | 定期定額 | [0050 與定期定額](../08-investing/etf-passive-dca.md) |
 | ADR | American Depositary Receipt | 美國存託憑證 | [跨市場](../05-analysis/cross-market.md) |
 | OI | Open Interest | 未平倉量（期貨） | [期貨輔助](../09-advanced/futures-signal.md) |
 | TDCC | Taiwan Depository & Clearing | 集保（大戶持股） | [chips](../02-glossary/chips.md) |

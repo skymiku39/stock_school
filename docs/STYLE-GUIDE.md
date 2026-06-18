@@ -42,7 +42,7 @@
 
 ### 詞典分類頁子模板
 
-每個術語固定四欄：**定義 → 在哪裡看到 → 常見誤解 → 小例子**，並連到對應教學章。
+每個術語小節固定為**五列表格**：**英文 → 定義 → 在哪裡看到 → 常見誤解 → 小例子**，並連到對應教學章。詳見下方 [詞典格式規範](#詞典格式規範詞條與索引)。
 
 ### 案例頁子模板
 
@@ -65,7 +65,86 @@
 | 三類 | 三类 | 避免簡體字 |
 
 !!! tip "新增術語時"
-    若引入新的英文術語，請同步在 [完整詞條總表](02-glossary/dictionary.md) 與對應分類頁補上詞條，並在此表登記統一用語。
+    若引入新的術語，請同步更新四處：[完整詞條總表](02-glossary/dictionary.md)（含英文欄）、對應分類頁（五列表格）、本頁術語對照表，以及（若為縮寫）[縮寫對照](appendix/abbreviations.md)。
+
+---
+
+## 詞典格式規範（詞條與索引） {#詞典格式規範詞條與索引}
+
+本節規範 [術語詞典](02-glossary/index.md) 的呈現格式。**正文教學頁不適用本節**，仍依上方術語對照表「英文僅首次括註」。詞典是中英對照場域，不受「禁止裸英文」限制。
+
+### 分類詳解頁：五列表格
+
+每個 `##` 詞條小節固定如下結構，缺資料時填「—」而非刪列：
+
+```markdown
+## 軋空（Short Squeeze） {#軋空}
+
+| 項目 | 說明 |
+|------|------|
+| **英文** | Short squeeze |
+| **定義** | 空頭（常透過融券或借券）被迫買回平倉，推升股價的連鎖反應 |
+| **在哪裡看到** | 融資融券表、新聞「融券回補」、鉅額買超 |
+| **常見誤解** | 融券多就一定會軋空；還需看借券成本與基本面 |
+| **小例子** | 融券餘額高 + 法人大買 → 空頭回補推升股價 |
+```
+
+- 相關連結、`admonition`、`mermaid`、子表格等延伸內容放在五列表格**下方**，不破壞主體。
+- 標題格式：`## 中文（English） {#既有錨點}`。**錨點 ID 一律凍結**，只改 `{#}` 前的顯示文字，以免 60+ 篇教學頁的 `#錨點` 連結斷裂。
+- 多詞合併小節（如「開倉 / 平倉」）：標題用主要詞 + 英文；表格「英文」「定義」列以子句或子表格分述各詞。
+- 純縮寫詞條（MACD、RSI）：標題保留縮寫（`## MACD {#macd}`），「英文」列填全名。
+
+### 完整詞條總表：四欄索引
+
+[`dictionary.md`](02-glossary/dictionary.md) 每列固定四欄 `| 詞條 | 英文 | 一句話 | 詳見 |`：
+
+```markdown
+| 詞條 | 英文 | 一句話 | 詳見 |
+|------|------|--------|------|
+| 軋空 | Short squeeze | 空頭被迫回補推升價 | [軋空](market-terms.md#軋空) |
+| PER / 本益比 | P/E (Price Earnings Ratio) | 股價 ÷ EPS | [PER](fundamentals.md#per本益比) |
+```
+
+複合詞條英文以 `/` 分隔（`Open position / Close position`）；產品代號（0050、006208）英文欄填 `—`。
+
+### 英文分級規則
+
+| 等級 | 條件 | dictionary 英文欄 | 分類頁英文列 |
+|------|------|-------------------|--------------|
+| **A 縮寫** | 有標準縮寫（PER、MACD、OHLC） | 縮寫 + 全名括註，以 [縮寫對照](appendix/abbreviations.md) 為準 | 同左 |
+| **B 通用英文** | 國際金融／技術分析通用名（Stop loss、Moving average、Gap） | 標準英文 | 同左 |
+| **C 在地用語** | 台股慣用、無通用縮寫（填息、軋空、洗盤、套牢） | 描述性英文 gloss | 同左 |
+| **D 純中文** | 無合理英文對照 | `—` | `—` |
+
+命名風格採美式金融英文、Title Case；縮寫全大寫。與 [縮寫對照](appendix/abbreviations.md) 衝突時一律以該頁為準。
+
+### 在地用語英文對照（C 級權威表）
+
+新增 C 級詞條前先查本表；若無，補上後再使用，確保全站譯名一致。
+
+| 中文 | 英文 gloss |
+|------|-----------|
+| 軋空 | Short squeeze |
+| 填息 / 填權 | Dividend gap fill / Rights gap fill |
+| 洗盤 | Shakeout |
+| 套牢 / 解套 | Locked-in (underwater) / break even recovery |
+| 抄底 | Bottom fishing |
+| 追高殺低 | Chasing highs, selling lows |
+| 打底 | Bottoming |
+| 破底 | Breakdown to new low |
+| 盤堅 / 盤軟 | Grinding up / Grinding down |
+| 主力 | Big player (market mover) |
+| 利多出盡 | Buy the rumor, sell the news |
+| 量價背離 | Price-volume divergence |
+| 回補缺口 | Gap fill |
+| 抬轎 / 坐轎 | Riding the move |
+| 內盤 / 外盤 | Sell-side hit / Buy-side lift |
+| 五檔 | Five-level order book |
+| 零股 | Odd lot |
+| 分點 | Broker branch |
+| 集保大戶 | Major holders (TDCC) |
+| 存股 | Dividend buy-and-hold |
+| 對號入座 | Persona matching |
 
 ---
 
@@ -98,7 +177,9 @@
 ## 提交前檢查清單
 
 - [ ] 符合頁面模板與術語對照表
-- [ ] 無簡體字、無裸英文術語
+- [ ] 無簡體字、無裸英文術語（詞典頁除外）
+- [ ] 詞典分類頁為五列表格、`dictionary.md` 為四欄索引、英文分級正確
+- [ ] 詞典標題 `{#錨點}` 未變動
 - [ ] 重點回顧 + 相關連結齊全
 - [ ] canonical 章節只摘要、不重複
 - [ ] `uv run mkdocs build --strict` 通過
