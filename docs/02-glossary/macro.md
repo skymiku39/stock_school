@@ -135,7 +135,7 @@
 
 ---
 
-## 通膨 / CPI（Consumer Price Index） {#cpi}
+## 通膨 / CPI / 核心 CPI（Consumer Price Index） {#cpi}
 
 | 項目 | 說明 |
 |------|------|

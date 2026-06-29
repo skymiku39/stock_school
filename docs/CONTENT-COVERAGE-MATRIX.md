@@ -259,7 +259,7 @@
 |------|------|-----------|
 | 停損/心態錯配 | A | stop-loss、mode-psychology |
 | 毛價差/淨利/移動停利/損益兩平/風險報酬比 | B | pnl、trading-costs |
-| 認賠殺出 | B | capital#閒錢與生活費 |
+| 認賠殺出 | B | capital#認賠殺出 |
 | 停利 | A | stop-loss#停利與減碼 + 自檢 |
 
 ### 交易行為與心態

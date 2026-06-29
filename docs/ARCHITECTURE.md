@@ -85,7 +85,7 @@ uv run python scripts/generate_all.py --only cases
 |------|----------------------|----------|
 | 0050 定額、常見說法 | `08-investing/etf-passive-dca.md` | `etf-intro` 只摘要 + 連結 |
 | 006208 對照、三層費用 | `01-basics/etf-costs-and-premium.md` | 不重複表格 |
-| 閒錢、認賠殺出 | `06-risk/capital.md` | ETF 章只連結 |
+| 閒錢、認賠殺出 | `06-risk/capital.md`（`#閒錢與生活費`、`#認賠殺出`） | ETF 章只連結 |
 | 證交稅、損益平衡、期望值 | `06-risk/trading-costs.md#費用結構` | `settlement-fees` 只講 T+2 與扣款時點 |
 | ETF 三層費用、折溢價、收益平準金 | `01-basics/etf-costs-and-premium.md` | `trading-costs` 只列賣出稅率；`etf-high-dividend` 誤解 3 只連結 |
 | 基金 vs ETF vs 個股 | `01-basics/mutual-fund-intro.md#基金-vs-etf-vs-個股` | `etf-intro` 只列個股 vs ETF 摘要 |

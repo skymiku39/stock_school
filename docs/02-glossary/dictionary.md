@@ -67,7 +67,7 @@
 | 毛價差 | Gross spread | 未扣費用之價差% | [損益詞典](pnl.md) |
 | 淨利 | Net P&L | 扣費稅後實際損益 | [淨利](pnl.md#淨利) |
 | 停損 | Stop loss | 虧損達門檻出場 | [停損](pnl.md#停損) |
-| 認賠殺出 | Capitulation (panic sell) | 被迫或恐慌在低點賣出變現 | [閒錢](../06-risk/capital.md#閒錢與生活費) |
+| 認賠殺出 | Capitulation (panic sell) | 被迫或恐慌在低點賣出變現 | [認賠殺出](../06-risk/capital.md#認賠殺出) |
 | 心態錯配 | Mindset mismatch | 用 A 模式進場、B 模式心態出場 | [投資模式與心態](../08-investing/mode-psychology.md#心態錯配) |
 | 停利 | Take profit | 獲利達目標出場 | [停利與減碼](../06-risk/stop-loss.md#停利與減碼) |
 | 移動停利 | Trailing stop | 從高點回撤幅度出場 | [移動停利](pnl.md#移動停利) |
