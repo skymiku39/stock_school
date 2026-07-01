@@ -32,6 +32,7 @@
 | 10-persona 分頁 | 4 篇身分分組自檢 | **已補**（見下方 10-persona 清單） |
 | 附錄教學頁 | 公式／清單／資料源／FAQ 自檢 | **已補**（`taxes-for-costing` 先前已補） |
 | 02-glossary 分類頁 | 8 篇詞典分類自檢 | **已補**（`macro`／`fundamentals` 先前已補） |
+| 專章樞紐 index | 8 篇導覽頁自檢 | **已補**（見下方樞紐清單） |
 
 !!! success "看表嚴格 A 已達標"
     看表 10 篇均已含手算一例（或樞紐頁導覽練習一例）與完整 A 模板；`tests/test_table_coverage.py` 同步檢查手算／導覽練習區塊。
@@ -221,6 +222,19 @@
 | [quotes](02-glossary/quotes.md) | 自檢 |
 | [pnl](02-glossary/pnl.md) | 自檢 |
 | [market-terms](02-glossary/market-terms.md) | 自檢 |
+
+### 專章樞紐 index（已補章末自檢）
+
+| 頁面 | 補強 |
+|------|------|
+| [03-tables/index](03-tables/index.md) | 自檢 |
+| [04-charts/index](04-charts/index.md) | 自檢 |
+| [05-analysis/index](05-analysis/index.md) | 自檢 |
+| [06-risk/index](06-risk/index.md) | 自檢 |
+| [07-cases/index](07-cases/index.md) | 自檢 |
+| [08-investing/index](08-investing/index.md) | 自檢 |
+| [09-advanced/index](09-advanced/index.md) | 自檢 |
+| [02-glossary/index](02-glossary/index.md) | 自檢 |
 
 ### P4 詞典／進階缺口（已補）
 

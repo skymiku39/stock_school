@@ -43,6 +43,17 @@ flowchart LR
 
 ---
 
+## 自我檢查
+
+??? question "1.（概念題）三大分析支柱是哪三面？"
+    參考答案：**基本面、技術面、籌碼面**；宜交叉驗證，見 [three-pillars](three-pillars.md)。
+
+??? question "2.（判斷題）只看月營收 YoY 正成長就夠下結論？"
+    參考答案：否。須搭配估值、法人、技術位置等；見 [基本面框架](fundamental-framework.md)。
+
+??? question "3.（情境題）想理解開盤前情緒，本章哪篇最相關？"
+    參考答案：[跨市場連動](cross-market.md)（美股、ADR、台指期）。
+
 ## 重點回顧
 
 - 分析思維把素材組成判斷，是 [看表](../03-tables/index.md)、[看圖](../04-charts/index.md) 的上層。
