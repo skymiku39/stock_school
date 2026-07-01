@@ -190,6 +190,7 @@ nav:
   - 附錄:
     - 架構說明（開發者）: ARCHITECTURE.md
     - 寫作規範（維護者）: STYLE-GUIDE.md
+    - 頁面章節規範（維護者）: PAGE-STRUCTURE-GUIDE.md
     - 內容覆蓋矩陣（維護者）: CONTENT-COVERAGE-MATRIX.md
     - 圖表檢查清單（維護者）: CHART-CHECKLIST.md
     - 投資審查檢核表（維護者）: INVESTMENT-REVIEW-CHECKLIST.md

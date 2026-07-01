@@ -3,7 +3,7 @@
 本頁是 Stock School 教材的**唯一寫作依據**，供維護者與貢獻者在新增或潤稿時參考。學員可略過本頁。
 
 !!! note "定位"
-    本頁規範「怎麼寫」，內容權威來源（哪一章是某主題的主檔）請見 [架構說明](ARCHITECTURE.md) 的 canonical 對照表。
+    本頁規範「怎麼寫」，內容權威來源（哪一章是某主題的主檔）請見 [架構說明](ARCHITECTURE.md) 的 canonical 對照表；**逐頁章節清單**見 [頁面章節規範](PAGE-STRUCTURE-GUIDE.md)。
 
 ---
 
