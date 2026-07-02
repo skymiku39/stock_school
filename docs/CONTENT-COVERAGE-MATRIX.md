@@ -316,7 +316,7 @@
 |------|------|-----------|
 | 注意股/處置股/全額交割/跳空/軋空/ETF/0050/定期定額/高股息ETF | A | trading-restrictions、market-terms、etf 系列、案例 |
 | 多頭空頭/缺口/回補缺口/盤堅盤軟/打底/破底/主力/洗盤/利多出盡/量價背離/共同基金/NAV/被動ETF/006208/內扣費用/折溢價/收益平準金/台指期/大小台/保證金 | B | market-terms、etf-costs、futures-intro |
-| 上市/上櫃 | B | market-overview（三層市場比較） |
+| 上市/上櫃 | A | [quotes#上市](02-glossary/quotes.md#上市)、[quotes#上櫃](02-glossary/quotes.md#上櫃)、[market-overview](01-basics/market-overview.md) |
 | 資金行情 | B | market-terms（已互連 macro） |
 | 興櫃 | B | market-overview（三層市場比較） |
 

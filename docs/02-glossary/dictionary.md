@@ -180,7 +180,7 @@
 
 | 詞條 | 英文 | 一句話 | 詳見 |
 |------|------|--------|------|
-| 上市 / 上櫃 | Listed / OTC | 台交所 / 櫃買掛牌 | [市場概覽](../01-basics/market-overview.md) |
+| 上市 / 上櫃 | Listed / OTC | 台交所 / 櫃買掛牌 | [上市](quotes.md#上市) · [上櫃](quotes.md#上櫃) · [市場概覽](../01-basics/market-overview.md) |
 | IPO 公開申購 | IPO subscription | 新股上市櫃前隨機抽籤申購 | [IPO 公開申購](../01-basics/ipo-subscription.md) |
 | ADR | American Depositary Receipt | 美國掛牌之海外股權憑證 | [跨市場（ADR 折溢價）](../05-analysis/cross-market.md#adr-折溢價怎麼算) |
 | 集保戶股權分散表 | TDCC shareholder distribution | 每週大戶／散戶持股分級 | [進階籌碼](../09-advanced/advanced-chips.md#集保大戶) |
