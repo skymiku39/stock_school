@@ -1,0 +1,4003 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="台股入門、術語、看表、看圖與實戰案例" name="description"/>
+<meta content="Stock School" name="author"/>
+<link href="../etf-costs-and-premium/" rel="prev"/>
+<link href="../futures-intro/" rel="next"/>
+<link href="../../assets/logo.svg" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<title>共同基金入門 - Stock School — 台股教學</title>
+<link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          跳转至
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="页眉" class="md-header__inner md-grid">
+<a aria-label="Stock School — 台股教學" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Stock School — 台股教學">
+<img alt="logo" src="../../assets/logo.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Stock School — 台股教學
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              共同基金入門
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="切換深色模式" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="切換深色模式">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="切換淺色模式" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="切換淺色模式">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="搜索" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="搜索" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="查找" class="md-search__options">
+<button aria-label="清空当前内容" class="md-search__icon md-icon" tabindex="-1" title="清空当前内容" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="标签" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        
+  
+  
+    
+  
+  首頁
+
+      </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../">
+          
+  
+  
+  入門
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../02-glossary/">
+          
+  
+  
+  術語詞典
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../03-tables/">
+          
+  
+  
+  怎麼看表
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../04-charts/">
+          
+  
+  
+  怎麼看圖
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../05-analysis/">
+          
+  
+  
+  分析思維
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../08-investing/">
+          
+  
+  
+  投資模式
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../10-persona/">
+          
+  
+  
+  對號入座
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../06-risk/">
+          
+  
+  
+  風險與紀律
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../09-advanced/">
+          
+  
+  
+  老手專區
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../07-cases/">
+          
+  
+  
+  實戰案例
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../ARCHITECTURE/">
+          
+  
+  
+  附錄
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="导航栏" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Stock School — 台股教學" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Stock School — 台股教學">
+<img alt="logo" src="../../assets/logo.svg"/>
+</a>
+    Stock School — 台股教學
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    
+  
+    首頁
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    入門
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    入門
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    
+  
+    入門導覽
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    股票基礎
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    股票基礎
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../what-is-stock/">
+<span class="md-ellipsis">
+    
+  
+    股票是什麼
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../price-and-cap/">
+<span class="md-ellipsis">
+    
+  
+    股價與市值
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../quote-screen/">
+<span class="md-ellipsis">
+    
+  
+    報價畫面怎麼看
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../market-overview/">
+<span class="md-ellipsis">
+    
+  
+    台股市場概覽
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../trading-restrictions/">
+<span class="md-ellipsis">
+    
+  
+    處置股與交易限制
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../trading-flow/">
+<span class="md-ellipsis">
+    
+  
+    一筆交易怎麼完成
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../settlement-fees/">
+<span class="md-ellipsis">
+    
+  
+    交割與稅費
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../first-trade-walkthrough/">
+<span class="md-ellipsis">
+    
+  
+    第一筆交易走一遍
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../roles/">
+<span class="md-ellipsis">
+    
+  
+    市場參與者
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../open-account/">
+<span class="md-ellipsis">
+    
+  
+    開戶與交易資格
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ipo-subscription/">
+<span class="md-ellipsis">
+    
+  
+    IPO 公開申購（抽籤）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dividend/">
+<span class="md-ellipsis">
+    
+  
+    除權息入門
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../etf-intro/">
+<span class="md-ellipsis">
+    
+  
+    ETF 入門
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../etf-costs-and-premium/">
+<span class="md-ellipsis">
+    
+  
+    ETF 費用與折溢價
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    共同基金入門
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    共同基金入門
+  
+
+    
+  </span>
+</a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        本篇你會學到
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        先講結論
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        基金是什麼
+      
+    </span>
+</a>
+<nav aria-label="基金是什麼" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        生態系：誰扮演什麼角色
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#基金-vs-etf-vs-個股">
+<span class="md-ellipsis">
+      
+        基金 vs ETF vs 個股
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        淨值、申購、贖回
+      
+    </span>
+</a>
+<nav aria-label="淨值、申購、贖回" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nav">
+<span class="md-ellipsis">
+      
+        淨值（NAV）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        申購與贖回流程
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        「未知價」申購
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#長期持有變現與手續費">
+<span class="md-ellipsis">
+      
+        長期持有、變現與手續費
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#微笑曲線與定期定額">
+<span class="md-ellipsis">
+      
+        微笑曲線與定期定額
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        基金費用（必看）
+      
+    </span>
+</a>
+<nav aria-label="基金費用（必看）" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        費用一覽
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      
+        數字試算（教學示意）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#etf">
+<span class="md-ellipsis">
+      
+        跟 ETF 比費用（十年概念）
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      
+        基金類型與風險等級
+      
+    </span>
+</a>
+<nav aria-label="基金類型與風險等級" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      
+        常見類型
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rr">
+<span class="md-ellipsis">
+      
+        風險等級（RR）
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#配息基金特別要小心">
+<span class="md-ellipsis">
+      
+        配息基金：特別要小心
+      
+    </span>
+</a>
+<nav aria-label="配息基金：特別要小心" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#配息型基金為何仍可能虧損">
+<span class="md-ellipsis">
+      
+        配息型基金為何仍可能虧損？
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#為什麼還要買賣轉換基金">
+<span class="md-ellipsis">
+      
+        為什麼還要買賣／轉換基金？
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vs">
+<span class="md-ellipsis">
+      
+        台幣 vs 外幣基金
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      
+        哪裡可以買基金
+      
+    </span>
+</a>
+<nav aria-label="哪裡可以買基金" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_15">
+<span class="md-ellipsis">
+      
+        保單連結基金：清單怎麼讀
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_16">
+<span class="md-ellipsis">
+      
+        投資型保單與基金：兩層報酬
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_17">
+<span class="md-ellipsis">
+      
+        怎麼讀基金資訊
+      
+    </span>
+</a>
+<nav aria-label="怎麼讀基金資訊" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+<span class="md-ellipsis">
+      
+        必看文件
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+<span class="md-ellipsis">
+      
+        績效與排名
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_20">
+<span class="md-ellipsis">
+      
+        常見誤解
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vs-etf-vs">
+<span class="md-ellipsis">
+      
+        決策：基金 vs ETF vs 保單
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_21">
+<span class="md-ellipsis">
+      
+        三管道完整對照
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_22">
+<span class="md-ellipsis">
+      
+        自我檢查
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_23">
+<span class="md-ellipsis">
+      
+        重點回顧
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../futures-intro/">
+<span class="md-ellipsis">
+    
+  
+    期貨入門
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    術語詞典
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    術語詞典
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/">
+<span class="md-ellipsis">
+    
+  
+    術語詞典
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/dictionary/">
+<span class="md-ellipsis">
+    
+  
+    完整詞條總表
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/quotes/">
+<span class="md-ellipsis">
+    
+  
+    行情與報價
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/trading-terms/">
+<span class="md-ellipsis">
+    
+  
+    交易行為與心態
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/pnl/">
+<span class="md-ellipsis">
+    
+  
+    損益與停損
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/position/">
+<span class="md-ellipsis">
+    
+  
+    持倉與交易
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/chips/">
+<span class="md-ellipsis">
+    
+  
+    法人與籌碼
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/fundamentals/">
+<span class="md-ellipsis">
+    
+  
+    基本面
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/technical/">
+<span class="md-ellipsis">
+    
+  
+    技術面
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/market-terms/">
+<span class="md-ellipsis">
+    
+  
+    市場進階
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/macro/">
+<span class="md-ellipsis">
+    
+  
+    總經與利率
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../02-glossary/risk/">
+<span class="md-ellipsis">
+    
+  
+    風控
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    怎麼看表
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    怎麼看表
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/">
+<span class="md-ellipsis">
+    
+  
+    怎麼看表總覽
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/watchlist/">
+<span class="md-ellipsis">
+    
+  
+    個股總覽表怎麼看
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/deep-dive-tabs/">
+<span class="md-ellipsis">
+    
+  
+    個股深入分析：分頁地圖
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/revenue/">
+<span class="md-ellipsis">
+    
+  
+    月營收表怎麼看
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/institutional/">
+<span class="md-ellipsis">
+    
+  
+    三大法人買賣超表
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/margin/">
+<span class="md-ellipsis">
+    
+  
+    融資融券與借券表
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/valuation/">
+<span class="md-ellipsis">
+    
+  
+    估值表怎麼看
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/financials/">
+<span class="md-ellipsis">
+    
+  
+    財報摘要表怎麼看
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/scoring/">
+<span class="md-ellipsis">
+    
+  
+    評分量表怎麼看
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/dividend-schedule/">
+<span class="md-ellipsis">
+    
+  
+    除權息日程表怎麼看
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../03-tables/block-trade/">
+<span class="md-ellipsis">
+    
+  
+    鉅額交易表怎麼看
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    怎麼看圖
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    怎麼看圖
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/">
+<span class="md-ellipsis">
+    
+  
+    圖表總覽
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    價格走勢
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    價格走勢
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/line-charts/">
+<span class="md-ellipsis">
+    
+  
+    線圖與美國線
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/intraday-charts/">
+<span class="md-ellipsis">
+    
+  
+    分時與即時圖
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/kline-basics/">
+<span class="md-ellipsis">
+    
+  
+    K 線基礎
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/kline-reading/">
+<span class="md-ellipsis">
+    
+  
+    三招讀懂 K 線
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/candle-patterns/">
+<span class="md-ellipsis">
+    
+  
+    16 種 K 棒型態
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/candle-quickref/">
+<span class="md-ellipsis">
+    
+  
+    型態速查表
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/candle-combinations/">
+<span class="md-ellipsis">
+    
+  
+    K 線組合型態
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/volume-price/">
+<span class="md-ellipsis">
+    
+  
+    量價圖
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/chips-charts/">
+<span class="md-ellipsis">
+    
+  
+    籌碼圖表
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/fundamental-charts/">
+<span class="md-ellipsis">
+    
+  
+    基本面圖表
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/market-charts/">
+<span class="md-ellipsis">
+    
+  
+    大盤與類股圖
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    技術指標
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_7">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    技術指標
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/indicator-quickref/">
+<span class="md-ellipsis">
+    
+  
+    指標速查表
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/ma/">
+<span class="md-ellipsis">
+    
+  
+    均線 MA
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/macd/">
+<span class="md-ellipsis">
+    
+  
+    MACD
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/rsi/">
+<span class="md-ellipsis">
+    
+  
+    RSI
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/kd/">
+<span class="md-ellipsis">
+    
+  
+    KD
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../04-charts/bollinger/">
+<span class="md-ellipsis">
+    
+  
+    布林通道
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    分析思維
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    分析思維
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../05-analysis/">
+<span class="md-ellipsis">
+    
+  
+    分析思維總覽
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../05-analysis/three-pillars/">
+<span class="md-ellipsis">
+    
+  
+    三大分析支柱
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../05-analysis/fundamental-framework/">
+<span class="md-ellipsis">
+    
+  
+    基本面分析框架
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../05-analysis/timeframes/">
+<span class="md-ellipsis">
+    
+  
+    四種時間框架
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../05-analysis/conference/">
+<span class="md-ellipsis">
+    
+  
+    法說會與重大訊息
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../05-analysis/cross-market/">
+<span class="md-ellipsis">
+    
+  
+    跨市場連動
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../05-analysis/active-etf/">
+<span class="md-ellipsis">
+    
+  
+    主動 ETF 與共識分析
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    投資模式
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    投資模式
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/">
+<span class="md-ellipsis">
+    
+  
+    投資模式總覽
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/choose-style/">
+<span class="md-ellipsis">
+    
+  
+    如何選擇適合自己的模式
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/mode-psychology/">
+<span class="md-ellipsis">
+    
+  
+    投資模式與心態
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/day-trade/">
+<span class="md-ellipsis">
+    
+  
+    當沖（當日沖銷）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/overnight/">
+<span class="md-ellipsis">
+    
+  
+    隔日沖
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/swing-short/">
+<span class="md-ellipsis">
+    
+  
+    短線交易
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/swing-mid/">
+<span class="md-ellipsis">
+    
+  
+    中線波段
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/long-term/">
+<span class="md-ellipsis">
+    
+  
+    長期價值投資
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/dividend-investing/">
+<span class="md-ellipsis">
+    
+  
+    存股與除權息
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/dividend-strategies/">
+<span class="md-ellipsis">
+    
+  
+    配股配息策略
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/etf-investing/">
+<span class="md-ellipsis">
+    
+  
+    ETF 投資與配置
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/etf-passive-dca/">
+<span class="md-ellipsis">
+    
+  
+    0050 與定期定額
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/etf-high-dividend/">
+<span class="md-ellipsis">
+    
+  
+    高股息 ETF
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/investment-linked-policy/">
+<span class="md-ellipsis">
+    
+  
+    投資型保單
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../08-investing/insurance-fx-products/">
+<span class="md-ellipsis">
+    
+  
+    外幣帳戶
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    對號入座
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    對號入座
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../10-persona/">
+<span class="md-ellipsis">
+    
+  
+    我是誰，該怎麼投？
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../10-persona/beginner/">
+<span class="md-ellipsis">
+    
+  
+    新手・小資・學生
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../10-persona/busy/">
+<span class="md-ellipsis">
+    
+  
+    上班・斜槓・家計
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../10-persona/active/">
+<span class="md-ellipsis">
+    
+  
+    盯盤・追風・重生
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../10-persona/steady/">
+<span class="md-ellipsis">
+    
+  
+    配息・研究・退休
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    風險與紀律
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    風險與紀律
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../06-risk/">
+<span class="md-ellipsis">
+    
+  
+    風險與紀律總覽
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../06-risk/capital/">
+<span class="md-ellipsis">
+    
+  
+    資金配置
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../06-risk/trading-costs/">
+<span class="md-ellipsis">
+    
+  
+    交易成本與期望值
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../06-risk/margin-trading/">
+<span class="md-ellipsis">
+    
+  
+    信用交易實務
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../06-risk/stop-loss/">
+<span class="md-ellipsis">
+    
+  
+    停損三層概念
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../06-risk/discipline/">
+<span class="md-ellipsis">
+    
+  
+    交易紀律
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../06-risk/emergency-playbook/">
+<span class="md-ellipsis">
+    
+  
+    突發狀況手冊
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    老手專區
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    老手專區
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09-advanced/">
+<span class="md-ellipsis">
+    
+  
+    老手專區總覽
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09-advanced/research-workflow/">
+<span class="md-ellipsis">
+    
+  
+    系統化研究流程
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09-advanced/multi-timeframe/">
+<span class="md-ellipsis">
+    
+  
+    多週期整合分析
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09-advanced/portfolio/">
+<span class="md-ellipsis">
+    
+  
+    組合管理
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09-advanced/macro-rotation/">
+<span class="md-ellipsis">
+    
+  
+    總經與類股輪動
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09-advanced/advanced-chips/">
+<span class="md-ellipsis">
+    
+  
+    進階籌碼解讀
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09-advanced/event-playbook/">
+<span class="md-ellipsis">
+    
+  
+    事件操作手冊
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09-advanced/futures-signal/">
+<span class="md-ellipsis">
+    
+  
+    期貨輔助現貨判斷
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09-advanced/veteran-pitfalls/">
+<span class="md-ellipsis">
+    
+  
+    老手常見陷阱
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    實戰案例
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    實戰案例
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/">
+<span class="md-ellipsis">
+    
+  
+    實戰案例總覽
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/revenue-turn/">
+<span class="md-ellipsis">
+    
+  
+    案例一：月營收轉折
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/hammer-ma/">
+<span class="md-ellipsis">
+    
+  
+    案例二：鎚子線 + 均線
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/institutional-flow/">
+<span class="md-ellipsis">
+    
+  
+    案例三：三大法人連續買超
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/day-trade-risk/">
+<span class="md-ellipsis">
+    
+  
+    案例四：當沖風控決策樹
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/valuation-trap/">
+<span class="md-ellipsis">
+    
+  
+    案例五：估值陷阱（高殖利率）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/macd-divergence/">
+<span class="md-ellipsis">
+    
+  
+    案例六：MACD 頂背離
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/conference-chips/">
+<span class="md-ellipsis">
+    
+  
+    案例七：法說樂觀 vs 法人賣超
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/gap-breakout/">
+<span class="md-ellipsis">
+    
+  
+    案例八：突破缺口與假突破
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/short-squeeze/">
+<span class="md-ellipsis">
+    
+  
+    案例九：融券與軋空
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/dividend-play/">
+<span class="md-ellipsis">
+    
+  
+    案例十：除權息參與與填息
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/etf-dca-drawdown/">
+<span class="md-ellipsis">
+    
+  
+    0050 定額遇大跌
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/fund-policy-faq/">
+<span class="md-ellipsis">
+    
+  
+    基金與保單實戰問答
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/macro-rates/">
+<span class="md-ellipsis">
+    
+  
+    升息環境估值取捨
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/odd-lot-mistake/">
+<span class="md-ellipsis">
+    
+  
+    零股小資踩雷
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/ex-dividend-mistake/">
+<span class="md-ellipsis">
+    
+  
+    除權息誤操作
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../07-cases/disposal-stock-trap/">
+<span class="md-ellipsis">
+    
+  
+    追飆股追進處置股
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    附錄
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_12_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    附錄
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ARCHITECTURE/">
+<span class="md-ellipsis">
+    
+  
+    架構說明（開發者）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../STYLE-GUIDE/">
+<span class="md-ellipsis">
+    
+  
+    寫作規範（維護者）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PAGE-STRUCTURE-GUIDE/">
+<span class="md-ellipsis">
+    
+  
+    頁面章節規範（維護者）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ARTICLE-REVIEW-PLAN/">
+<span class="md-ellipsis">
+    
+  
+    逐篇複審計畫（維護者）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../CONTENT-COVERAGE-MATRIX/">
+<span class="md-ellipsis">
+    
+  
+    內容覆蓋矩陣（維護者）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../CHART-CHECKLIST/">
+<span class="md-ellipsis">
+    
+  
+    圖表檢查清單（維護者）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../INVESTMENT-REVIEW-CHECKLIST/">
+<span class="md-ellipsis">
+    
+  
+    投資審查檢核表（維護者）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/reference-book/">
+<span class="md-ellipsis">
+    
+  
+    基本資料書
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/investor-checklist/">
+<span class="md-ellipsis">
+    
+  
+    投資檢查清單
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/faq/">
+<span class="md-ellipsis">
+    
+  
+    常見問答 FAQ
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/formulas/">
+<span class="md-ellipsis">
+    
+  
+    公式速查表
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/taxes-for-costing/">
+<span class="md-ellipsis">
+    
+  
+    稅費總覽（成本試算）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/abbreviations/">
+<span class="md-ellipsis">
+    
+  
+    縮寫與英文對照
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/disclaimer/">
+<span class="md-ellipsis">
+    
+  
+    免責聲明
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/data-sources/">
+<span class="md-ellipsis">
+    
+  
+    資料來源說明
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/stock-tool-map/">
+<span class="md-ellipsis">
+    
+  
+    與 Stock Bot 工具對照
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/dev-glossary/">
+<span class="md-ellipsis">
+    
+  
+    開發詞彙（跨專案）
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../appendix/video-resources/">
+<span class="md-ellipsis">
+    
+  
+    影片學習資源索引
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        本篇你會學到
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        先講結論
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        基金是什麼
+      
+    </span>
+</a>
+<nav aria-label="基金是什麼" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        生態系：誰扮演什麼角色
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#基金-vs-etf-vs-個股">
+<span class="md-ellipsis">
+      
+        基金 vs ETF vs 個股
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        淨值、申購、贖回
+      
+    </span>
+</a>
+<nav aria-label="淨值、申購、贖回" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nav">
+<span class="md-ellipsis">
+      
+        淨值（NAV）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        申購與贖回流程
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        「未知價」申購
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#長期持有變現與手續費">
+<span class="md-ellipsis">
+      
+        長期持有、變現與手續費
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#微笑曲線與定期定額">
+<span class="md-ellipsis">
+      
+        微笑曲線與定期定額
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        基金費用（必看）
+      
+    </span>
+</a>
+<nav aria-label="基金費用（必看）" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        費用一覽
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      
+        數字試算（教學示意）
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#etf">
+<span class="md-ellipsis">
+      
+        跟 ETF 比費用（十年概念）
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      
+        基金類型與風險等級
+      
+    </span>
+</a>
+<nav aria-label="基金類型與風險等級" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      
+        常見類型
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rr">
+<span class="md-ellipsis">
+      
+        風險等級（RR）
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#配息基金特別要小心">
+<span class="md-ellipsis">
+      
+        配息基金：特別要小心
+      
+    </span>
+</a>
+<nav aria-label="配息基金：特別要小心" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#配息型基金為何仍可能虧損">
+<span class="md-ellipsis">
+      
+        配息型基金為何仍可能虧損？
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#為什麼還要買賣轉換基金">
+<span class="md-ellipsis">
+      
+        為什麼還要買賣／轉換基金？
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vs">
+<span class="md-ellipsis">
+      
+        台幣 vs 外幣基金
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      
+        哪裡可以買基金
+      
+    </span>
+</a>
+<nav aria-label="哪裡可以買基金" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_15">
+<span class="md-ellipsis">
+      
+        保單連結基金：清單怎麼讀
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_16">
+<span class="md-ellipsis">
+      
+        投資型保單與基金：兩層報酬
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_17">
+<span class="md-ellipsis">
+      
+        怎麼讀基金資訊
+      
+    </span>
+</a>
+<nav aria-label="怎麼讀基金資訊" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+<span class="md-ellipsis">
+      
+        必看文件
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+<span class="md-ellipsis">
+      
+        績效與排名
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_20">
+<span class="md-ellipsis">
+      
+        常見誤解
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vs-etf-vs">
+<span class="md-ellipsis">
+      
+        決策：基金 vs ETF vs 保單
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_21">
+<span class="md-ellipsis">
+      
+        三管道完整對照
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_22">
+<span class="md-ellipsis">
+      
+        自我檢查
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_23">
+<span class="md-ellipsis">
+      
+        重點回顧
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="_1">共同基金入門<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<h2 id="_2">本篇你會學到<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>共同基金（開放式基金）</strong> 是什麼、誰在裡面扮演什麼角色</li>
+<li><strong>淨值、申購、贖回、未知價</strong> 怎麼運作</li>
+<li>基金<strong>費用</strong>與<strong>數字試算</strong></li>
+<li><strong>配息基金</strong>常見陷阱（含為何仍可能虧損）</li>
+<li><strong>微笑曲線</strong>與定期定額的關係</li>
+<li><strong>投資型保單</strong>為什麼幾乎都連結基金</li>
+<li>自己買基金 vs 保單 vs ETF，該怎麼選</li>
+</ul>
+<p><a href="../">← 入門導覽</a> · <a href="../etf-intro/">ETF 入門</a> · <a href="../../08-investing/investment-linked-policy/">投資型保單</a></p>
+<div class="admonition warning">
+<p class="admonition-title">免責聲明</p>
+<p>以下為教學整理，<strong>不構成投資建議</strong>，亦不保證任何報酬。</p>
+</div>
+<hr/>
+<h2 id="_3">先講結論<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>問題</th>
+<th>答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基金是什麼？</td>
+<td>多人集資 → 投信代操一籃子標的 → 你持有<strong>單位</strong>，按<strong>淨值</strong>賺賠</td>
+</tr>
+<tr>
+<td>跟 ETF 差在哪？</td>
+<td>基金<strong>申購淨值</strong>、常較慢、<strong>申購費+高經理費</strong>；ETF <strong>像股票買</strong>、費用通常較低</td>
+</tr>
+<tr>
+<td>投資型保單買的是？</td>
+<td><strong>連結同一套共同基金</strong>（或 ETF），但多扣保單前置費、保險成本 B</td>
+</tr>
+<tr>
+<td>該買基金還是 ETF？</td>
+<td><strong>長期大盤、要低成本</strong> → 優先 ETF；<strong>特定主動基金</strong>才考慮申購基金</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="_4">基金是什麼<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<p><strong>共同基金</strong>（開放式基金）= 把很多投資人的錢<strong>集合成一池</strong>，交給<strong>投信公司</strong>依基金契約投資，你持有的是<strong>基金單位／受益憑證</strong>，不是直接持有某一家公司股票。</p>
+<table>
+<thead>
+<tr>
+<th>白話</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>一籃子</strong></td>
+<td>一檔基金裡通常有多檔股票、債券等</td>
+</tr>
+<tr>
+<td><strong>專人（或規則）操盤</strong></td>
+<td>主動型靠經理選股；指數型跟指數</td>
+</tr>
+<tr>
+<td><strong>按淨值買賣</strong></td>
+<td>不像股票盤中跳價，而是<strong>每日結算淨值</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">生態系：誰扮演什麼角色<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<pre class="mermaid"><code>flowchart TB
+    INV[你／保戶] --&gt;|申購| FC[基金／保單標的帳戶]
+    FC --&gt; AM[投信公司<br/>基金經理人]
+    AM --&gt; MKT[股票／債券／衍生性商品]
+    CUST[保管銀行] -.保管資產.-&gt; FC
+    SELL[銀行／業務／平台] -.銷售.-&gt; INV
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>做什麼</th>
+<th>怎麼賺</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>投信（AM）</strong></td>
+<td>決定（或依指數）怎麼投</td>
+<td><strong>經理費（內扣）</strong></td>
+</tr>
+<tr>
+<td><strong>保管銀行</strong></td>
+<td>保管基金資產</td>
+<td>保管費（多內扣於淨值）</td>
+</tr>
+<tr>
+<td><strong>銷售機構</strong></td>
+<td>銀行、券商、保險公司推申購</td>
+<td><strong>申購手續費、佣金</strong></td>
+</tr>
+<tr>
+<td><strong>你</strong></td>
+<td>出資、承擔淨值漲跌</td>
+<td>淨值增減 − 各項費用</td>
+</tr>
+</tbody>
+</table>
+<p>台灣投資型保單的標的帳戶，<strong>絕大多數連結這類共同基金</strong>（少數為 ETF、全委託帳戶）。</p>
+<hr/>
+<h2 id="基金-vs-etf-vs-個股">基金 vs ETF vs 個股<a class="headerlink" href="#基金-vs-etf-vs-個股" title="Permanent link">¶</a></h2>
+<p>本站<strong>三方對照以本章為準</strong>；ETF 與個股的入門差異另見 <a href="../etf-intro/">ETF 入門</a>（不重複此表）。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>共同基金</th>
+<th>ETF</th>
+<th>個股</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>怎麼買</strong></td>
+<td>銀行／投信／平台<strong>申購</strong></td>
+<td>證券商像<strong>股票</strong>下單</td>
+<td>證券商買賣</td>
+</tr>
+<tr>
+<td><strong>價格</strong></td>
+<td><strong>淨值</strong>（每日計算）</td>
+<td>盤中<strong>市價</strong></td>
+<td>盤中股價</td>
+</tr>
+<tr>
+<td><strong>交易時間</strong></td>
+<td>申贖依 cut-off，常 <strong>T+1～T+2</strong> 確認</td>
+<td>盤中即時</td>
+<td>盤中即時</td>
+</tr>
+<tr>
+<td><strong>典型費用</strong></td>
+<td>申購／贖回費 + <strong>經理費 1%～2%</strong></td>
+<td><strong>經理費 0.3%～0.5%</strong> + 低交易費</td>
+<td>手續費 + 證交稅</td>
+</tr>
+<tr>
+<td><strong>最低入門</strong></td>
+<td>常數千～數萬起</td>
+<td>1 張（依股價）</td>
+<td>1 張</td>
+</tr>
+<tr>
+<td><strong>投資型保單</strong></td>
+<td>✅ <strong>最常見連結標的</strong></td>
+<td>✅ 部分保單可選</td>
+<td>❌ 通常不直接連結</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    Y[你的資金] --&gt; F[共同基金]
+    Y --&gt; E[ETF]
+    Y --&gt; S[個股]
+    Y --&gt; P[投資型保單]
+    P --&gt; F
+    P --&gt; E
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>想要…</th>
+<th>優先考慮</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>台股大盤、長期、少折騰</td>
+<td><strong>ETF</strong>（如 0050）→ <a href="../etf-intro/">ETF 入門</a></td>
+</tr>
+<tr>
+<td>特定主動策略、只能買某檔基金</td>
+<td><strong>共同基金</strong>（本章）</td>
+</tr>
+<tr>
+<td>單一公司投資論點（thesis）</td>
+<td><strong>個股</strong></td>
+</tr>
+<tr>
+<td>保障 + 連結基金綁一起</td>
+<td><strong>投資型保單</strong> → 先讀本章再讀 <a href="../../08-investing/investment-linked-policy/">專章</a></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="_6">淨值、申購、贖回<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<h3 id="nav">淨值（NAV）<a class="headerlink" href="#nav" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>公式概念</strong></td>
+<td>（基金總資產 − 總負債）÷ 總單位數</td>
+</tr>
+<tr>
+<td><strong>公布時間</strong></td>
+<td>通常<strong>每營業日</strong>結算後（T 日收盤後算 T 日淨值）</td>
+</tr>
+<tr>
+<td><strong>你賺賠</strong></td>
+<td>持有期間淨值漲跌，<strong>盈虧自負</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">申購與贖回流程<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant 你
+    participant 平台
+    participant 基金
+    你-&gt;&gt;平台: 申購（cut-off 前）
+    平台-&gt;&gt;基金: 依淨值計算單位數
+    Note over 基金: T 日或 T+1 淨值
+    基金--&gt;&gt;你: 確認單位數
+    你-&gt;&gt;平台: 贖回
+    平台-&gt;&gt;基金: 依贖回日淨值
+    基金--&gt;&gt;你: 數日後入帳
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>白話</th>
+<th>注意</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>申購</strong></td>
+<td>用錢換基金單位</td>
+<td>依<strong>申購日淨值</strong>計價</td>
+</tr>
+<tr>
+<td><strong>贖回</strong></td>
+<td>賣回單位換現金</td>
+<td>資金常 <strong>T+2～T+7</strong> 才入帳（依基金）</td>
+</tr>
+<tr>
+<td><strong>定期定額</strong></td>
+<td>每月固定日扣款申購</td>
+<td>銀行／平台常見</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">「未知價」申購<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>狀況</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>你在 cut-off 前下單</strong></td>
+<td>當天淨值<strong>還沒算出來</strong></td>
+</tr>
+<tr>
+<td><strong>實際成交</strong></td>
+<td>依<strong>下一個</strong>已公布淨值（或契約規定日）計算</td>
+</tr>
+<tr>
+<td><strong>白話</strong></td>
+<td>不像股票看即時價；<strong>今天買，用明天或後天的淨值</strong></td>
+</tr>
+</tbody>
+</table>
+<p>投資型保單內換標的，依保單<strong>資產評價日</strong>結算，邏輯類似——不是台股 T+0。</p>
+<h3 id="長期持有變現與手續費">長期持有、變現與手續費<a class="headerlink" href="#長期持有變現與手續費" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>問題</th>
+<th>白話答案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基金要長期持有才獲利？</td>
+<td><strong>長期</strong>較能平滑波動，但<strong>不保證</strong>獲利；短期賣出常輸給長抱（尚須扣費）</td>
+</tr>
+<tr>
+<td>交易日影響大嗎？</td>
+<td><strong>定期定額、長抱</strong>下，單次扣款日影響較小；仍須注意 cut-off 與未知價</td>
+</tr>
+<tr>
+<td>變現後再買要重扣手續費？</td>
+<td><strong>贖回再申購</strong>：可能再收贖回費／申購費（依基金與平台）</td>
+</tr>
+<tr>
+<td>保單部分提領呢？</td>
+<td><strong>不解約</strong>的提領通常<strong>不重扣首年前置費</strong>；轉換、提領仍可能有其他費用 → <a href="../../08-investing/investment-linked-policy/#部分提領解約與加籌">保單專章</a></td>
+</tr>
+</tbody>
+</table>
+<p>自己買基金變現 = 贖回；保單變現 = 部分提領或解約——<strong>兩者費用結構不同</strong>，不能混為「都不用再付」。</p>
+<hr/>
+<h2 id="微笑曲線與定期定額">微笑曲線與定期定額<a class="headerlink" href="#微笑曲線與定期定額" title="Permanent link">¶</a></h2>
+<p>業務常說的<strong>「微笑曲線」</strong>，多半指<strong>定期定額</strong>（或逢低加碼）時，你的<strong>平均成本</strong>隨市場起伏形成的曲線：價格低時買到較多單位、價格高時買到較少，長期平均成本常落在波段中間偏下，圖形像微笑。</p>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>不是保證獲利策略</strong></td>
+<td>微笑曲線描述的是<strong>進場成本分布</strong>，不是「一定賺」</td>
+</tr>
+<tr>
+<td><strong>適用對象</strong></td>
+<td>共同基金定期定額、<a href="../../08-investing/etf-passive-dca/">ETF 定額</a></td>
+</tr>
+<tr>
+<td><strong>前提</strong></td>
+<td><strong>閒錢</strong>、願意長期持有、標的 thesis 不變</td>
+</tr>
+<tr>
+<td><strong>代價</strong></td>
+<td>牛市時報酬可能<strong>低於</strong>單筆 All-in（機會成本）；見 <a href="../../07-cases/fund-policy-faq/">實戰問答</a></td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    A[市場下跌] --&gt; B[同額買到更多單位]
+    C[市場上漲] --&gt; D[同額買到較少單位]
+    B --&gt; E[平均成本平滑]
+    D --&gt; E
+</code></pre>
+<p><strong>微笑曲線 ≠ 投資型保單專利</strong>；用券商買 ETF 定額也能達到類似效果，且費用通常更低。</p>
+<hr/>
+<h2 id="_9">基金費用（必看）<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<h3 id="_10">費用一覽<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>費用</th>
+<th>外扣／內扣</th>
+<th>白話</th>
+<th>教學參考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>申購手續費</strong></td>
+<td><strong>外扣</strong></td>
+<td>買入時先扣</td>
+<td>牌告 <strong>1%～3%</strong>，常可打折</td>
+</tr>
+<tr>
+<td><strong>贖回手續費</strong></td>
+<td>外扣或內扣</td>
+<td>部分基金持有未滿 N 年收</td>
+<td>依公開說明書，可能 <strong>0%</strong></td>
+</tr>
+<tr>
+<td><strong>經理費</strong></td>
+<td><strong>內扣</strong></td>
+<td>每天從淨值扣</td>
+<td><strong>1%～2%／年</strong></td>
+</tr>
+<tr>
+<td><strong>保管費</strong></td>
+<td>內扣</td>
+<td>併入營運</td>
+<td>已反映在淨值</td>
+</tr>
+<tr>
+<td><strong>轉換費</strong></td>
+<td>外扣</td>
+<td>同系列基金互轉</td>
+<td>依平台</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">內扣 vs 外扣</p>
+<p><strong>經理費</strong>：淨值曲線<strong>已經扣過</strong>，你看不到帳單，但長期會少賺。<br/>
+<strong>申購費</strong>：買 10 萬、費率 3% → <strong>只有 9.7 萬</strong>進基金。</p>
+</div>
+<h3 id="_11">數字試算（教學示意）<a class="headerlink" href="#_11" title="Permanent link">¶</a></h3>
+<p>假設：申購 <strong>100,000</strong>、申購費 <strong>2%</strong>、經理費 <strong>1.5%／年</strong>、持有 <strong>1 年</strong>、淨值漲 <strong>10%</strong>（假設，非保證）。</p>
+<table>
+<thead>
+<tr>
+<th>步驟</th>
+<th>計算</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>扣申購費</td>
+<td>100,000 × 98%</td>
+<td>98,000 進場</td>
+</tr>
+<tr>
+<td>淨值 +10%</td>
+<td>98,000 × 1.10</td>
+<td>107,800</td>
+</tr>
+<tr>
+<td>再扣經理費約 1.5%</td>
+<td>粗略</td>
+<td>約 <strong>106,200</strong></td>
+</tr>
+<tr>
+<td><strong>實際報酬率</strong></td>
+<td>vs 原本 100,000</td>
+<td>約 <strong>+6.2%</strong>（不是 +10%）</td>
+</tr>
+</tbody>
+</table>
+<p>若同一標的用 <strong>0050</strong>（申購費極低、經理費 ~0.4%），同樣淨值 +10% 時，<strong>實拿會更接近 10%</strong>（仍扣極低交易費）。</p>
+<p>業務講「基金年報酬 30%」——常是<strong>標的淨值故事</strong>；若再包一層 <a href="../../08-investing/investment-linked-policy/">投資型保單</a>，還要扣 <strong>B、前置費</strong>。</p>
+<h3 id="etf">跟 ETF 比費用（十年概念）<a class="headerlink" href="#etf" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>主動共同基金</th>
+<th>0050 類 ETF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>進場</td>
+<td>申購 1%～3%</td>
+<td>~0.04% 量級</td>
+</tr>
+<tr>
+<td>每年</td>
+<td>經理 1%～2%</td>
+<td>~0.4%</td>
+</tr>
+<tr>
+<td><strong>複利效果</strong></td>
+<td>長期明顯落後</td>
+<td>多數散戶長期預設</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="_12">基金類型與風險等級<a class="headerlink" href="#_12" title="Permanent link">¶</a></h2>
+<h3 id="_13">常見類型<a class="headerlink" href="#_13" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>類型</th>
+<th>投什麼</th>
+<th>波動</th>
+<th>保單常見？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>股票型</strong></td>
+<td>以股票為主</td>
+<td>高</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>平衡型</strong></td>
+<td>股 + 債混合</td>
+<td>中</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>債券型</strong></td>
+<td>債券為主</td>
+<td>中低</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>貨幣型</strong></td>
+<td>短天期、現金類</td>
+<td>低</td>
+<td>✅ 停泊／待機</td>
+</tr>
+<tr>
+<td><strong>指數型</strong></td>
+<td>追蹤指數</td>
+<td>依指數</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>海外型</strong></td>
+<td>境外市場</td>
+<td>依市場 + <strong>匯率</strong></td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rr">風險等級（RR）<a class="headerlink" href="#rr" title="Permanent link">¶</a></h3>
+<p>公開說明書常標 <strong>RR1～RR5</strong>（數字越大越波動）：</p>
+<table>
+<thead>
+<tr>
+<th>等級</th>
+<th>白話</th>
+<th>適合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RR1～2</td>
+<td>偏保守</td>
+<td>短期、低波動需求</td>
+</tr>
+<tr>
+<td>RR3</td>
+<td>股債混合</td>
+<td>中庸</td>
+</tr>
+<tr>
+<td>RR4～5</td>
+<td>偏股、新興市場等</td>
+<td>可承受較大回撤</td>
+</tr>
+</tbody>
+</table>
+<p><strong>投資型保單不是「有保險就比較穩」</strong>——連結 RR5 基金，帳戶一樣會大跌。</p>
+<hr/>
+<h2 id="配息基金特別要小心">配息基金：特別要小心<a class="headerlink" href="#配息基金特別要小心" title="Permanent link">¶</a></h2>
+<p>保單與銀行常推<strong>月配息、季配息</strong>基金；配息<strong>不等於</strong>賺錢。</p>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>配息從哪來</strong></td>
+<td>多半來自基金已持有的<strong>利息、股利、或賣資產</strong></td>
+</tr>
+<tr>
+<td><strong>配息後淨值</strong></td>
+<td>常<strong>相應下降</strong>（除息概念）</td>
+</tr>
+<tr>
+<td><strong>本金配息</strong></td>
+<td>若配息 &gt; 標的賺的 → 其實在<strong>吃本金</strong></td>
+</tr>
+<tr>
+<td><strong>月配 1% 話術</strong></td>
+<td>要算：<strong>含息報酬</strong> vs <strong>淨值是否創新高</strong></td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart LR
+    A[基金淨值 100] --&gt;|配息 2 元| B[淨值約 98 + 現金 2]
+    B --&gt; C{標的沒漲?}
+    C --&gt;|是| D[只是把自己的錢領回來]
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>你要看的</th>
+<th>不要只看</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>淨值長期走勢</strong>（3～10 年）</td>
+<td>每月配息數字</td>
+</tr>
+<tr>
+<td><strong>含息 vs 不含息</strong>績效</td>
+<td>「月配 1% = 年配 12%」</td>
+</tr>
+<tr>
+<td>公開說明書<strong>配息政策</strong></td>
+<td>業務口述「像薪水」</td>
+</tr>
+</tbody>
+</table>
+<h3 id="配息型基金為何仍可能虧損">配息型基金為何仍可能虧損？<a class="headerlink" href="#配息型基金為何仍可能虧損" title="Permanent link">¶</a></h3>
+<p>常見疑問：「有配息、又有經理人操盤，怎麼還會負報酬？」</p>
+<table>
+<thead>
+<tr>
+<th>原因</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>配息來自淨值</strong></td>
+<td>配出去多少，淨值常降多少；標的沒漲 = <strong>把錢從左手換到右手</strong></td>
+</tr>
+<tr>
+<td><strong>本金配息</strong></td>
+<td>配息 &gt; 標的賺的 → 長期淨值走低，總報酬為負</td>
+</tr>
+<tr>
+<td><strong>經理費內扣</strong></td>
+<td>每天從淨值扣，配息數字<strong>不會</strong>幫你付經理費</td>
+</tr>
+<tr>
+<td><strong>標的下跌</strong></td>
+<td>經理人只能<strong>相對</strong>減虧或選股，<strong>不能保證</strong>正報酬</td>
+</tr>
+<tr>
+<td><strong>保單外層</strong></td>
+<td>若透過投資型保單，還要扣 <strong>B、前置費</strong> → 帳戶更容易負報酬</td>
+</tr>
+</tbody>
+</table>
+<p><strong>數字示意（教學，非保證）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>年初淨值</td>
+<td>100</td>
+</tr>
+<tr>
+<td>全年標的 -10%</td>
+<td>淨值約 90</td>
+</tr>
+<tr>
+<td>期間月配息共領 6 元</td>
+<td>帳上現金 +6，但淨值已跌</td>
+</tr>
+<tr>
+<td><strong>含息總報酬</strong></td>
+<td>仍可能 <strong>-4%～-10%</strong> 量級（視配息是否來自本金）</td>
+</tr>
+</tbody>
+</table>
+<p>所以：<strong>配息 ≠ 沒虧</strong>；要看「淨值 + 已領配息」的<strong>總報酬</strong>，不是只看每月入帳金額。</p>
+<hr/>
+<h2 id="為什麼還要買賣轉換基金">為什麼還要買賣／轉換基金？<a class="headerlink" href="#為什麼還要買賣轉換基金" title="Permanent link">¶</a></h2>
+<p>「基金裡已經有投資經理人了，為什麼我還要買賣？」——這裡其實有<strong>兩層不同</strong>的操作：</p>
+<table>
+<thead>
+<tr>
+<th>層次</th>
+<th>誰在買賣</th>
+<th>在做什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>基金內部</strong></td>
+<td>投信經理人</td>
+<td>依契約調整<strong>一籃子股票／債券</strong>（你持有的是基金單位）</td>
+</tr>
+<tr>
+<td><strong>你（保戶／投資人）</strong></td>
+<td>你自己或業務協助</td>
+<td><strong>申購／贖回</strong>整檔基金，或在保單內<strong>轉換</strong>連結標的</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart TB
+    subgraph 基金內_經理人操盤
+        M[經理人調持股]
+    end
+    subgraph 你這層_選管道與標的
+        Y[申購 A 基金]
+        Z[轉換成 B 基金]
+    end
+    Y --&gt; M
+    Z --&gt; M
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>你的操作</th>
+<th>為什麼要做</th>
+<th>費用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>申購／贖回</strong></td>
+<td>進場、變現、換策略</td>
+<td>申購費、贖回費</td>
+</tr>
+<tr>
+<td><strong>保單內轉換標的</strong></td>
+<td>從平衡型換成股票型等</td>
+<td>免費次數用盡後常 <strong>NT$500／次</strong></td>
+</tr>
+<tr>
+<td>什麼時候不必你動</td>
+<td><a href="../../08-investing/investment-linked-policy/#類全委全權委託投資型保單">類全委</a> 由投信代操配置</td>
+<td>仍有保單費 + 代操費</td>
+</tr>
+</tbody>
+</table>
+<p><strong>白話：</strong> 經理人幫你選<strong>籃子裡的零件</strong>；你（或全委託）決定<strong>買哪一籃</strong>、要不要<strong>換一籃</strong>。兩層都有成本，不能互相抵銷。</p>
+<hr/>
+<h2 id="vs">台幣 vs 外幣基金<a class="headerlink" href="#vs" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>台幣計價基金</th>
+<th>美元等外幣基金</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>標的</strong></td>
+<td>台股、台債等</td>
+<td>海外股票、債券</td>
+</tr>
+<tr>
+<td><strong>額外風險</strong></td>
+<td>標的市場</td>
+<td>標的市場 + <strong>匯率</strong></td>
+</tr>
+<tr>
+<td><strong>保單</strong></td>
+<td>常見</td>
+<td>常見（美元保單、美元標的）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>匯率獨立一層</strong>：海外基金淨值漲 10%，台幣若升值 5%，台幣計價報酬可能只剩約 5% 概念。見 <a href="../../05-analysis/cross-market/">跨市場分析</a>。</p>
+<hr/>
+<h2 id="_14">哪裡可以買基金<a class="headerlink" href="#_14" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>管道</th>
+<th>白話</th>
+<th>申購費</th>
+<th>跟保單</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>銀行</strong></td>
+<td>臨櫃、網銀</td>
+<td>較高，可議價</td>
+<td>無 B</td>
+</tr>
+<tr>
+<td><strong>基金平台</strong></td>
+<td>線上、定額</td>
+<td>常 0～2%</td>
+<td>無 B</td>
+</tr>
+<tr>
+<td><strong>證券戶</strong></td>
+<td>買 <strong>ETF</strong> 替代指數基金</td>
+<td>低</td>
+<td>無 B</td>
+</tr>
+<tr>
+<td><strong>投資型保單</strong></td>
+<td>保費進連結清單</td>
+<td><strong>前置費 + B + 經理費</strong></td>
+<td>見 <a href="../../08-investing/investment-linked-policy/">專章</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_15">保單連結基金：清單怎麼讀<a class="headerlink" href="#_15" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>看什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>商品說明書</strong></td>
+<td>可連結標的全清單、配置比例上限</td>
+</tr>
+<tr>
+<td><strong>各標的基本資料</strong></td>
+<td>基金類型、RR、經理費、歷史淨值（參考）</td>
+</tr>
+<tr>
+<td><strong>類全委帳戶</strong></td>
+<td>是否代操、撥回是否來自本金</td>
+</tr>
+</tbody>
+</table>
+<p><strong>同一投信旗下的基金</strong>，在銀行買 vs 在保單裡買 → <strong>基金淨值邏輯相同</strong>，差在<strong>保單外層多扣什麼</strong>。</p>
+<hr/>
+<h2 id="_16">投資型保單與基金：兩層報酬<a class="headerlink" href="#_16" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart TB
+    subgraph 第一層_基金
+        NAV[基金淨值漲跌]
+    end
+    subgraph 第二層_保單
+        CUT[前置費 / B / 管理費]
+    end
+    PRE[保費] --&gt; CUT
+    CUT --&gt; UNITS[買入基金單位]
+    UNITS --&gt; NAV
+    NAV --&gt; ACCT[保單帳戶價值]
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>層級</th>
+<th>你在簡報聽到的</th>
+<th>你實際關心的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>基金層</strong></td>
+<td>「這檔漲 30%」</td>
+<td>連結基金淨值表現</td>
+</tr>
+<tr>
+<td><strong>保單層</strong></td>
+<td>較少主動講</td>
+<td><strong>帳戶價值 IRR</strong>（扣完 B 後）</td>
+</tr>
+</tbody>
+</table>
+<p>完整保單結構 → <a href="../../08-investing/investment-linked-policy/">投資型保單</a><br/>
+<strong>建議閱讀順序：本章（基金）→ 保單專章 → <a href="../../08-investing/etf-passive-dca/">ETF 定額</a> 對照</strong></p>
+<hr/>
+<h2 id="_17">怎麼讀基金資訊<a class="headerlink" href="#_17" title="Permanent link">¶</a></h2>
+<h3 id="_18">必看文件<a class="headerlink" href="#_18" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>公開說明書</strong></td>
+<td>投資目標、RR、費用、持股限制、配息政策</td>
+</tr>
+<tr>
+<td><strong>簡式說明書</strong></td>
+<td>快速版，仍要看費用</td>
+</tr>
+<tr>
+<td><strong>投資展望／月報</strong></td>
+<td>經理觀點（<strong>參考</strong>，非保證）</td>
+</tr>
+<tr>
+<td><strong>淨值表</strong></td>
+<td>至少看 <strong>3～10 年</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_19">績效與排名<a class="headerlink" href="#_19" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>同類排名</strong></td>
+<td>在同類型中相對位置</td>
+</tr>
+<tr>
+<td><strong>標準差</strong></td>
+<td>波動大不大</td>
+</tr>
+<tr>
+<td><strong>Sharpe</strong>（若有）</td>
+<td>風險調整後報酬</td>
+</tr>
+<tr>
+<td><strong>追蹤誤差</strong></td>
+<td>指數型基金專有</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_20">常見誤解<a class="headerlink" href="#_20" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>誤解</th>
+<th>實際</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基金漲 30% = 我賺 30%</td>
+<td>扣申購費、經理費；保單還扣 B</td>
+</tr>
+<tr>
+<td>配息 = 獲利</td>
+<td>可能是<strong>本金配息</strong>；總報酬仍可能為負</td>
+</tr>
+<tr>
+<td>有經理人就不會虧</td>
+<td>經理人調倉<strong>不保證</strong>正報酬</td>
+</tr>
+<tr>
+<td>保單連結 = 報酬加成</td>
+<td>只是<strong>管道</strong>，通常更貴</td>
+</tr>
+<tr>
+<td>未知價 = 被坑</td>
+<td>是基金<strong>正常機制</strong></td>
+</tr>
+<tr>
+<td>主動基金一定贏指數</td>
+<td>長期多數跑輸；見 ETF</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="vs-etf-vs">決策：基金 vs ETF vs 保單<a class="headerlink" href="#vs-etf-vs" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    S[我要長期投資] --&gt; Q1{要特定主動基金?}
+    Q1 --&gt;|否| ETF[優先 ETF 定額]
+    Q1 --&gt;|是| FUND[申購基金<br/>比費、看長期績效]
+    S --&gt; Q2{要身故保障綁一起?}
+    Q2 --&gt;|是| IL[投資型保單<br/>先算十年成本]
+    Q2 --&gt;|否| ETF
+    IL --&gt; READ[先讀本章<br/>再讀保單專章]
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>情境</th>
+<th>建議</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>台股大盤、長期、低成本</td>
+<td><a href="../../08-investing/etf-passive-dca/">0050 定額</a></td>
+</tr>
+<tr>
+<td>只某檔主動基金可接受</td>
+<td>銀行／平台申購，<strong>議申購費</strong></td>
+</tr>
+<tr>
+<td>業務推保單連結基金</td>
+<td>問：<strong>同基金我自己買，差哪些費用？</strong></td>
+</tr>
+<tr>
+<td>要月配息現金流</td>
+<td>先確認<strong>不是本金配息</strong>；ETF 也可配息</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="_21">三管道完整對照<a class="headerlink" href="#_21" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>自己買基金</th>
+<th>ETF 定額</th>
+<th>保單連結基金</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>適合</strong></td>
+<td>特定主動策略</td>
+<td>長期大盤</td>
+<td>已確認要保障+綁定</td>
+</tr>
+<tr>
+<td><strong>進場</strong></td>
+<td>1%～3% 申購</td>
+<td>極低</td>
+<td>前置費 + B</td>
+</tr>
+<tr>
+<td><strong>持續</strong></td>
+<td>1%～2% 經理費</td>
+<td>0.3%～0.5%</td>
+<td>經理費 + B + 管理費</td>
+</tr>
+<tr>
+<td><strong>流動性</strong></td>
+<td>贖回數日到帳</td>
+<td>T+2 賣 ETF</td>
+<td>解約成本高</td>
+</tr>
+<tr>
+<td><strong>30% 敘事</strong></td>
+<td>標的可能，你打折拿</td>
+<td>接近標的表現</td>
+<td><strong>最少進帳戶</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_22">自我檢查<a class="headerlink" href="#_22" title="Permanent link">¶</a></h2>
+<details class="question">
+<summary>1.（概念題）共同基金申購是看什麼價格？</summary>
+<p>參考答案：<strong>淨值（NAV）</strong>，非盤中即時報價。</p>
+</details>
+<details class="question">
+<summary>2.（判斷題）配息基金月月配，代表一定賺錢？</summary>
+<p>參考答案：否。要看<strong>淨值有無成長</strong>與含息總報酬；可能是本金配息。</p>
+</details>
+<details class="question">
+<summary>3.（情境題）業務推投資型保單連結基金，你該問什麼？</summary>
+<p>參考答案：<strong>同基金我自己買，差哪些費用？</strong> 見 <a href="../../08-investing/investment-linked-policy/">保單專章</a> 與 <a href="../../07-cases/fund-policy-faq/">實戰問答</a>。</p>
+</details>
+<h2 id="_23">重點回顧<a class="headerlink" href="#_23" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>共同基金</strong> = 集合理財、<strong>淨值</strong>申贖；投信操盤、銷售機構賺申購費。</li>
+<li><strong>費用</strong> = 外扣申購 + 內扣經理費；長期差 1%～2% 複利差距大。</li>
+<li><strong>配息基金</strong>要看淨值有沒有長高；<strong>含息總報酬</strong>仍可能為負。</li>
+<li><strong>微笑曲線</strong> = 定額平均成本概念，不是保證獲利。</li>
+<li><strong>買賣／轉換基金</strong>是你選標的；<strong>經理人買賣</strong>是籃子內調倉——兩層不同。</li>
+<li><strong>投資型保單</strong>連結的是同一類基金，但多<strong>保單層</strong>費用；見 <a href="../../08-investing/investment-linked-policy/">專章</a>。</li>
+<li><strong>多數長期配置</strong> → <a href="../../08-investing/etf-passive-dca/">ETF 定額</a>；不必為投資買保單。</li>
+</ul>
+<p>相關：<a href="../etf-intro/">ETF 入門</a> · <a href="../../08-investing/investment-linked-policy/">投資型保單</a> · <a href="../../07-cases/fund-policy-faq/">實戰問答</a> · <a href="../../06-risk/trading-costs/">交易成本</a> · <a href="../../05-analysis/cross-market/">跨市場</a></p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  回到页面顶部
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+window.mermaidConfig = {default: {
+    startOnLoad: false
+}};</script></body>
+</html>
