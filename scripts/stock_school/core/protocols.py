@@ -32,3 +32,7 @@ class SvgGenerator(Protocol):
     def generate(self) -> dict[str, str]:
         """Return mapping of filename → SVG content."""
         ...
+
+    def artifact_path(self, filename: str) -> Path:
+        """Resolve the on-disk path for a generated filename."""
+        ...

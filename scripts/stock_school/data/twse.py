@@ -2,11 +2,14 @@
 from __future__ import annotations
 
 import json
+import logging
 import urllib.error
 import urllib.request
 from datetime import date
 
 from stock_school.domain.bar import Bar
+
+logger = logging.getLogger(__name__)
 
 UA = {"User-Agent": "StockSchool/1.0 (educational; +https://github.com/stock-school)"}
 
@@ -46,8 +49,10 @@ class TwseDataSource:
         for _ in range(months):
             try:
                 all_bars.extend(self.fetch_month(stock_no, y, m))
-            except (urllib.error.URLError, json.JSONDecodeError, ValueError):
-                pass
+            except (urllib.error.URLError, json.JSONDecodeError, ValueError) as exc:
+                logger.warning(
+                    "TWSE %s %04d-%02d 抓取失敗：%s", stock_no, y, m, exc
+                )
             m -= 1
             if m == 0:
                 m = 12

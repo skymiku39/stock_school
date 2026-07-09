@@ -5,7 +5,6 @@ import argparse
 from pathlib import Path
 
 from stock_school.core.bus import EventBus
-from stock_school.core.events import PipelineCompleted
 from stock_school.data.twse import TwseDataSource
 from stock_school.generators.candles import CandleSvgGenerator
 from stock_school.generators.cases import CaseSvgGenerator
@@ -61,12 +60,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.only:
         generators = [g for g in generators if g.generator_id == args.only]
 
-    total = 0
-    for generator in generators:
-        total += pipeline.run(generator)
-
-    print(f"\nTotal: {total} SVG files → {ASSETS}")
-    bus.publish(PipelineCompleted(total_artifacts=total))
+    pipeline.run_all(generators, output_dir=ASSETS)
     return 0
 
 

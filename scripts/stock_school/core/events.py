@@ -52,3 +52,4 @@ class PipelineCompleted(Event):
     """All requested generators finished."""
 
     total_artifacts: int = 0
+    output_dir: Path | None = None

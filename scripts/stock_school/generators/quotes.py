@@ -1,6 +1,7 @@
 """Quote-screen SVG generator (OCP: extend stocks without changing pipeline)."""
 from __future__ import annotations
 
+import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -11,6 +12,8 @@ from stock_school.render.quotes import (
     quote_screen_svg,
     volume_bars_svg,
 )
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -27,6 +30,9 @@ class QuoteSvgGenerator:
         for code, name in self.stocks.items():
             bars = self.data_source.fetch_bars(code, months=4, tail=30)
             if len(bars) < 2:
+                logger.warning(
+                    "報價 SVG 略過 %s：僅取得 %d 根 K 線（需 >= 2）", code, len(bars)
+                )
                 continue
             last, prev = bars[-1], bars[-2]
             files[f"{code}-quote-screen.svg"] = quote_screen_svg(

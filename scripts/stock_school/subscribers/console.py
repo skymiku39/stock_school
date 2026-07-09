@@ -6,6 +6,7 @@ from stock_school.core.events import (
     GenerationError,
     GenerationFinished,
     GenerationStarted,
+    PipelineCompleted,
     SvgArtifactReady,
 )
 
@@ -20,3 +21,6 @@ class ConsoleSubscriber:
             print(f"[done] {event.generator_id} ({event.artifact_count} files)")
         elif isinstance(event, GenerationError):
             print(f"[error] {event.generator_id}: {event.message}")
+        elif isinstance(event, PipelineCompleted):
+            dest = f" → {event.output_dir}" if event.output_dir else ""
+            print(f"\nTotal: {event.total_artifacts} SVG files{dest}")
