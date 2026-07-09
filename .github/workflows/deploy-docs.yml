@@ -19,11 +19,18 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
+      - name: Verify offline SVG generators are deterministic
+        run: |
+          uv run python -m stock_school.cli --only candles
+          uv run python -m stock_school.cli --only cases
+          uv run python -m stock_school.cli --only concepts
+          git diff --exit-code docs/assets/
+
       - name: Run chart/asset tests
         run: uv run pytest tests/ -v
 
       - name: Audit links and anchors
-        run: uv run python scripts/check_links.py --strict
+        run: uv run stock-school-links --strict
 
       - name: Validate docs (strict build)
         run: uv run mkdocs build --strict
