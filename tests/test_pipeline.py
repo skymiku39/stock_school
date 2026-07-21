@@ -131,3 +131,27 @@ def test_file_writer_subscriber_writes_artifact(tmp_path: Path) -> None:
         )
     )
     assert target.read_text(encoding="utf-8").startswith("<svg")
+
+
+def test_console_arrow_falls_back_to_ascii_on_legacy_codepage(monkeypatch) -> None:
+    import io
+
+    from stock_school.subscribers import console
+
+    class _Cp950Stream(io.StringIO):
+        encoding = "cp950"
+
+    monkeypatch.setattr(console.sys, "stdout", _Cp950Stream())
+    assert console._safe_arrow() == "->"
+
+
+def test_console_arrow_uses_unicode_on_utf8(monkeypatch) -> None:
+    import io
+
+    from stock_school.subscribers import console
+
+    class _Utf8Stream(io.StringIO):
+        encoding = "utf-8"
+
+    monkeypatch.setattr(console.sys, "stdout", _Utf8Stream())
+    assert console._safe_arrow() == "→"
