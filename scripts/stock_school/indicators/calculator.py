@@ -1,6 +1,8 @@
 """Technical indicator math (SRP: pure calculations, no I/O)."""
 from __future__ import annotations
 
+from collections.abc import Sequence
+
 from stock_school.domain.bar import Bar
 
 
@@ -31,7 +33,7 @@ class IndicatorCalculator:
         return out
 
     @classmethod
-    def ema_series(cls, values: list[float | None], period: int) -> list[float | None]:
+    def ema_series(cls, values: Sequence[float | None], period: int) -> list[float | None]:
         nums = [v for v in values if v is not None]
         if not nums:
             return [None] * len(values)

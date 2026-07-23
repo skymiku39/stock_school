@@ -19,6 +19,11 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
+      - name: Lint and type-check
+        run: |
+          uv run ruff check scripts tests
+          uv run mypy
+
       - name: Verify offline SVG generators are deterministic
         run: |
           uv run python -m stock_school.cli --only candles

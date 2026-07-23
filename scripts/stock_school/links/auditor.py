@@ -39,7 +39,7 @@ class _IgnoreUnknownTagsLoader(yaml.SafeLoader):
     """讓 yaml 略過 mkdocs.yml 中的 ``!!python/name:`` 等自訂標籤。"""
 
 
-def _ignore_unknown(loader: yaml.Loader, suffix: str, node: yaml.Node):  # noqa: ARG001
+def _ignore_unknown(loader: yaml.Loader, suffix: str, node: yaml.Node) -> None:  # noqa: ARG001
     return None
 
 
@@ -47,7 +47,7 @@ _IgnoreUnknownTagsLoader.add_multi_constructor("", _ignore_unknown)
 _IgnoreUnknownTagsLoader.add_multi_constructor("tag:yaml.org,2002:python/name:", _ignore_unknown)
 
 
-def _walk_nav(node, titles: dict[str, str]) -> None:
+def _walk_nav(node: object, titles: dict[str, str]) -> None:
     if isinstance(node, list):
         for item in node:
             _walk_nav(item, titles)

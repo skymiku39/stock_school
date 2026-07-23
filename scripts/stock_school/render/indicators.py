@@ -4,6 +4,7 @@ from __future__ import annotations
 import logging
 
 from stock_school.core.protocols import MarketDataSource
+from stock_school.domain.bar import Bar
 from stock_school.indicators.calculator import IndicatorCalculator
 from stock_school.render.svg_primitives import (
     ChartPad,
@@ -43,7 +44,7 @@ MIN_BARS = 30
 logger = logging.getLogger(__name__)
 
 
-def ma_svg(bars) -> str:
+def ma_svg(bars: list[Bar]) -> str:
     c = closes(bars)
     ma5, ma20, ma60 = sma(c, 5), sma(c, 20), sma(c, 60)
     pad = ChartPad(top=44, bottom=32)
@@ -52,7 +53,7 @@ def ma_svg(bars) -> str:
     parts = title_block(f"{CODE} {NAME} — 均線 MA5 / MA20 / MA60", W, "TWSE 日 K · 教學用")
     candle_parts, _, _ = draw_candles(bars, width=W, height=H, pad=pad, y_lo=lo, y_hi=hi)
     parts.extend(candle_parts)
-    for series, color, label in [
+    for series, color, _label in [
         (ma5, ORANGE, "MA5"),
         (ma20, BLUE, "MA20"),
         (ma60, PURPLE, "MA60"),
@@ -69,7 +70,7 @@ def ma_svg(bars) -> str:
     return svg_header(f"{CODE} 均線", W, H, "".join(parts))
 
 
-def macd_svg(bars) -> str:
+def macd_svg(bars: list[Bar]) -> str:
     c = closes(bars)
     dif, sig, hist = macd(c)
     price_h = int(H * 0.58)
@@ -127,7 +128,7 @@ def macd_svg(bars) -> str:
     return svg_header(f"{CODE} MACD", W, H, "".join(parts))
 
 
-def rsi_svg(bars) -> str:
+def rsi_svg(bars: list[Bar]) -> str:
     c = closes(bars)
     r = rsi(c, 14)
     price_h = int(H * 0.62)
@@ -156,7 +157,7 @@ def rsi_svg(bars) -> str:
     return svg_header(f"{CODE} RSI", W, H, "".join(parts))
 
 
-def kd_svg(bars) -> str:
+def kd_svg(bars: list[Bar]) -> str:
     k_line, d_line = stochastic(bars)
     price_h = int(H * 0.62)
     kd_h = H - price_h
@@ -188,7 +189,7 @@ def kd_svg(bars) -> str:
     return svg_header(f"{CODE} KD", W, H, "".join(parts))
 
 
-def bollinger_svg(bars) -> str:
+def bollinger_svg(bars: list[Bar]) -> str:
     c = closes(bars)
     mid, up, lo_b = bollinger(c, 20, 2.0)
     pad = ChartPad(top=44, bottom=32)
@@ -211,7 +212,7 @@ def bollinger_svg(bars) -> str:
     return svg_header(f"{CODE} 布林", W, H, "".join(parts))
 
 
-def volume_price_svg(bars) -> str:
+def volume_price_svg(bars: list[Bar]) -> str:
     price_h = int(H * 0.68)
     vol_h = H - price_h
     pad_p = ChartPad(top=44, bottom=8)
@@ -242,7 +243,7 @@ def volume_price_svg(bars) -> str:
     return svg_header(f"{CODE} 量價", W, H, "".join(parts))
 
 
-def line_compare_svg(bars) -> str:
+def line_compare_svg(bars: list[Bar]) -> str:
     """Line vs bar vs candle on same closes (last 15 bars)."""
     tail = bars[-15:]
     c = closes(tail)
@@ -317,7 +318,7 @@ def revenue_demo_svg() -> str:
     parts = title_block("月營收柱狀 + YoY 折線（教學合成數據）", W, "案例：營收轉折")
     base_y, ch = 260, 180
     gap = (W - 96) / len(months)
-    for i, (m, r) in enumerate(zip(months, revenue)):
+    for i, (m, r) in enumerate(zip(months, revenue, strict=True)):
         x = 48 + gap * i + gap * 0.25
         h = ch * r / max_r
         y = base_y - h
@@ -354,7 +355,7 @@ def revenue_demo_svg() -> str:
     return svg_header("月營收示意", W, H, "".join(parts))
 
 
-def market_index_svg(bars) -> str:
+def market_index_svg(bars: list[Bar]) -> str:
     """Use 0050 bars as market proxy."""
     pad = ChartPad(top=44, bottom=32)
     lo = min(b.low for b in bars)

@@ -1,6 +1,6 @@
 # 架構說明 — SOLID 與 Pub/Sub
 
-本專案可拆為兩層：**MkDocs 靜態教材**（`docs/`）與 **SVG 圖表產生器**（`scripts/stock_school/`）。程式架構遵循 SOLID，並以 **Publish/Subscribe** 解耦「產圖」與「寫檔／日誌」。
+本專案可拆為兩層：**MkDocs 靜態教材**（`docs/`）與 **Python 工具套件**（`scripts/stock_school/`，可安裝為 `stock_school`）。程式架構遵循 SOLID；SVG 產圖以 **Publish/Subscribe** 解耦「產圖」與「寫檔／日誌」，連結稽核則採 **Strategy／檢查鏈**（無 I/O 副作用事件，不需要 EventBus）。
 
 ## 分層總覽
 
@@ -14,6 +14,7 @@ scripts/stock_school/
 ├── generators/     # 各類圖表產生器（OCP：新增 generator 不改 pipeline）
 ├── subscribers/    # 訂閱者：寫檔、主控台（SRP）
 ├── services/       # GenerationPipeline（Publisher）
+├── links/          # 連結稽核（Strategy：Reachability / Semantic checks）
 └── cli.py          # 組裝依賴、啟動流程
 ```
 
@@ -38,7 +39,7 @@ sequenceDiagram
     participant File as FileWriterSubscriber
     participant Log as ConsoleSubscriber
 
-    CLI->>Pipeline: run(generator)
+    CLI->>Pipeline: run_all(generators)
     Pipeline->>Bus: publish(GenerationStarted)
     Bus->>Log: on_event
     Pipeline->>Gen: generate()
@@ -48,7 +49,13 @@ sequenceDiagram
         Bus->>File: on_event → write file
         Bus->>Log: on_event → print
     end
+    opt empty or exception
+        Pipeline->>Bus: publish(GenerationError)
+        Bus->>Log: on_event
+    end
     Pipeline->>Bus: publish(GenerationFinished)
+    Bus->>Log: on_event
+    Pipeline->>Bus: publish(PipelineCompleted)
     Bus->>Log: on_event
 ```
 
@@ -57,25 +64,30 @@ sequenceDiagram
 - `GenerationStarted` — 某 generator 開始
 - `SvgArtifactReady` — 單一 SVG 已產出（含路徑與內容）
 - `GenerationFinished` — 批次完成（含檔案數）
-- `GenerationError` — 錯誤（可擴充訂閱者處理）
-- `PipelineCompleted` — 全部 generator 執行完畢
+- `GenerationError` — 例外或 0 產出（ConsoleSubscriber 會印出）
+- `PipelineCompleted` — 全部 generator 執行完畢（含 `output_dir`）
 
 內建訂閱者 `MkdocsHintSubscriber`（`--hint-serve`）示範如何在不改 pipeline 的情況下擴充行為。
 
 ## 使用方式
 
 ```bash
-# 產生全部 SVG
-uv run python scripts/generate_all.py
+# 產生全部 SVG（推薦）
+uv run python -m stock_school.cli
+uv run stock-school-gen
 
 # 只產生某一類
-uv run python scripts/generate_all.py --only quotes
-uv run python scripts/generate_all.py --only candles
-uv run python scripts/generate_all.py --only indicators
-uv run python scripts/generate_all.py --only cases
+uv run python -m stock_school.cli --only quotes
+uv run python -m stock_school.cli --only candles
+uv run python -m stock_school.cli --only indicators
+uv run python -m stock_school.cli --only cases
+uv run python -m stock_school.cli --only concepts
+
+# 連結稽核
+uv run stock-school-links --strict
 ```
 
-舊腳本 `gen_quote_charts.py` 等仍可使用，內部已委派至同一 pipeline。
+舊腳本 `scripts/generate_all.py`、`gen_*.py`、`check_links.py` 仍可使用，內部已委派至同一套件入口。
 
 ## MkDocs 教材層
 

@@ -9,7 +9,14 @@
 SVG 產生器採 **SOLID** 分層與 **Publish/Subscribe** 事件匯流排（產圖與寫檔解耦）。詳見 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)。
 
 ```bash
-# 產生／更新教學用 SVG 圖表
+# 產生／更新教學用 SVG 圖表（推薦）
+uv run python -m stock_school.cli
+uv run stock-school-gen --only candles
+
+# 連結／錨點稽核
+uv run stock-school-links --strict
+
+# 舊腳本仍可用（內部委派至同一 pipeline）
 uv run python scripts/generate_all.py
 ```
 
@@ -68,7 +75,7 @@ uv run mkdocs build
 ## 內容規模（約）
 
 - **約 120 篇** Markdown 章節
-- **21 張** K 線 SVG（含 4 張組合型態）
+- **52 張** 教學 SVG（K 線 21、報價 8、指標 9、案例 8、概念 6；另含 `logo.svg`）
 - 涵蓋術語、看表、看圖、評分、風控、投資模式、對號入座、**12 篇**實戰案例
 
 ## 與 Stock Bot 的關係

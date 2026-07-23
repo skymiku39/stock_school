@@ -5,6 +5,7 @@ import argparse
 from pathlib import Path
 
 from stock_school.core.bus import EventBus
+from stock_school.core.protocols import SvgGenerator
 from stock_school.data.twse import TwseDataSource
 from stock_school.generators.candles import CandleSvgGenerator
 from stock_school.generators.cases import CaseSvgGenerator
@@ -28,7 +29,7 @@ def _build_bus(*, hint_mkdocs: bool = False) -> EventBus:
     return bus
 
 
-def _all_generators(data_source: TwseDataSource):
+def _all_generators(data_source: TwseDataSource) -> list[SvgGenerator]:
     return [
         QuoteSvgGenerator(data_source=data_source, output_dir=ASSETS / "quotes"),
         CandleSvgGenerator(output_dir=ASSETS / "candles"),

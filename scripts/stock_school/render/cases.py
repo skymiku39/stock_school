@@ -33,8 +33,8 @@ BLUE, BORDER, GRAY, GREEN, ORANGE, PURPLE, RED, TEAL = (
 W, H = 640, 380
 
 
-def _bar(d: str, o: float, h: float, l: float, c: float, v: int = 3000) -> Bar:
-    return Bar(d=d, open=o, high=h, low=l, close=c, volume=v * 1000)
+def _bar(d: str, o: float, h: float, lo: float, c: float, v: int = 3000) -> Bar:
+    return Bar(d=d, open=o, high=h, low=lo, close=c, volume=v * 1000)
 
 
 def hammer_ma_bars() -> list[Bar]:
@@ -46,8 +46,8 @@ def hammer_ma_bars() -> list[Bar]:
         o = price
         c = price + drift
         h = max(o, c) + 0.6
-        l = min(o, c) - 0.8
-        bars.append(_bar(f"D{i - 21}", o, h, l, c, 2500 + i * 30))
+        lo = min(o, c) - 0.8
+        bars.append(_bar(f"D{i - 21}", o, h, lo, c, 2500 + i * 30))
         price = c
     # hammer: O101 H102 L96 C101.5 vol up
     bars.append(_bar("D0", 101, 102, 96, 101.5, 4200))
@@ -75,7 +75,6 @@ def hammer_ma_svg() -> str:
         f'fill="#fff3e0" opacity="0.5"/>'
     )
     parts.append(f'<text x="52" y="{y100 - 4:.1f}" font-size="9" fill="{ORANGE}">支撐區 98～100</text>')
-    last = bars[-1]
     cx = 48 + (W - 64) * (len(bars) - 0.5) / len(bars)
     parts.append(f'<text x="{cx:.0f}" y="{pad.top + 12}" font-size="10" fill="{RED}" text-anchor="middle">鎚子</text>')
     parts.append(footer_note(W, H, "合成教學數據 · 非真實個股"))
@@ -94,9 +93,9 @@ def macd_divergence_bars() -> list[Bar]:
     for i, c in enumerate(prices):
         o = c - 0.5 if i % 2 == 0 else c + 0.3
         h = max(o, c) + 0.8
-        l = min(o, c) - 0.6
+        lo = min(o, c) - 0.6
         vol = 3000 if i < 18 else 2200
-        bars.append(_bar(f"D{i - len(prices)}", o, h, l, c, vol))
+        bars.append(_bar(f"D{i - len(prices)}", o, h, lo, c, vol))
     return bars
 
 
@@ -117,7 +116,7 @@ def macd_divergence_svg() -> str:
     peaks = [13, 19]  # ~100 and ~105
     n = len(bars)
     gap = (W - 64) / n
-    for idx, label in zip(peaks, ["高點1 ~100", "高點2 ~105"]):
+    for idx, label in zip(peaks, ["高點1 ~100", "高點2 ~105"], strict=True):
         cx = 48 + gap * (idx + 0.5)
         cy = pad_p.top + 14
         parts.append(f'<text x="{cx:.1f}" y="{cy:.1f}" font-size="9" fill="{RED}" text-anchor="middle">{label}</text>')
@@ -129,7 +128,7 @@ def macd_divergence_svg() -> str:
     parts.append(
         draw_line_series(dif, color=BLUE, width=W, height=macd_h, pad=pad_m, y_lo=m_lo, y_hi=m_hi)
     )
-    for idx, label in zip(peaks, ["DIF 2.5", "DIF 2.0↓"]):
+    for idx, label in zip(peaks, ["DIF 2.5", "DIF 2.0↓"], strict=True):
         cx = 48 + gap * (idx + 0.5)
         parts.append(
             f'<text x="{cx:.1f}" y="{price_h + 20}" font-size="9" fill="{PURPLE}" text-anchor="middle">{label}</text>'
@@ -151,10 +150,10 @@ def gap_breakout_bars() -> list[Bar]:
         o = base + random.uniform(-0.5, 0.5)
         c = base + random.uniform(-1, 1)
         h = max(o, c) + random.uniform(0.2, 0.8)
-        l = min(o, c) - random.uniform(0.2, 0.8)
+        lo = min(o, c) - random.uniform(0.2, 0.8)
         h = min(h, 90)
-        l = max(l, 85)
-        bars.append(_bar(f"D{i - 21}", o, h, l, c, 2800 + random.randint(0, 400)))
+        lo = max(lo, 85)
+        bars.append(_bar(f"D{i - 21}", o, h, lo, c, 2800 + random.randint(0, 400)))
     # D-1
     bars.append(_bar("D-1", 89, 90, 87, 88, 3200))
     # D0 gap up
@@ -210,8 +209,8 @@ def dca_drawdown_bars() -> list[Bar]:
         o = base
         c = base + (0.4 if i % 2 else -0.3)
         h = max(o, c) + 0.8
-        l = min(o, c) - 0.8
-        bars.append(_bar(f"M{i}", o, h, l, c, 5000))
+        lo = min(o, c) - 0.8
+        bars.append(_bar(f"M{i}", o, h, lo, c, 5000))
     return bars
 
 

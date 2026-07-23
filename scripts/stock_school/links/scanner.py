@@ -25,8 +25,8 @@ def _classify(href: str, is_image: bool) -> tuple[LinkKind, str, str | None]:
     if _EXTERNAL_RE.match(href):
         return LinkKind.EXTERNAL, href, None
 
-    target, _, anchor = href.partition("#")
-    anchor = anchor or None
+    target, _, frag = href.partition("#")
+    anchor: str | None = frag or None
 
     if target == "":
         return LinkKind.ANCHOR, "", anchor
