@@ -22,7 +22,7 @@
 | [深入分析分頁](03-tables/deep-dive-tabs.md) | 單檔股票各分頁欄位地圖 |
 | [風險與紀律](06-risk/index.md) | 資金配置、停損停利、交易紀律、突發狀況手冊 |
 | [常見問答](appendix/faq.md) / [檢查清單](appendix/investor-checklist.md) | 新手 FAQ、下單前／除息前／月複盤清單 |
-| [實戰案例](07-cases/index.md) | **13 篇**逐步拆解案例（含總經利率） |
+| [實戰案例](07-cases/index.md) | **17 篇**逐步拆解案例（含接盤／追高與總經利率） |
 | [**老手專區**](09-advanced/index.md) | 研究流程、多週期、組合、總經、進階籌碼、事件手冊 |
 
 ## 建議學習路徑

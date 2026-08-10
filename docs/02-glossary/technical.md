@@ -33,7 +33,7 @@ K 線是技術面的基礎，建議先讀 [K 線基礎](../04-charts/kline-basic
 | **常見誤解** | 金叉必買；盤整時假訊號多 |
 | **小例子** | DIF 上穿訊號線（黃金交叉）→ 動能轉強參考 |
 
-詳見 [MACD 教學](../04-charts/macd.md)。
+詳見 [MACD 教學](../04-charts/macd.md)。用零軸與背離分辨接盤／追高見 [接盤還是追高](../04-charts/catch-or-chase.md)。
 
 ---
 

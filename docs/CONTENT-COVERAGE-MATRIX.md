@@ -88,7 +88,8 @@
 | [kline-basics](04-charts/kline-basics.md) | 常見誤區 + 自檢 |
 | [kline-reading](04-charts/kline-reading.md) | 常見誤區 + 自檢 |
 | [ma](04-charts/ma.md) | 自檢 |
-| [macd](04-charts/macd.md) | 自檢 |
+| [macd](04-charts/macd.md) | 自檢 + 接盤／追高小節 |
+| [catch-or-chase](04-charts/catch-or-chase.md) | 四層框架 + 盤前清單 + 自檢 |
 | [rsi](04-charts/rsi.md) | 自檢 |
 | [kd](04-charts/kd.md) | 自檢 |
 | [bollinger](04-charts/bollinger.md) | 自檢 |
@@ -281,7 +282,7 @@
 | 條目 | 等級 | canonical |
 |------|------|-----------|
 | 投資論點 thesis | A | research-workflow |
-| 開倉/平倉/加減碼/抄底/追高殺低/回檔/反彈/套牢/解套/分批/類股/觀察清單 | B | trading-terms、watchlist |
+| 開倉/平倉/加減碼/抄底/追高殺低/回檔/反彈/套牢/解套/分批/類股/觀察清單 | A | trading-terms、watchlist、[catch-or-chase](04-charts/catch-or-chase.md) |
 | 回測（策略） | C | trading-terms |
 
 ### 法人與籌碼
@@ -379,7 +380,7 @@
 | 主題群 | 案例 | 狀態 |
 |--------|------|------|
 | 營收轉折 | [revenue-turn](07-cases/revenue-turn.md) | 有 |
-| 技術型態 | [hammer-ma](07-cases/hammer-ma.md)、[macd-divergence](07-cases/macd-divergence.md)、[gap-breakout](07-cases/gap-breakout.md) | 有 |
+| 技術型態 | [hammer-ma](07-cases/hammer-ma.md)、[macd-divergence](07-cases/macd-divergence.md)、[gap-breakout](07-cases/gap-breakout.md)、[weak-rebound-trap](07-cases/weak-rebound-trap.md) | 有 |
 | 籌碼法人 | [institutional-flow](07-cases/institutional-flow.md)、[conference-chips](07-cases/conference-chips.md) | 有 |
 | 估值 | [valuation-trap](07-cases/valuation-trap.md) | 有 |
 | 當沖風控 | [day-trade-risk](07-cases/day-trade-risk.md) | 有 |

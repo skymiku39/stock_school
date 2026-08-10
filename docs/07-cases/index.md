@@ -2,7 +2,7 @@
 
 ## 本篇你會學到
 
-- 16 篇案例各自示範什麼判斷
+- 17 篇案例各自示範什麼判斷
 - 哪些案例對應你的 [投資模式](../08-investing/index.md) 與**主題群**
 - 案例的共通拆解結構
 
@@ -47,6 +47,7 @@ flowchart LR
 | 十四 | [零股小資踩雷](odd-lot-mistake.md) | 零股成本 | 小資 / 長線 | [零股](../01-basics/trading-flow.md#零股) |
 | 十五 | [除權息誤操作](ex-dividend-mistake.md) | 除息誤判 | 存股 | [除權息日程](../03-tables/dividend-schedule.md) |
 | 十六 | [追飆股追進處置股](disposal-stock-trap.md) | 交易限制 | 當沖 / 短線 | [交易限制](../01-basics/trading-restrictions.md) |
+| 十七 | [弱勢反彈接盤陷阱](weak-rebound-trap.md) | 接盤 vs 追高 | 短線 | [接盤還是追高](../04-charts/catch-or-chase.md) |
 
 ---
 
@@ -58,7 +59,7 @@ flowchart LR
 |--------|------|----------|
 | **基本面轉折** | [月營收轉折](revenue-turn.md) | 營收由弱轉強的判讀 |
 | **估值** | [估值陷阱](valuation-trap.md)、[升息環境估值](macro-rates.md) | 高殖利率陷阱、利率對估值 |
-| **技術型態** | [鎚子線+均線](hammer-ma.md)、[MACD 背離](macd-divergence.md)、[突破缺口](gap-breakout.md) | 反轉、背離、缺口辨識 |
+| **技術型態** | [鎚子線+均線](hammer-ma.md)、[MACD 背離](macd-divergence.md)、[突破缺口](gap-breakout.md)、[弱勢反彈接盤](weak-rebound-trap.md) | 反轉、背離、缺口、接盤辨識 |
 | **籌碼法人** | [法人連續買超](institutional-flow.md)、[法說 vs 法人](conference-chips.md)、[融券軋空](short-squeeze.md) | 籌碼追蹤與軋空 |
 | **除權息** | [除權息參與](dividend-play.md)、[除權息誤操作](ex-dividend-mistake.md) | 填息與除息誤判 |
 | **ETF / 定額** | [0050 定額遇大跌](etf-dca-drawdown.md) | 定額心態 |

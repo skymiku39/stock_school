@@ -121,6 +121,7 @@ nav:
       - RSI: 04-charts/rsi.md
       - KD: 04-charts/kd.md
       - 布林通道: 04-charts/bollinger.md
+      - 接盤還是追高: 04-charts/catch-or-chase.md
   - 分析思維:
     - 05-analysis/index.md
     - 05-analysis/three-pillars.md
@@ -177,6 +178,7 @@ nav:
     - 07-cases/day-trade-risk.md
     - 07-cases/valuation-trap.md
     - 07-cases/macd-divergence.md
+    - 弱勢反彈接盤陷阱: 07-cases/weak-rebound-trap.md
     - 07-cases/conference-chips.md
     - 07-cases/gap-breakout.md
     - 07-cases/short-squeeze.md

@@ -45,7 +45,7 @@ flowchart TB
 | **量價圖** | 漲跌有沒有量配合？ | [量價圖](volume-price.md) · [2330/0050 範例](../01-basics/quote-screen.md) |
 | **籌碼圖** | 誰在買賣？槓桿高嗎？ | [籌碼圖表](chips-charts.md) |
 | **基本面圖** | 營收獲利趨勢如何？ | [基本面圖表](fundamental-charts.md) |
-| **技術指標** | 趨勢/動能/超買超賣？ | [指標速查](indicator-quickref.md) |
+| **技術指標** | 趨勢/動能/超買超賣？ | [指標速查](indicator-quickref.md) · [接盤還是追高](catch-or-chase.md) |
 | **大盤圖** | 整體市場風險？ | [大盤與類股圖](market-charts.md) |
 
 ---
@@ -106,8 +106,9 @@ K 線是**價格走勢類**中最細的一支，本站拆為：
 === "已有 K 線基礎"
 
     1. [分時圖](intraday-charts.md) 或 [籌碼圖](chips-charts.md)（依模式）
-    2. [指標速查](indicator-quickref.md)
-    3. [基本面圖](fundamental-charts.md)（中線以上）
+    2. [指標速查](indicator-quickref.md) → [MACD](macd.md)
+    3. [接盤還是追高](catch-or-chase.md)（綜合判讀）
+    4. [基本面圖](fundamental-charts.md)（中線以上）
 
 ---
 

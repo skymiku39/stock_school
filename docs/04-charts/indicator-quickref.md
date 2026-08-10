@@ -41,6 +41,14 @@ flowchart LR
 - **震盪指標**（RSI、KD）告訴你「短線冷熱」
 - **布林**告訴你「波動是否變大」
 - 三者同向時訊號較一致，但仍需 [停損](../06-risk/stop-loss.md)
+- 想分辨**接盤 vs 追高**：用四層框架 → [接盤還是追高](catch-or-chase.md)
+
+## 接盤／追高一覽（極簡）
+
+| 疑慮 | 優先看 | 詳見 |
+|------|--------|------|
+| 是不是接盤？ | 均線空方 + MACD **零軸下**金叉 + 縮量反彈 | [接盤框架](catch-or-chase.md) · [案例十七](../07-cases/weak-rebound-trap.md) |
+| 是不是追高？ | 頂背離、高檔量縮、乖離過大 | [接盤框架](catch-or-chase.md) · [頂背離案例](../07-cases/macd-divergence.md) |
 
 ## 自我檢查
 
@@ -58,4 +66,4 @@ flowchart LR
 - 沒有萬用指標；當沖重 MA+量，波段重 MA+MACD。
 - 指標是滯後或統計工具，不能取代 [K 線位置](candle-patterns.md) 判斷。
 
-相關：[技術面術語](../02-glossary/technical.md) · [MACD 背離案例](../07-cases/macd-divergence.md)
+相關：[技術面術語](../02-glossary/technical.md) · [接盤還是追高](catch-or-chase.md) · [MACD 背離案例](../07-cases/macd-divergence.md)
