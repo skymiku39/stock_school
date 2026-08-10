@@ -224,13 +224,24 @@ canonical 範本見 [月營收表](03-tables/revenue.md) 與 [估值表](03-tabl
 | 洗盤 | Shakeout |
 | 套牢 / 解套 | Locked-in (underwater) / break even recovery |
 | 抄底 | Bottom fishing |
+| 接盤 / 接刀 | Catching a falling knife |
 | 追高殺低 | Chasing highs, selling lows |
+| 攤平 | Averaging down |
+| 半山腰 | Halfway entry |
+| FOMO | Fear Of Missing Out |
 | 打底 | Bottoming |
 | 破底 | Breakdown to new low |
 | 盤堅 / 盤軟 | Grinding up / Grinding down |
 | 主力 | Big player (market mover) |
 | 利多出盡 | Buy the rumor, sell the news |
 | 量價背離 | Price-volume divergence |
+| 動能背離（頂／底） | Momentum divergence |
+| 假突破 | False breakout / fakeout |
+| 突破 | Breakout |
+| 盤整 | Consolidation / range |
+| 零軸 | MACD zero line |
+| 鈍化 | Extreme-zone persistence |
+| 乖離率 | Bias / MA deviation |
 | 回補缺口 | Gap fill |
 | 抬轎 / 坐轎 | Riding the move |
 | 內盤 / 外盤 | Sell-side hit / Buy-side lift |
@@ -240,6 +251,8 @@ canonical 範本見 [月營收表](03-tables/revenue.md) 與 [估值表](03-tabl
 | 集保大戶 | Major holders (TDCC) |
 | 存股 | Dividend buy-and-hold |
 | 對號入座 | Persona matching |
+| 閘門 | Gate (entry guard) |
+| 緊急停機 | Kill switch |
 
 ---
 
@@ -257,6 +270,29 @@ canonical 範本見 [月營收表](03-tables/revenue.md) 與 [估值表](03-tabl
 - 站內連結一律使用相對路徑（如 `../02-glossary/chips.md`），可帶錨點。
 - 潤稿時**不重複展開**權威章節的完整內容；摘要頁只留重點 + 連結。權威來源對照見 [架構說明](ARCHITECTURE.md)。
 - 改動任何標題文字後，務必重跑 `uv run mkdocs build --strict` 驗證錨點未斷。
+- `dictionary.md`「詳見」欄：連到**詞典分類頁時必須帶 `{#錨點}`**；連到整篇教學頁（該頁即該詞主檔）可不帶錨點。
+
+### 三層連結慣例（詞義 → 判讀 → 練習）
+
+| 需求 | 應連向 | 範例 |
+|------|--------|------|
+| **詞義／定義** | `02-glossary/*#凍結錨點` | `[接盤](../02-glossary/trading-terms.md#接盤)` |
+| **操作判讀（canonical）** | 權威專章 | `[接盤還是追高](../04-charts/catch-or-chase.md)` |
+| **盤中速查** | 速查頁（非詳解） | `[速查](../04-charts/catch-chase-quickref.md)` |
+| **情境練習** | 對應案例 | `[弱勢反彈接盤](../07-cases/weak-rebound-trap.md)` |
+
+連結文字應反映層級：詞義連詞典時勿寫成「完整手冊」；操作框架連專章時勿只連詞典摘要。
+
+### 易混詞族（必須分清目標）
+
+| 口語／顯示文字 | 正確目標 | 勿連成 |
+|----------------|----------|--------|
+| 金叉／黃金交叉 | `technical.md#黃金交叉` | 勿自創新錨點 `#金叉` |
+| 動能背離／頂背離／底背離 | `technical.md#動能背離`；進階見 `macd.md#背離進階`；案例 `macd-divergence.md` | 勿與量價背離互代 |
+| 量價背離 | `market-terms.md#量價背離` | 勿連 MACD 背離案例當定義 |
+| 突破（詞義） | `technical.md#突破` | 勿把一般「突破」只連 `market-terms#缺口` |
+| 假突破（詞義） | `technical.md#假突破`；案例 `gap-breakout.md` | 詞義頁與案例分開標 |
+| 接盤／追高（詞義） | `trading-terms.md#接盤`／`#追高殺低` | 判讀框架改連 `catch-or-chase.md` |
 
 ---
 

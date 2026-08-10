@@ -20,18 +20,18 @@
 | 最高價 | High | 該時段最高成交價 | [開高低收](quotes.md#開高低收) |
 | 最低價 | Low | 該時段最低成交價 | [開高低收](quotes.md#開高低收) |
 | 收盤價 | Closing price | 該時段最後一筆成交價 | [開高低收](quotes.md#開高低收) |
-| 開高低收 | OHLC (Open High Low Close) | 一根 K 棒四個價格 | [行情詞典](quotes.md#開高低收) |
-| 昨收 | Previous close | 前一交易日最後成交價 | [行情詞典](quotes.md) |
+| 開高低收 | OHLC (Open High Low Close) | 一根 K 棒四個價格 | [開高低收](quotes.md#開高低收) |
+| 昨收 | Previous close | 前一交易日最後成交價 | [昨收](quotes.md#昨收) |
 | 平盤 | Unchanged (flat) | 口語常指昨收基準價 | [開高開低](quotes.md#開高開低) |
 | 開高 | Gap-up open | 開盤 > 昨收 | [開高開低](quotes.md#開高開低) |
 | 開低 | Gap-down open | 開盤 < 昨收 | [開高開低](quotes.md#開高開低) |
-| 漲跌幅 | Change % | (現價−昨收)/昨收×100% | [行情詞典](quotes.md#漲跌幅) |
-| 成交量 | Volume | 成交股數多寡 | [行情詞典](quotes.md#成交量) |
-| 委買 / 委賣 | Bid / Ask | 尚未成交的掛單 | [行情詞典](quotes.md) |
+| 漲跌幅 | Change % | (現價−昨收)/昨收×100% | [漲跌幅](quotes.md#漲跌幅) |
+| 成交量 | Volume | 成交股數多寡 | [成交量](quotes.md#成交量) |
+| 委買 / 委賣 | Bid / Ask | 尚未成交的掛單 | [委買賣](quotes.md#委買賣) |
 | 五檔 | Five-level order book | 買賣各五檔掛單價量 | [報價畫面](../01-basics/quote-screen.md) |
 | 內盤 / 外盤 | Sell-side hit / Buy-side lift | 主動賣 / 主動買成交 | [報價畫面](../01-basics/quote-screen.md) |
 | 均價 | VWAP (average price) | 當日成交加權平均價 | [報價畫面](../01-basics/quote-screen.md) |
-| 漲停 / 跌停 | Limit up / Limit down | 當日 ±10% 價格限制 | [行情詞典](quotes.md#漲跌停) |
+| 漲停 / 跌停 | Limit up / Limit down | 當日 ±10% 價格限制 | [漲跌停](quotes.md#漲跌停) |
 | 前高 | Prior high | 目前之前最近相對高點 | [前高前低](quotes.md#前高前低) |
 | 前低 | Prior low | 目前之前最近相對低點 | [前高前低](quotes.md#前高前低) |
 
@@ -43,13 +43,13 @@
 |------|------|--------|------|
 | 股票 | Stock (share) | 公司所有權憑證 | [股票是什麼](../01-basics/what-is-stock.md) |
 | 股東 | Shareholder | 持有股票的所有者 | [股票是什麼](../01-basics/what-is-stock.md) |
-| 張 | Lot (1,000 shares) | 1 張 = 1,000 股 | [持倉詞典](position.md) |
+| 張 | Lot (1,000 shares) | 1 張 = 1,000 股 | [張數](position.md#張數) |
 | 零股 | Odd lot | 不足 1 張的股數 | [零股](position.md#零股) |
 | 持倉 | Position | 追蹤中的部位與均價 | [持倉](position.md#持倉) |
 | 庫存 | Holdings (broker) | 券商帳戶實際持股 | [庫存](position.md#庫存) |
-| 部位 | Position (exposure) | 對某標的的曝險 | [持倉詞典](position.md) |
-| 做多 | Long | 先買後賣賺上漲 | [持倉詞典](position.md) |
-| 做空 | Short | 融券賣出後買回 | [持倉詞典](position.md) |
+| 部位 | Position (exposure) | 對某標的的曝險 | [部位](position.md#部位) |
+| 做多 | Long | 先買後賣賺上漲 | [做多做空](position.md#做多做空) |
+| 做空 | Short | 融券賣出後買回 | [做多做空](position.md#做多做空) |
 | 當沖 | Day trade | 當日買賣沖銷不留倉 | [當沖](position.md#當沖) |
 | 限價單 | Limit order | 指定價格才成交 | [交易流程](../01-basics/trading-flow.md) |
 | 市價單 | Market order | 以對手價快速成交 | [交易流程](../01-basics/trading-flow.md) |
@@ -64,15 +64,15 @@
 
 | 詞條 | 英文 | 一句話 | 詳見 |
 |------|------|--------|------|
-| 毛價差 | Gross spread | 未扣費用之價差% | [損益詞典](pnl.md) |
+| 毛價差 | Gross spread | 未扣費用之價差% | [毛價差](pnl.md#毛價差) |
 | 淨利 | Net P&L | 扣費稅後實際損益 | [淨利](pnl.md#淨利) |
 | 停損 | Stop loss | 虧損達門檻出場 | [停損](pnl.md#停損) |
 | 認賠殺出 | Capitulation (panic sell) | 被迫或恐慌在低點賣出變現 | [認賠殺出](../06-risk/capital.md#認賠殺出) |
 | 心態錯配 | Mindset mismatch | 用 A 模式進場、B 模式心態出場 | [投資模式與心態](../08-investing/mode-psychology.md#心態錯配) |
-| 停利 | Take profit | 獲利達目標出場 | [停利與減碼](../06-risk/stop-loss.md#停利與減碼) |
+| 停利 | Take profit | 獲利達目標出場 | [停利](pnl.md#停利) |
 | 移動停利 | Trailing stop | 從高點回撤幅度出場 | [移動停利](pnl.md#移動停利) |
-| 損益兩平 | Break-even | 不賺不賠之價位 | [損益詞典](pnl.md) |
-| 風險報酬比 | Risk-reward ratio | 可能獲利 vs 可能虧損 | [風控詞典](risk.md) |
+| 損益兩平 | Break-even | 不賺不賠之價位 | [損益兩平](pnl.md#損益兩平) |
+| 風險報酬比 | Risk-reward ratio | 可能獲利 vs 可能虧損 | [風險報酬比](risk.md#風險報酬比) |
 
 ---
 
@@ -82,7 +82,7 @@
 |------|------|--------|------|
 | 開倉 / 建倉 | Open position | 開始建立部位 | [開倉平倉](trading-terms.md#開倉平倉) |
 | 平倉 | Close position | 結束部位之反向操作 | [開倉平倉](trading-terms.md#開倉平倉) |
-| 加碼 / 減碼 | Scale in / Scale out | 增加或減少部位 | [交易行為詞典](trading-terms.md) |
+| 加碼 / 減碼 | Scale in / Scale out | 增加或減少部位 | [開倉平倉](trading-terms.md#開倉平倉) |
 | 抄底 | Bottom fishing | 低點逆勢買進 | [抄底](trading-terms.md#抄底) |
 | 接盤 / 接刀 | Catching a falling knife | 下跌中低接承壓 | [接盤](trading-terms.md#接盤) |
 | 追高殺低 | Chasing highs, selling lows | 高買低賣 | [追高殺低](trading-terms.md#追高殺低) |
@@ -107,19 +107,19 @@
 | 詞條 | 英文 | 一句話 | 詳見 |
 |------|------|--------|------|
 | 三大法人 | Three institutional investors | 外資、投信、自營商 | [三大法人](chips.md#三大法人) |
-| 外資 | Foreign investors | 國際機構資金 | [籌碼詞典](chips.md) |
-| 投信 | Investment trust | 國內投信基金 | [籌碼詞典](chips.md) |
-| 自營商 | Proprietary dealers | 券商自有部位 | [籌碼詞典](chips.md) |
+| 外資 | Foreign investors | 國際機構資金 | [三大法人](chips.md#三大法人) |
+| 投信 | Investment trust | 國內投信基金 | [三大法人](chips.md#三大法人) |
+| 自營商 | Proprietary dealers | 券商自有部位 | [三大法人](chips.md#三大法人) |
 | 買超 / 賣超 | Net buy / Net sell | 買進與賣出淨額 | [買超賣超](chips.md#買超賣超) |
-| 融資 | Margin buying | 向券商借錢買股 | [融資融券](chips.md#融資融券) |
+| 融資 | Margin buying | 向券商借錢買股 | [融資](chips.md#融資) |
 | 融券 | Margin short selling | 借券賣出 | [融資融券](chips.md#融資融券) |
-| 借券 | Securities lending | 借入股票賣出或還券 | [籌碼詞典](chips.md) |
-| 券資比 | Short/margin ratio | 融券/融資比 | [籌碼詞典](chips.md) |
+| 借券 | Securities lending | 借入股票賣出或還券 | [借券](chips.md#借券) |
+| 券資比 | Short/margin ratio | 融券/融資比 | [券資比](chips.md#券資比) |
 | 維持率 | Maintenance ratio | 融資擔保品對欠款之安全比例 | [信用交易實務](../06-risk/margin-trading.md) |
 | 追繳 | Margin call | 維持率不足須補保證金 | [信用交易實務](../06-risk/margin-trading.md) |
 | 斷頭 | Forced liquidation | 未補保證金遭強制賣出 | [信用交易實務](../06-risk/margin-trading.md) |
 | 分點 | Broker branch | 券商營業據點 | [分點](chips.md#分點) |
-| 集保大戶 | Major holders (TDCC) | 持股分級之大戶結構 | [籌碼詞典](chips.md) |
+| 集保大戶 | Major holders (TDCC) | 持股分級之大戶結構 | [集保大戶](chips.md#集保大戶) |
 | 期現價差 | Basis (futures − spot) | 期貨價 − 現貨價 | [期現價差](chips.md#期現價差) |
 | 鉅額交易 | Block trade | 單筆大額撮合 | [鉅額表](../03-tables/block-trade.md) |
 
@@ -130,11 +130,11 @@
 | 詞條 | 英文 | 一句話 | 詳見 |
 |------|------|--------|------|
 | 月營收 | Monthly revenue | 公司每月營業收入 | [月營收](fundamentals.md#月營收) |
-| YoY | Year over Year | 與去年同期比 | [基本面詞典](fundamentals.md) |
-| MoM / QoQ | Month / Quarter over period | 與上月/上季比 | [基本面詞典](fundamentals.md) |
-| EPS | Earnings Per Share | 每股盈餘 | [基本面詞典](fundamentals.md) |
+| YoY | Year over Year | 與去年同期比 | [YoY/MoM/QoQ](fundamentals.md#yoy-mom-qoq) |
+| MoM / QoQ | Month / Quarter over period | 與上月/上季比 | [YoY/MoM/QoQ](fundamentals.md#yoy-mom-qoq) |
+| EPS | Earnings Per Share | 每股盈餘 | [EPS](fundamentals.md#eps每股盈餘) |
 | PER / 本益比 | P/E (Price Earnings Ratio) | 股價 ÷ EPS | [PER](fundamentals.md#per本益比) |
-| PBR | P/B (Price Book Ratio) | 股價 ÷ 每股淨值 | [基本面詞典](fundamentals.md) |
+| PBR | P/B (Price Book Ratio) | 股價 ÷ 每股淨值 | [PBR](fundamentals.md#pbr股價淨值比) |
 | 殖利率 | Dividend yield | 股利 ÷ 股價 | [殖利率](fundamentals.md#殖利率) |
 | 毛利率 | Gross margin | (營收−成本)/營收 | [三率](fundamentals.md#三率) |
 | 營益率 | Operating margin | 營業利益/營收 | [三率](fundamentals.md#三率) |
@@ -180,7 +180,9 @@
 | 鈍化 | Extreme-zone persistence | 指標黏在超買超賣區 | [鈍化](technical.md#鈍化) |
 | 乖離率 | Bias / MA deviation | 現價偏離均線幅度 | [乖離率](technical.md#乖離率) |
 | 突破 | Breakout | 有效穿越壓力／箱頂 | [突破](technical.md#突破) |
+| 假突破 | False breakout / fakeout | 短暫穿越後站不穩回落 | [假突破](technical.md#假突破) |
 | 盤整 | Consolidation / range | 區間來回趨勢不明 | [盤整](technical.md#盤整) |
+| 型態 | Chart pattern | 圖上可辨的價格形狀 | [型態](technical.md#型態) |
 | 頭肩頂 | Head and shoulders | 反轉型態 | [頭肩頂](technical.md#頭肩頂) |
 | 吞噬 | Engulfing | 後 K 實體包住前 K | [組合型態](../04-charts/candle-combinations.md) |
 | 晨星 / 暮星 | Morning star / Evening star | 三根反轉組合 | [組合型態](../04-charts/candle-combinations.md) |
@@ -214,6 +216,7 @@
 | Priced In | Priced in | 利多已反映在股價 | [Priced In](market-terms.md#priced-in) |
 | 利多出盡 | Buy the rumor, sell the news | 消息落地反向走 | [利多利空出盡](market-terms.md#利多利空出盡) |
 | 量價背離 | Price-volume divergence | 價與量方向不一致 | [量價背離](market-terms.md#量價背離) |
+| 漲跌停鎖死 | Limit up / down lock | 漲跌停且幾乎無對手掛單 | [漲跌停鎖](market-terms.md#漲跌停鎖) |
 | ETF | Exchange Traded Fund | 交易所買賣之基金 | [ETF](../01-basics/etf-intro.md) |
 | 共同基金 | Mutual fund | 開放式基金，按淨值申贖 | [共同基金入門](../01-basics/mutual-fund-intro.md) |
 | 淨值 NAV | Net Asset Value (NAV) | 基金每單位資產價值 | [共同基金入門](../01-basics/mutual-fund-intro.md) |
@@ -257,8 +260,11 @@
 | 詞條 | 英文 | 一句話 | 詳見 |
 |------|------|--------|------|
 | 曝險 | Exposure | 投入市場之風險資金 | [曝險](risk.md#曝險) |
-| 資金上限 | Capital cap | 單檔/總資金限制 | [風控詞典](risk.md) |
-| 最大回撤 | Maximum drawdown | 高峰到低谷最大跌幅 | [風控詞典](risk.md) |
+| 資金上限 | Capital cap | 單檔/總資金限制 | [資金上限](risk.md#資金上限) |
+| 最大回撤 | Maximum drawdown | 高峰到低谷最大跌幅 | [最大回撤](risk.md#最大回撤) |
+| 閘門 | Gate (entry guard) | 不該交易時的擋門條件 | [閘門](risk.md#閘門) |
+| 門檻 | Threshold | 達標後須執行動作的界線 | [門檻](risk.md#門檻) |
+| 緊急停機 | Kill switch | 觸發後全面停止交易 | [緊急停機](risk.md#緊急停機kill-switch) |
 | 紀律 | Discipline | 遵守計畫不情緒交易 | [紀律](../06-risk/discipline.md) |
 
 ---

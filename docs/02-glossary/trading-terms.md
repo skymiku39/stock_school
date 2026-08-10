@@ -64,7 +64,7 @@
 | **常見誤解** | 跟著熱度走就安全；貪婪與恐懼正是追高殺低的根源 |
 | **小例子** | 利多噴出追在漲停 → 隔日回檔恐慌殺在低點 |
 
-**改善方向**：[分批](#分批) 進出、[紀律](../06-risk/discipline.md)、事先寫好進出場計畫。圖表判讀：[接盤還是追高](../04-charts/catch-or-chase.md)；相關案例：[追高陷阱](../07-cases/chase-high-trap.md)、[突破與假突破](../07-cases/gap-breakout.md)、[MACD 頂背離](../07-cases/macd-divergence.md)。
+**改善方向**：[分批](#分批) 進出、[紀律](../06-risk/discipline.md)、事先寫好進出場計畫。圖表判讀：[接盤還是追高](../04-charts/catch-or-chase.md)；相關：[假突破](technical.md#假突破)、案例 [突破與假突破](../07-cases/gap-breakout.md)、[追高陷阱](../07-cases/chase-high-trap.md)、[MACD 頂背離](../07-cases/macd-divergence.md)。
 
 ---
 
