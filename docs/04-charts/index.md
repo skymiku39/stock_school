@@ -45,7 +45,7 @@ flowchart TB
 | **量價圖** | 漲跌有沒有量配合？ | [量價圖](volume-price.md) · [2330/0050 範例](../01-basics/quote-screen.md) |
 | **籌碼圖** | 誰在買賣？槓桿高嗎？ | [籌碼圖表](chips-charts.md) |
 | **基本面圖** | 營收獲利趨勢如何？ | [基本面圖表](fundamental-charts.md) |
-| **技術指標** | 趨勢/動能/超買超賣？ | [指標速查](indicator-quickref.md) · [接盤還是追高](catch-or-chase.md) |
+| **技術指標** | 趨勢/動能/超買超賣？接盤還是追高？ | [指標速查](indicator-quickref.md) · [完整手冊](catch-or-chase.md) · [速查](catch-chase-quickref.md) |
 | **大盤圖** | 整體市場風險？ | [大盤與類股圖](market-charts.md) |
 
 ---

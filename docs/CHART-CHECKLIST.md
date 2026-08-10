@@ -11,7 +11,7 @@
 
 | 類型 | 數量 | 產生方式 | 是否需要網路 |
 |------|------|----------|--------------|
-| 教學 SVG | 52 張（另含 `logo.svg`） | `scripts/stock_school/render/` → `docs/assets/` | 部分需要 |
+| 教學 SVG | 57 張（另含 `logo.svg`） | `scripts/stock_school/render/` → `docs/assets/` | 部分需要 |
 | Mermaid 圖 | 93 個 / 73 檔 | Markdown fenced block + `mkdocs-mermaid2-plugin` | 否 |
 
 教學 SVG 依產生器分為五類，**只有報價與技術指標需要 TWSE 連線**；其餘為合成教學數據，離線即可重現。
@@ -32,9 +32,9 @@
 
 `2330-ma.svg`、`2330-macd.svg`、`2330-rsi.svg`、`2330-kd.svg`、`2330-bollinger.svg`、`2330-volume-price.svg`、`line-compare.svg`、`revenue-demo.svg`、`0050-market.svg`。
 
-### 案例圖 `docs/assets/cases/`（離線 · 8 張）
+### 案例圖 `docs/assets/cases/`（離線 · 13 張）
 
-`hammer-ma.svg`、`macd-divergence.svg`、`gap-breakout.svg`、`etf-dca-drawdown.svg`、`etf-vs-stock.svg`、`valuation-trap.svg`、`conference-chips.svg`、`institutional-flow.svg`。
+`hammer-ma.svg`、`macd-divergence.svg`、`gap-breakout.svg`、`etf-dca-drawdown.svg`、`etf-vs-stock.svg`、`valuation-trap.svg`、`conference-chips.svg`、`institutional-flow.svg`、`weak-rebound-trap.svg`、`chase-high-trap.svg`、`healthy-pullback.svg`、`bottom-confirm.svg`、`breakout-hold.svg`。
 
 ### 概念示意 `docs/assets/concepts/`（離線 · 6 張）
 

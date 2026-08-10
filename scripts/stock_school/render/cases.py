@@ -625,6 +625,124 @@ def healthy_pullback_svg() -> str:
     return svg_header("健康回檔案例", W, H, "".join(parts))
 
 
+def bottom_confirm_bars() -> list[Bar]:
+    """Downtrend then reclaim MA20 with expanding thrust (scenario 2)."""
+    prices: list[float] = []
+    for i in range(30):
+        prices.append(120 - i * 0.85 + (0.3 if i % 4 == 0 else -0.2))
+    prices.extend([95, 94, 93, 92, 91, 90, 91.5, 93, 95, 97, 99, 101])
+    bars: list[Bar] = []
+    n = len(prices)
+    reclaim_start = n - 5
+    for i, c in enumerate(prices):
+        o = c + 0.5 if i % 2 == 0 else c - 0.4
+        h = max(o, c) + 0.9
+        l = min(o, c) - (1.8 if i == n - 7 else 0.7)  # hammer-ish
+        vol = 5200 if i >= reclaim_start else (2800 if i < n - 8 else 3600)
+        bars.append(_bar(f"D{i - n}", o, h, l, c, vol))
+    return bars
+
+
+def bottom_confirm_svg() -> str:
+    bars = bottom_confirm_bars()
+    c = closes(bars)
+    dif, sig, hist = macd(c)
+    ma20 = sma(c, 20)
+    price_h = int(H * 0.55)
+    macd_h = H - price_h
+    pad_p = ChartPad(top=44, bottom=6)
+    pad_m = ChartPad(top=price_h + 6, bottom=32)
+    lo = min(b.low for b in bars) - 1
+    hi = max(b.high for b in bars) + 1
+    parts = title_block(
+        "案例：止跌轉強確認（合成數據）",
+        W,
+        "L 公司 · 放量站回 MA20 · MACD 柱擴大朝零軸 · RSI>50",
+    )
+    candle_parts, _, _ = draw_candles(bars, width=W, height=price_h, pad=pad_p, y_lo=lo, y_hi=hi)
+    parts.extend(candle_parts)
+    parts.append(
+        draw_line_series(ma20, color=TEAL, width=W, height=price_h, pad=pad_p, y_lo=lo, y_hi=hi)
+    )
+    n = len(bars)
+    gap = (W - 64) / n
+    for idx, label in ((n - 7, "止跌"), (n - 1, "站回MA20")):
+        cx = 48 + gap * (idx + 0.5)
+        parts.append(
+            f'<text x="{cx:.1f}" y="{pad_p.top + 14}" font-size="9" fill="{RED}" '
+            f'text-anchor="middle">{label}</text>'
+        )
+    parts.append(f'<line x1="48" y1="{price_h}" x2="{W - 16}" y2="{price_h}" stroke="{BORDER}"/>')
+    span_vals = [x for x in (hist + dif + sig) if x is not None] + [0.0]
+    m_lo = min(span_vals) * 1.2
+    m_hi = max(span_vals) * 1.2
+    if abs(m_hi - m_lo) < 1e-9:
+        m_lo, m_hi = -1.0, 1.0
+    parts.append(
+        draw_line_series(dif, color=BLUE, width=W, height=macd_h, pad=pad_m, y_lo=m_lo, y_hi=m_hi)
+    )
+    parts.append(
+        draw_line_series(sig, color=ORANGE, width=W, height=macd_h, pad=pad_m, y_lo=m_lo, y_hi=m_hi)
+    )
+    parts.append(
+        f'<text x="52" y="{price_h + 18}" font-size="10" fill="{PURPLE}">'
+        f"確認組合：均線+量+柱擴大 → 情境2</text>"
+    )
+    parts.append(footer_note(W, H, "合成教學數據 · 確認後仍設停損"))
+    return svg_header("止跌轉強確認案例", W, H, "".join(parts))
+
+
+def breakout_hold_bars() -> list[Bar]:
+    """Range then breakout that holds above the box (scenario 5)."""
+    import random
+
+    random.seed(7)
+    bars: list[Bar] = []
+    for i in range(20):
+        base = 97 + (i % 5) * 0.4
+        o = base + random.uniform(-0.4, 0.4)
+        c = base + random.uniform(-0.8, 0.8)
+        h = min(max(o, c) + random.uniform(0.2, 0.7), 100)
+        l = max(min(o, c) - random.uniform(0.2, 0.7), 95)
+        bars.append(_bar(f"D{i - 26}", o, h, l, c, 2600 + random.randint(0, 400)))
+    # Breakout and hold
+    bars.append(_bar("D0", 100.5, 105, 100, 104, 7800))
+    bars.append(_bar("D+1", 103.5, 104.5, 101, 102.5, 5100))
+    bars.append(_bar("D+2", 102.2, 104, 100.2, 103.5, 4800))
+    bars.append(_bar("D+3", 103.5, 106, 103, 105.5, 4500))
+    return bars
+
+
+def breakout_hold_svg() -> str:
+    bars = breakout_hold_bars()
+    pad = ChartPad(top=44, bottom=36)
+    lo, hi = 94, 107
+    parts = title_block(
+        "案例：突破站穩（合成數據）",
+        W,
+        "M 公司 · 箱 95～100 · 放量突破 · 2～3 日未跌回箱內",
+    )
+    candle_parts, _, _ = draw_candles(bars, width=W, height=H, pad=pad, y_lo=lo, y_hi=hi)
+    parts.extend(candle_parts)
+    y100 = pad.top + (H - pad.top - pad.bottom) * (hi - 100) / (hi - lo)
+    y95 = pad.top + (H - pad.top - pad.bottom) * (hi - 95) / (hi - lo)
+    parts.append(
+        f'<rect x="48" y="{y100:.1f}" width="{(W - 64) * 0.7:.1f}" height="{y95 - y100:.1f}" '
+        f'fill="none" stroke="{GRAY}" stroke-dasharray="4 3"/>'
+    )
+    parts.append(f'<text x="70" y="{y95 + 14:.1f}" font-size="9" fill="{GRAY}">整理箱</text>')
+    n = len(bars)
+    gap = (W - 64) / n
+    for label, idx in (("D0 放量突破", -4), ("站穩", -1)):
+        cx = 48 + gap * (n + idx + 0.5)
+        parts.append(
+            f'<text x="{cx:.1f}" y="{pad.top + 12}" font-size="9" fill="{RED}" '
+            f'text-anchor="middle">{label}</text>'
+        )
+    parts.append(footer_note(W, H, "合成教學數據 · 突破要量+站穩"))
+    return svg_header("突破站穩案例", W, H, "".join(parts))
+
+
 def build_all_case_svgs() -> dict[str, str]:
     """Return filename → SVG content for case-study assets."""
     return {
@@ -633,6 +751,8 @@ def build_all_case_svgs() -> dict[str, str]:
         "weak-rebound-trap.svg": weak_rebound_trap_svg(),
         "chase-high-trap.svg": chase_high_trap_svg(),
         "healthy-pullback.svg": healthy_pullback_svg(),
+        "bottom-confirm.svg": bottom_confirm_svg(),
+        "breakout-hold.svg": breakout_hold_svg(),
         "gap-breakout.svg": gap_breakout_svg(),
         "etf-dca-drawdown.svg": dca_drawdown_svg(),
         "etf-vs-stock.svg": etf_vs_stock_svg(),

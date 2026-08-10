@@ -88,6 +88,9 @@
 | 追高殺低 | Chasing highs, selling lows | 高買低賣 | [追高殺低](trading-terms.md#追高殺低) |
 | 回檔 / 拉回 | Pullback | 上漲中暫時下跌 | [回檔](trading-terms.md#回檔) |
 | 反彈 | Rebound | 下跌中暫時上漲 | [反彈](trading-terms.md#反彈) |
+| 攤平 | Averaging down | 虧損後加碼降成本 | [攤平](trading-terms.md#攤平) |
+| 半山腰 | Halfway entry | 買在波段中段 | [半山腰](trading-terms.md#半山腰) |
+| FOMO | Fear Of Missing Out | 怕錯過而衝動追價 | [FOMO](trading-terms.md#fomo) |
 | 套牢 | Locked-in (underwater) | 虧損不願賣出 | [套牢解套](trading-terms.md#套牢解套) |
 | 解套 | Break-even recovery | 回升至成本以上 | [套牢解套](trading-terms.md#套牢解套) |
 | 分批 | Scaling (in tranches) | 分段買賣控風險 | [分批](trading-terms.md#分批) |
@@ -169,11 +172,20 @@
 | 布林通道 | Bollinger Bands | 均線 ± 標準差通道 | [技術面詞典](technical.md#布林通道) |
 | 支撐 / 壓力 | Support / Resistance | 多次反彈/受阻價位 | [支撐壓力](technical.md#支撐--壓力) |
 | 超買 / 超賣 | Overbought / Oversold | 過度買進/賣出 | [超買超賣](technical.md#超買超賣) |
-| 黃金交叉 | Golden cross | 短均線上穿長均線 | [技術面詞典](technical.md) |
-| 死亡交叉 | Death cross | 短均線下穿長均線 | [技術面詞典](technical.md) |
+| 黃金交叉 | Golden cross | 短均線上穿長均線 | [黃金交叉](technical.md#黃金交叉) |
+| 死亡交叉 | Death cross | 短均線下穿長均線 | [黃金交叉](technical.md#黃金交叉) |
+| DIF / Signal / 柱 | DIF / Signal / histogram | MACD 三元件 | [DIF/Signal](technical.md#dif-signal) |
+| 零軸 | MACD zero line | DIF=0 的多空分界 | [零軸](technical.md#零軸) |
+| 動能背離（頂／底） | Momentum divergence | 價與指標不同步 | [動能背離](technical.md#動能背離) |
+| 鈍化 | Extreme-zone persistence | 指標黏在超買超賣區 | [鈍化](technical.md#鈍化) |
+| 乖離率 | Bias / MA deviation | 現價偏離均線幅度 | [乖離率](technical.md#乖離率) |
+| 突破 | Breakout | 有效穿越壓力／箱頂 | [突破](technical.md#突破) |
+| 盤整 | Consolidation / range | 區間來回趨勢不明 | [盤整](technical.md#盤整) |
 | 頭肩頂 | Head and shoulders | 反轉型態 | [頭肩頂](technical.md#頭肩頂) |
 | 吞噬 | Engulfing | 後 K 實體包住前 K | [組合型態](../04-charts/candle-combinations.md) |
 | 晨星 / 暮星 | Morning star / Evening star | 三根反轉組合 | [組合型態](../04-charts/candle-combinations.md) |
+| 接盤／追高速查 | Catch-or-chase quickref | 六情境一頁表 | [速查](../04-charts/catch-chase-quickref.md) |
+| 接盤還是追高（手冊） | Catch or chase handbook | 進場風險完整框架 | [完整手冊](../04-charts/catch-or-chase.md) |
 
 ---
 
