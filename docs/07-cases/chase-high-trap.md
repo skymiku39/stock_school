@@ -4,7 +4,7 @@
 
 - 辨識「已經漲一波後，情緒熱＋量縮創高」的追高風險
 - 用乖離、MACD 頂背離、融資與量價交叉驗證
-- 適用模式：[短線](../08-investing/swing-short.md) · 專章：[接盤還是追高](../04-charts/catch-or-chase.md)（情境 4）
+- 適用模式：[短線](../08-investing/swing-short.md) · 專章：[手冊：接盤還是追高](../04-charts/catch-or-chase.md)（情境 4）
 
 !!! warning "免責聲明"
     教學示意，非投資建議。數據為合成。
@@ -29,7 +29,7 @@
 ## 推理步驟
 
 1. **先標情境**：偏多環境但位置極高 → 候選 [情境 4 追高](../04-charts/catch-or-chase.md) 或情境 5；用下列項排除 5。
-2. **動能**：價新高、MACD 未新高 → [頂背離](../04-charts/macd.md#背離進階)，動能衰竭警訊。
+2. **動能**：價新高、MACD 未新高 → [教學：MACD 背離進階](../04-charts/macd.md#背離進階)，動能衰竭警訊。
 3. **量價**：創高量縮 → 買盤不夠，假突破／過熱機率上升，見 [量價](../04-charts/volume-price.md)。
 4. **籌碼**：融資增＋熱度高 → 抬轎結構，見 [融資表](../03-tables/margin.md)。
 5. **計分卡 B**（教學示意）：位置 0、MACD 0、量 0、站穩未驗證、籌碼 0、情緒 0 → 極低分。
@@ -63,11 +63,11 @@ flowchart TD
 
 ## 對照
 
-- 若放量突破後站穩、無背離、融資未失控 → 才比較像 [情境 5](../04-charts/catch-or-chase.md)；仍要防 [假突破](gap-breakout.md)。
-- 接盤端對照：[弱勢反彈](weak-rebound-trap.md)。
-- 純動能背離拆解：[MACD 頂背離](macd-divergence.md)。
+- 若放量突破後站穩、無背離、融資未失控 → 才比較像 [手冊情境 5](../04-charts/catch-or-chase.md)；仍要防 [案例：缺口假突破](gap-breakout.md)。
+- 接盤端對照：[案例：弱勢反彈](weak-rebound-trap.md)。
+- 純動能背離拆解：[案例：MACD 頂背離](macd-divergence.md)。
 
 ## 重點回顧
 
 - 追高典型組合：**大乖離 + 頂背離 + 量縮創高 + 融資熱**。
-- 相關：[接盤還是追高](../04-charts/catch-or-chase.md) · [追高殺低](../02-glossary/trading-terms.md#追高殺低)
+- 相關：手冊：[手冊：接盤還是追高](../04-charts/catch-or-chase.md) · 定義：[定義：追高殺低](../02-glossary/trading-terms.md#追高殺低)

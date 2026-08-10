@@ -3,7 +3,7 @@
 ## 本篇你會學到
 
 - 均線、MACD、RSI、KD、布林與**零軸／背離／乖離／突破／盤整**等進場相關詞
-- 各指標適合回答什麼問題；如何接到 [接盤還是追高](../04-charts/catch-or-chase.md)
+- 各指標適合回答什麼問題；如何接到 [手冊：接盤還是追高](../04-charts/catch-or-chase.md)
 
 K 線是技術面的基礎，建議先讀 [K 線基礎](../04-charts/kline-basics.md)、[三招讀懂 K 線](../04-charts/kline-reading.md)、[16 種型態](../04-charts/candle-patterns.md)。
 
@@ -33,7 +33,7 @@ K 線是技術面的基礎，建議先讀 [K 線基礎](../04-charts/kline-basic
 | **常見誤解** | 金叉必買；盤整時假訊號多 |
 | **小例子** | DIF 上穿訊號線（黃金交叉）→ 動能轉強參考 |
 
-詳見 [MACD 教學](../04-charts/macd.md)。用零軸與背離分辨接盤／追高見 [接盤還是追高](../04-charts/catch-or-chase.md)。
+詳見 [MACD 教學](../04-charts/macd.md)。用零軸與背離分辨接盤／追高見 [手冊：接盤還是追高](../04-charts/catch-or-chase.md)。
 
 ---
 
@@ -163,7 +163,7 @@ K 線是技術面的基礎，建議先讀 [K 線基礎](../04-charts/kline-basic
 | **定義** | 黃金交叉：短期均線向上穿越長期均線；死亡交叉：短期均線向下穿越長期均線。MACD 的 DIF 上穿／下穿 Signal 也常口語稱金叉／死叉 |
 | **在哪裡看到** | 均線組合、MACD 快慢線 |
 | **常見誤解** | 交叉就是買賣訊號；盤整時假訊號多，且**零軸上下**意義不同 |
-| **小例子** | MA5 上穿 MA20 → 黃金交叉；MACD 零軸下金叉 → 常是弱勢反彈（見 [接盤還是追高](../04-charts/catch-or-chase.md)） |
+| **小例子** | MA5 上穿 MA20 → 黃金交叉；MACD 零軸下金叉 → 常是弱勢反彈（見 [手冊：接盤還是追高](../04-charts/catch-or-chase.md)） |
 
 相關：[均線](../04-charts/ma.md) · [MACD](../04-charts/macd.md)
 
@@ -193,7 +193,7 @@ K 線是技術面的基礎，建議先讀 [K 線基礎](../04-charts/kline-basic
 | **常見誤解** | 零軸下金叉＝大反轉；多數是弱勢反彈 |
 | **小例子** | 同樣金叉：零軸上較像回檔結束；零軸下較像接盤風險 |
 
-詳見 [接盤還是追高](../04-charts/catch-or-chase.md) · [MACD](../04-charts/macd.md#接盤還是追高)。
+詳見 [手冊：接盤還是追高](../04-charts/catch-or-chase.md) · [教學：MACD 節](../04-charts/macd.md#接盤還是追高)。
 
 ---
 
@@ -207,7 +207,7 @@ K 線是技術面的基礎，建議先讀 [K 線基礎](../04-charts/kline-basic
 | **常見誤解** | 背離＝立刻反轉下單；僅為警訊，常先橫盤 |
 | **小例子** | 價 100→105 新高，DIF 反而下滑 → 頂背離，追高風險升 |
 
-案例：[MACD 頂背離](../07-cases/macd-divergence.md) · [追高陷阱](../07-cases/chase-high-trap.md)。與 [量價背離](market-terms.md#量價背離) 不同（一個比指標，一個比成交量）。
+案例：[案例：MACD 頂背離](../07-cases/macd-divergence.md) · [案例：追高陷阱](../07-cases/chase-high-trap.md)。與 [定義：量價背離](market-terms.md#量價背離) 不同（一個比指標，一個比成交量）。
 
 ---
 
@@ -249,7 +249,7 @@ K 線是技術面的基礎，建議先讀 [K 線基礎](../04-charts/kline-basic
 | **常見誤解** | 穿越當下就追；需看量與是否站穩 |
 | **小例子** | 放量站上整理上緣並連收兩日站穩 → 突破延續候選 |
 
-對照假突破見下節；框架：[接盤還是追高情境 5／6](../04-charts/catch-or-chase.md)；案例：[突破站穩](../07-cases/breakout-hold.md)。
+對照假突破見下節；手冊：[手冊情境 5／6](../04-charts/catch-or-chase.md)；案例：[案例：突破站穩](../07-cases/breakout-hold.md)。
 
 ---
 
@@ -263,7 +263,7 @@ K 線是技術面的基礎，建議先讀 [K 線基礎](../04-charts/kline-basic
 | **常見誤解** | 一旦穿越就必續漲；無量、不站穩常失敗 |
 | **小例子** | D0 跳空突破、D+2 跌回箱內 → 假突破，宜執行無效點 |
 
-案例：[突破缺口與假突破](../07-cases/gap-breakout.md)。真突破對照：[突破站穩](../07-cases/breakout-hold.md)。
+案例：[案例：缺口假突破](../07-cases/gap-breakout.md)。真突破對照：[案例：突破站穩](../07-cases/breakout-hold.md)。
 
 ---
 
@@ -298,4 +298,4 @@ K 線是技術面的基礎，建議先讀 [K 線基礎](../04-charts/kline-basic
 - 指標互相驗證優於單一訊號；**金叉先問零軸，創高先問背離**。
 - 型態與指標需搭配**位置**（高檔 / 低檔 / 趨勢中 / 盤整）。
 
-相關：[K 線基礎](../04-charts/kline-basics.md) · [接盤還是追高](../04-charts/catch-or-chase.md) · [16 種型態](../04-charts/candle-patterns.md)
+相關：[K 線基礎](../04-charts/kline-basics.md) · [手冊：接盤還是追高](../04-charts/catch-or-chase.md) · [16 種型態](../04-charts/candle-patterns.md)

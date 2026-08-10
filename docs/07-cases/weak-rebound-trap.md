@@ -4,7 +4,7 @@
 
 - 如何辨識「下跌趨勢中的 MACD 金叉」常只是弱勢反彈
 - 用均線位置 + 零軸 + 量價，避免抄底抄在半山腰
-- 適用模式：[短線](../08-investing/swing-short.md) · 概念專章：[接盤還是追高](../04-charts/catch-or-chase.md)
+- 適用模式：[短線](../08-investing/swing-short.md) · 概念專章：[手冊：接盤還是追高](../04-charts/catch-or-chase.md)
 
 !!! warning "免責聲明"
     教學示意，非投資建議。數據為合成。
@@ -27,7 +27,7 @@
 
 ## 推理步驟
 
-1. **環境優先**：收盤在 MA20 下且均線下彎 → 仍屬下跌趨勢環境，見 [接盤還是追高](../04-charts/catch-or-chase.md)。
+1. **環境優先**：收盤在 MA20 下且均線下彎 → 仍屬下跌趨勢環境，見 [手冊：接盤還是追高](../04-charts/catch-or-chase.md)。
 2. **MACD 位置**：金叉發生在零軸下 → 依 [MACD](../04-charts/macd.md) 常見誤用，多為弱勢反彈而非大反轉。
 3. **動能持續性**：金叉後柱狀未連續擴大，數日後又轉弱 → 反彈力道不足。
 4. **量價**：漲時縮量、跌時放量 → 反彈缺乏買盤支持，見 [量價圖](../04-charts/volume-price.md)。
@@ -68,4 +68,4 @@ flowchart TD
 ## 重點回顧
 
 - 零軸下金叉 + 均線空方 + 縮量反彈 ≈ 接盤陷阱典型組合。
-- 相關：[接盤還是追高](../04-charts/catch-or-chase.md) · [MACD](../04-charts/macd.md) · [抄底](../02-glossary/trading-terms.md#抄底)
+- 相關：手冊／速查：[手冊：接盤還是追高](../04-charts/catch-or-chase.md) · 教學：[MACD](../04-charts/macd.md) · 定義：[定義：抄底](../02-glossary/trading-terms.md#抄底)

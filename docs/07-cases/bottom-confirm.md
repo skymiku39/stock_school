@@ -4,7 +4,7 @@
 
 - 如何把「可能止跌」升級成「轉強候選」（情境 2）
 - 與情境 1 接盤的差異：站回均線、零軸方向、放量
-- 適用模式：[短線](../08-investing/swing-short.md) · [中線](../08-investing/swing-mid.md) · 專章：[接盤還是追高](../04-charts/catch-or-chase.md)
+- 適用模式：[短線](../08-investing/swing-short.md) · [中線](../08-investing/swing-mid.md) · 專章：[手冊：接盤還是追高](../04-charts/catch-or-chase.md)
 
 !!! warning "免責聲明"
     教學示意，非投資建議。數據為合成。
@@ -60,4 +60,4 @@ flowchart TD
 ## 重點回顧
 
 - 情境 2＝**確認條件組合**，不是單一金叉。
-- 相關：[接盤還是追高](../04-charts/catch-or-chase.md) · [速查](../04-charts/catch-chase-quickref.md) · [零軸](../02-glossary/technical.md#零軸)
+- 相關：手冊／速查：[手冊：接盤還是追高](../04-charts/catch-or-chase.md) · [速查：接盤／追高](../04-charts/catch-chase-quickref.md) · 定義：[定義：零軸](../02-glossary/technical.md#零軸)

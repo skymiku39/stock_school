@@ -22,8 +22,8 @@
 | **弱勢反彈** | [反彈](../02-glossary/trading-terms.md#反彈) | 空頭裡的暫時回升，常不過前高／均線 | 「反彈＝落底」 |
 | **回檔買點** | [回檔](../02-glossary/trading-terms.md#回檔) | 多頭趨勢中的健康拉回後再攻 | 「一拉回就是轉空」 |
 | **追高** | [追高殺低](../02-glossary/trading-terms.md#追高殺低) | 已急漲、情緒熱、位置差才進場 | 「熱度＝安全」 |
-| **假突破** | [假突破](../02-glossary/technical.md#假突破)（常伴 [缺口](../02-glossary/market-terms.md#缺口)） | 突破後站不穩、量不足、快速跌回 | 「突破必追」 |
-| **頂／底背離** | [動能背離](../02-glossary/technical.md#動能背離) · [MACD 背離進階](macd.md#背離進階) | 價創高／低但動能未跟 | 「背離＝立刻反轉」；勿與 [量價背離](../02-glossary/market-terms.md#量價背離) 混用 |
+| **假突破** | [定義：假突破](../02-glossary/technical.md#假突破)（常伴 [定義：缺口](../02-glossary/market-terms.md#缺口)） | 突破後站不穩、量不足、快速跌回 | 「突破必追」 |
+| **頂／底背離** | [定義：動能背離](../02-glossary/technical.md#動能背離) · [教學：MACD 背離進階](macd.md#背離進階) | 價創高／低但動能未跟 | 「背離＝立刻反轉」；勿與 [定義：量價背離](../02-glossary/market-terms.md#量價背離) 混用 |
 
 核心原則：**先標「你站在哪種情境」**，再決定要不要進場；不要先下單再找理由。
 
@@ -87,12 +87,12 @@ flowchart LR
 | 1 | **弱勢反彈／接盤風險** | 均線空、MACD 零軸下金叉、縮量反彈 | 高（逆勢） | [案例十七](../07-cases/weak-rebound-trap.md) |
 | 2 | **止跌轉強候選** | 放量站回 MA20、MACD 柱擴大朝零軸、RSI＞50 | 中（仍要確認） | [案例二十](../07-cases/bottom-confirm.md)、[鎚子+均線](../07-cases/hammer-ma.md) |
 | 3 | **健康回檔買點候選** | 多頭中拉回 MA20 不破、零軸上、拉回縮量 | 中低（順勢） | [案例十九](../07-cases/healthy-pullback.md) |
-| 4 | **追高／過熱風險** | 乖離大、頂背離、量縮創高、融資暴增 | 高 | [案例十八](../07-cases/chase-high-trap.md)、[頂背離](../07-cases/macd-divergence.md) |
+| 4 | **追高／過熱風險** | 乖離大、頂背離、量縮創高、融資暴增 | 高 | [案例十八：追高](../07-cases/chase-high-trap.md)、[案例：MACD 頂背離](../07-cases/macd-divergence.md) |
 | 5 | **突破延續候選** | 放量突破＋站穩、MACD 非背離 | 中（假突破風險） | [案例二十一](../07-cases/breakout-hold.md) |
 | 6 | **假突破／追價失敗** | 突破後量不足、快速跌回、柱縮 | 高 | [案例八](../07-cases/gap-breakout.md) |
 
 !!! tip "速查"
-    盤中一頁對照見 [接盤／追高速查表](catch-chase-quickref.md)。
+    盤中一頁對照見 [速查：接盤／追高](catch-chase-quickref.md)。
 
 ```mermaid
 flowchart TD
@@ -274,13 +274,13 @@ flowchart TD
 
 1. 用計分卡複盤你最近一筆：當時比較像六格的哪一格？  
 2. 依序演練案例（六情境全覆蓋）：  
-   - 1 接盤：[弱勢反彈](../07-cases/weak-rebound-trap.md)  
-   - 2 止跌：[止跌確認](../07-cases/bottom-confirm.md) · [鎚子](../07-cases/hammer-ma.md)  
-   - 3 回檔：[健康回檔](../07-cases/healthy-pullback.md)  
-   - 4 追高：[追高陷阱](../07-cases/chase-high-trap.md) · [頂背離](../07-cases/macd-divergence.md)  
-   - 5 突破：[突破站穩](../07-cases/breakout-hold.md)  
-   - 6 假突破：[缺口假突破](../07-cases/gap-breakout.md)  
-3. 盤中改用 [速查表](catch-chase-quickref.md)；複盤用本手冊計分卡。
+   - 1 接盤：[案例：弱勢反彈](../07-cases/weak-rebound-trap.md)  
+   - 2 止跌：[案例：止跌確認](../07-cases/bottom-confirm.md) · [案例：鎚子](../07-cases/hammer-ma.md)  
+   - 3 回檔：[案例：健康回檔](../07-cases/healthy-pullback.md)  
+   - 4 追高：[案例：追高陷阱](../07-cases/chase-high-trap.md) · [案例：MACD 頂背離](../07-cases/macd-divergence.md)  
+   - 5 突破：[案例：突破站穩](../07-cases/breakout-hold.md)  
+   - 6 假突破：[案例：缺口假突破](../07-cases/gap-breakout.md)  
+3. 盤中改用 [速查：接盤／追高](catch-chase-quickref.md)；複盤用本手冊計分卡。
 4. 把清單貼進交易日誌（[研究流程](../09-advanced/research-workflow.md)）。
 
 ---
@@ -294,7 +294,7 @@ flowchart TD
     參考答案：不行。高分只代表故事較完整，**停損／無效點仍是必要條件**。
 
 ??? question "3.（情境題）股價創高、MACD 頂背離、融資大增、社群很熱，你標哪一格？空手怎麼做？"
-    參考答案：標 **情境 4 追高／過熱風險**；空手不追，等回檔或放棄。見 [追高陷阱](../07-cases/chase-high-trap.md)。
+    參考答案：標 **情境 4 追高／過熱風險**；空手不追，等回檔或放棄。見 [案例：追高陷阱](../07-cases/chase-high-trap.md)。
 
 ## 重點回顧
 
@@ -304,8 +304,8 @@ flowchart TD
 
 ## 相關
 
-- [接盤／追高速查](catch-chase-quickref.md) · [MACD](macd.md) · [均線](ma.md) · [量價](volume-price.md) · [指標速查](indicator-quickref.md)
-- [十七接盤](../07-cases/weak-rebound-trap.md) · [十八追高](../07-cases/chase-high-trap.md) · [十九回檔](../07-cases/healthy-pullback.md) · [二十止跌](../07-cases/bottom-confirm.md) · [二十一突破](../07-cases/breakout-hold.md)
-- [頂背離](../07-cases/macd-divergence.md) · [假突破](../07-cases/gap-breakout.md) · [鎚子+均線](../07-cases/hammer-ma.md)
-- [抄底](../02-glossary/trading-terms.md#抄底) · [接盤](../02-glossary/trading-terms.md#接盤) · [零軸](../02-glossary/technical.md#零軸) · [動能背離](../02-glossary/technical.md#動能背離)
-- [投資檢查清單](../appendix/investor-checklist.md)
+- 速查／教學：[速查：接盤／追高](catch-chase-quickref.md) · [MACD](macd.md) · [均線](ma.md) · [量價](volume-price.md) · [指標速查](indicator-quickref.md)
+- 案例：[案例十七：接盤](../07-cases/weak-rebound-trap.md) · [案例十八：追高](../07-cases/chase-high-trap.md) · [案例十九：回檔](../07-cases/healthy-pullback.md) · [案例二十：止跌](../07-cases/bottom-confirm.md) · [案例二十一：突破](../07-cases/breakout-hold.md)
+- 案例（對照）：[案例：MACD 頂背離](../07-cases/macd-divergence.md) · [案例：缺口假突破](../07-cases/gap-breakout.md) · [案例：鎚子+均線](../07-cases/hammer-ma.md)
+- 定義：[定義：抄底](../02-glossary/trading-terms.md#抄底) · [定義：接盤](../02-glossary/trading-terms.md#接盤) · [定義：零軸](../02-glossary/technical.md#零軸) · [定義：動能背離](../02-glossary/technical.md#動能背離)
+- 檢查清單：[投資檢查清單](../appendix/investor-checklist.md)

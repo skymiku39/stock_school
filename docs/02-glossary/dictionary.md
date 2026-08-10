@@ -96,7 +96,7 @@
 | 分批 | Scaling (in tranches) | 分段買賣控風險 | [分批](trading-terms.md#分批) |
 | 類股 | Sector | 同產業股票群 | [類股](trading-terms.md#類股) |
 | 回測（策略） | Backtest | 用歷史資料驗證策略 | [回測](trading-terms.md#回測) |
-| 回測（支撐） | Retest (support) | 價格測試支撐線 | [技術面詞典](technical.md#回測支撐) |
+| 回測（支撐） | Retest (support) | 價格測試支撐線 | [回測支撐](technical.md#回測支撐) |
 | 投資論點（thesis） | Thesis | 買進某檔的核心理由與失效條件 | [研究流程](../09-advanced/research-workflow.md) |
 | 觀察清單（watchlist） | Watchlist | 追蹤中的候選股清單 | [個股總覽表](../03-tables/watchlist.md) |
 
@@ -166,14 +166,14 @@
 | 量價圖 | Volume-price chart | 價格圖 + 成交量柱 | [量價](../04-charts/volume-price.md) |
 | 日 K / 週 K | Daily / Weekly candle | 一日/一週一根 K | [週期](../04-charts/kline-basics.md#時間週期) |
 | 均線 MA | Moving Average (MA) | N 日收盤均價線 | [MA](technical.md#均線-ma) |
-| MACD | MACD | 趨勢動能指標 | [技術面詞典](technical.md#macd) |
-| RSI | RSI (Relative Strength Index) | 相對強弱 0–100 | [技術面詞典](technical.md#rsi) |
-| KD | KD (Stochastic Oscillator) | 隨機指標 | [技術面詞典](technical.md#kd) |
-| 布林通道 | Bollinger Bands | 均線 ± 標準差通道 | [技術面詞典](technical.md#布林通道) |
+| MACD | MACD | 趨勢動能指標 | [MACD](technical.md#macd) |
+| RSI | RSI (Relative Strength Index) | 相對強弱 0–100 | [RSI](technical.md#rsi) |
+| KD | KD (Stochastic Oscillator) | 隨機指標 | [KD](technical.md#kd) |
+| 布林通道 | Bollinger Bands | 均線 ± 標準差通道 | [布林通道](technical.md#布林通道) |
 | 支撐 / 壓力 | Support / Resistance | 多次反彈/受阻價位 | [支撐壓力](technical.md#支撐--壓力) |
 | 超買 / 超賣 | Overbought / Oversold | 過度買進/賣出 | [超買超賣](technical.md#超買超賣) |
 | 黃金交叉 | Golden cross | 短均線上穿長均線 | [黃金交叉](technical.md#黃金交叉) |
-| 死亡交叉 | Death cross | 短均線下穿長均線 | [黃金交叉](technical.md#黃金交叉) |
+| 死亡交叉 | Death cross | 短均線下穿長均線 | [金叉／死叉](technical.md#黃金交叉) |
 | DIF / Signal / 柱 | DIF / Signal / histogram | MACD 三元件 | [DIF/Signal](technical.md#dif-signal) |
 | 零軸 | MACD zero line | DIF=0 的多空分界 | [零軸](technical.md#零軸) |
 | 動能背離（頂／底） | Momentum divergence | 價與指標不同步 | [動能背離](technical.md#動能背離) |
@@ -186,8 +186,8 @@
 | 頭肩頂 | Head and shoulders | 反轉型態 | [頭肩頂](technical.md#頭肩頂) |
 | 吞噬 | Engulfing | 後 K 實體包住前 K | [組合型態](../04-charts/candle-combinations.md) |
 | 晨星 / 暮星 | Morning star / Evening star | 三根反轉組合 | [組合型態](../04-charts/candle-combinations.md) |
-| 接盤／追高速查 | Catch-or-chase quickref | 六情境一頁表 | [速查](../04-charts/catch-chase-quickref.md) |
-| 接盤還是追高（手冊） | Catch or chase handbook | 進場風險完整框架 | [完整手冊](../04-charts/catch-or-chase.md) |
+| 接盤／追高速查 | Catch-or-chase quickref | 六情境一頁表 | [速查：接盤／追高](../04-charts/catch-chase-quickref.md) |
+| 接盤還是追高（手冊） | Catch or chase handbook | 進場風險完整框架 | [手冊：接盤還是追高](../04-charts/catch-or-chase.md) |
 
 ---
 

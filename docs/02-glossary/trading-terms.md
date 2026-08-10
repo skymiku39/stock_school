@@ -36,7 +36,7 @@
 | **小例子** | 股價腰斬後進場，但下跌趨勢未止 → 越接越深 |
 
 !!! warning "新手提醒"
-    口袋小學堂等影片多建議新手勿輕易抄底；若要做，需有明確支撐、基本面與 [停損](../06-risk/stop-loss.md) 計畫。用指標分辨「止跌」還是「弱勢反彈」見 [接盤還是追高](../04-charts/catch-or-chase.md)、[弱勢反彈案例](../07-cases/weak-rebound-trap.md)。
+    口袋小學堂等影片多建議新手勿輕易抄底；若要做，需有明確支撐、基本面與 [停損](../06-risk/stop-loss.md) 計畫。用指標分辨「止跌」還是「弱勢反彈」見 [手冊：接盤還是追高](../04-charts/catch-or-chase.md)、[案例：弱勢反彈](../07-cases/weak-rebound-trap.md)。
 
 ---
 
@@ -50,7 +50,7 @@
 | **常見誤解** | 跌深就會反彈讓你解套；可能越接越深 |
 | **小例子** | MACD 零軸下金叉就重倉 → 反彈失敗續跌 |
 
-完整判讀：[接盤還是追高完整手冊](../04-charts/catch-or-chase.md)；案例：[弱勢反彈接盤](../07-cases/weak-rebound-trap.md)。對照「不是接盤」：[健康回檔](../07-cases/healthy-pullback.md)。
+完整判讀：[手冊：接盤還是追高](../04-charts/catch-or-chase.md)；練習：[案例：弱勢反彈接盤](../07-cases/weak-rebound-trap.md)。對照「不是接盤」：[案例：健康回檔](../07-cases/healthy-pullback.md)。
 
 ---
 
@@ -64,7 +64,7 @@
 | **常見誤解** | 跟著熱度走就安全；貪婪與恐懼正是追高殺低的根源 |
 | **小例子** | 利多噴出追在漲停 → 隔日回檔恐慌殺在低點 |
 
-**改善方向**：[分批](#分批) 進出、[紀律](../06-risk/discipline.md)、事先寫好進出場計畫。圖表判讀：[接盤還是追高](../04-charts/catch-or-chase.md)；相關：[假突破](technical.md#假突破)、案例 [突破與假突破](../07-cases/gap-breakout.md)、[追高陷阱](../07-cases/chase-high-trap.md)、[MACD 頂背離](../07-cases/macd-divergence.md)。
+**改善方向**：[分批](#分批) 進出、[紀律](../06-risk/discipline.md)、事先寫好進出場計畫。圖表判讀：[手冊：接盤還是追高](../04-charts/catch-or-chase.md)；定義：[定義：假突破](technical.md#假突破)；案例：[案例：缺口假突破](../07-cases/gap-breakout.md)、[案例：追高陷阱](../07-cases/chase-high-trap.md)、[案例：MACD 頂背離](../07-cases/macd-divergence.md)。
 
 ---
 
@@ -78,7 +78,7 @@
 | **常見誤解** | 回檔 = 轉空；在強勢股中，健康回檔是常態 |
 | **小例子** | 拉回不破 MA20 → 趨勢可能延續；拉回很深 → 留意趨勢轉弱 |
 
-健康回檔與接盤的對照演練：[健康回檔案例](../07-cases/healthy-pullback.md)、[完整手冊情境 3](../04-charts/catch-or-chase.md)。
+健康回檔與接盤的對照演練：[案例：健康回檔](../07-cases/healthy-pullback.md)、[手冊情境 3](../04-charts/catch-or-chase.md)。
 
 ---
 
@@ -92,7 +92,7 @@
 | **常見誤解** | 反彈 = 落底回升；反彈不過均線或前高常是弱勢訊號 |
 | **小例子** | 反彈不過 MA20 又下跌 → 空頭可能仍占優 |
 
-回檔與反彈都是**波動中的正常現象**，關鍵在趨勢方向與位置。見 [行情與報價](quotes.md)、[均線](../04-charts/ma.md)、[接盤還是追高](../04-charts/catch-or-chase.md)。
+回檔與反彈都是**波動中的正常現象**，關鍵在趨勢方向與位置。見 [行情與報價](quotes.md)、[均線](../04-charts/ma.md)、[手冊：接盤還是追高](../04-charts/catch-or-chase.md)。
 
 ---
 
@@ -148,7 +148,7 @@
 | **常見誤解** | 已經跌一半就安全；趨勢可遠長於預期 |
 | **小例子** | 零軸下金叉進場後續跌 → 典型半山腰接盤 |
 
-案例：[弱勢反彈](../07-cases/weak-rebound-trap.md)。
+案例：[案例：弱勢反彈](../07-cases/weak-rebound-trap.md)。
 
 ---
 
@@ -212,4 +212,4 @@
 - **分批**可控制貪恐；**攤平**不是分批。
 - **回測**一字兩義：策略驗證 vs 價格測試支撐。
 
-相關：[市場進階術語](market-terms.md) · [接盤還是追高](../04-charts/catch-or-chase.md) · [影片資源索引](../appendix/video-resources.md)
+相關：[市場進階術語](market-terms.md) · [手冊：接盤還是追高](../04-charts/catch-or-chase.md) · [影片資源索引](../appendix/video-resources.md)

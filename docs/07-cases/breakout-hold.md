@@ -4,7 +4,7 @@
 
 - 辨識情境 5「突破延續候選」與情境 6「假突破」的差別
 - 量、站穩天數、MACD、回測壓力變支撐
-- 適用模式：[短線](../08-investing/swing-short.md) · 專章：[接盤還是追高](../04-charts/catch-or-chase.md)
+- 適用模式：[短線](../08-investing/swing-short.md) · 專章：[手冊：接盤還是追高](../04-charts/catch-or-chase.md)
 
 !!! warning "免責聲明"
     教學示意，非投資建議。數據為合成。
@@ -28,8 +28,8 @@
 
 ## 推理步驟
 
-1. **突破定義**：見 [突破](../02-glossary/technical.md#突破)；穿越不夠，要量與站穩。
-2. **排除情境 6**：對照 [假突破](gap-breakout.md)——本例兩三日未回補／未跌回箱內。
+1. **突破定義**：見 [定義：突破](../02-glossary/technical.md#突破)；穿越不夠，要量與站穩。
+2. **排除情境 6**：對照 [案例：缺口假突破](gap-breakout.md)——本例兩三日未回補／未跌回箱內。
 3. **排除情境 4**：非大乖離末端量縮創高；有量且無頂背離。
 4. **計分卡 B**：位置、量、站穩、MACD 加分 → 偏情境 5。
 5. **無效點**：收盤跌回 100 下方（或箱內）→ 改標情境 6，執行減碼／停損。
@@ -60,4 +60,4 @@ flowchart TD
 ## 重點回顧
 
 - 突破要 **量 + 站穩 + 非背離**；缺一就往 4 或 6 靠。
-- 相關：[接盤還是追高](../04-charts/catch-or-chase.md) · [速查](../04-charts/catch-chase-quickref.md) · [突破](../02-glossary/technical.md#突破)
+- 相關：手冊／速查：[手冊：接盤還是追高](../04-charts/catch-or-chase.md) · [速查：接盤／追高](../04-charts/catch-chase-quickref.md) · 定義：[定義：突破](../02-glossary/technical.md#突破)

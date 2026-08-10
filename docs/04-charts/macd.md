@@ -45,7 +45,7 @@ flowchart TD
 
 ## 用 MACD 想「接盤還是追高」 {#接盤還是追高}
 
-完整四層框架（均線 → MACD → 冷熱 → 量價）見專章：[接盤還是追高？指標綜合判讀](catch-or-chase.md)。本節只抓 MACD 最常用的兩刀：
+完整四層框架（均線 → MACD → 冷熱 → 量價）見專章：[手冊：接盤還是追高](catch-or-chase.md)。本節只抓 MACD 最常用的兩刀：
 
 ### 1. 會不會接盤？看「零軸下的金叉」
 
@@ -55,7 +55,7 @@ flowchart TD
 | 零軸下金叉後柱狀很快縮回 | 反彈力道不足 |
 | 金叉後柱連續擴大，並朝零軸靠近 | 止跌候選，仍須量與均線確認 |
 
-演練案例：[弱勢反彈接盤陷阱](../07-cases/weak-rebound-trap.md)。
+演練案例：[案例：弱勢反彈接盤](../07-cases/weak-rebound-trap.md)。
 
 ### 2. 會不會追高？看「頂背離與高檔死叉」
 
@@ -104,14 +104,14 @@ flowchart TD
 
 1. **零軸**：DIF 在零軸上（偏多環境）還是下（偏空）？
 2. **交叉**：DIF 與 Signal 金叉或死叉？之後柱狀有沒有連續擴大？
-3. **背離**：股價新高/新低時，MACD 是否同步？見 [背離案例](../07-cases/macd-divergence.md)
+3. **背離**：股價新高/新低時，MACD 是否同步？見 [案例：MACD 頂背離](../07-cases/macd-divergence.md)
 
 ## 搭配確認
 
 | 現象 | 動作參考 |
 |------|----------|
 | 零軸上金叉 + 量增 | 趨勢延續機率較高 |
-| 零軸下金叉 | 可能只是弱勢反彈 → [接盤框架](catch-or-chase.md) |
+| 零軸下金叉 | 可能只是弱勢反彈 → [手冊：接盤還是追高](catch-or-chase.md) |
 | 頂背離 + 高檔倒鎚 | 不加碼、守停利 |
 | MA 金叉 + MACD 金叉（同向） | 短線動能較一致，見 [均線](ma.md) |
 
@@ -121,15 +121,18 @@ flowchart TD
     參考答案：**DIF − Signal**，反映兩線差距與動能強弱。
 
 ??? question "2.（判斷題）零軸下方金叉一定是大反轉？"
-    參考答案：不一定，常只是**弱勢反彈**；零軸上方金叉較像趨勢延續。見 [接盤案例](../07-cases/weak-rebound-trap.md)。
+    參考答案：不一定，常只是**弱勢反彈**；零軸上方金叉較像趨勢延續。見 [案例：弱勢反彈接盤](../07-cases/weak-rebound-trap.md)。
 
 ??? question "3.（情境題）股價新高但 MACD 未新高，這叫什麼、該怎麼做？"
-    參考答案：**頂背離**，動能衰竭警訊；宜守停利、勿盲目加碼，見 [背離案例](../07-cases/macd-divergence.md)。
+    參考答案：**頂背離**，動能衰竭警訊；宜守停利、勿盲目加碼，見 [案例：MACD 頂背離](../07-cases/macd-divergence.md)。
 
 ## 重點回顧
 
 - MACD 是**趨勢 + 動能**指標，適合趨勢市，盤整假訊號多。
 - 金叉/死叉應看**零軸位置**與**價格結構**——這也是分辨接盤與追高的第一刀。
-- 速查：[指標速查表](indicator-quickref.md) · 綜合框架：[接盤還是追高](catch-or-chase.md)
+- [指標速查](indicator-quickref.md) · [手冊：接盤還是追高](catch-or-chase.md)
 
-相關：[MACD 術語](../02-glossary/technical.md#macd)
+## 相關
+
+- 定義：[定義：MACD](../02-glossary/technical.md#macd)
+- 案例：[案例：MACD 頂背離](../07-cases/macd-divergence.md) · [案例：弱勢反彈接盤](../07-cases/weak-rebound-trap.md)

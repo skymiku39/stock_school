@@ -62,7 +62,7 @@
     每根代表一段時間的開高低收。見 [K 線基礎](../04-charts/kline-basics.md)。
 
 ??? question "14b. 怎麼用 MACD 判斷是接盤還是追高？"
-    不要只問兩個字：先標六情境（接盤、止跌、回檔、追高、突破、假突破），再用零軸、量價、計分卡。完整手冊：[接盤還是追高](../04-charts/catch-or-chase.md)；案例：[接盤](../07-cases/weak-rebound-trap.md)、[追高](../07-cases/chase-high-trap.md)、[回檔](../07-cases/healthy-pullback.md)。
+    不要只問兩個字：先標六情境（接盤、止跌、回檔、追高、突破、假突破），再用零軸、量價、計分卡。[手冊：接盤還是追高](../04-charts/catch-or-chase.md)；練習：[案例：弱勢反彈接盤](../07-cases/weak-rebound-trap.md)、[案例：追高陷阱](../07-cases/chase-high-trap.md)、[案例：健康回檔](../07-cases/healthy-pullback.md)。
 
 ---
 

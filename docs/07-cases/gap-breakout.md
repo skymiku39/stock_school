@@ -66,4 +66,4 @@ flowchart TD
 - 突破要**量 + 站穩**；回補缺口是假突破的常見警訊。
 - 搭配 [法人表](../03-tables/institutional.md) 與量能，比單看 K 線可靠。
 
-相關：[市場進階術語](../02-glossary/market-terms.md) · [K 線組合型態](../04-charts/candle-combinations.md)
+相關：定義：[定義：缺口](../02-glossary/market-terms.md#缺口) · [定義：假突破](../02-glossary/technical.md#假突破) · 手冊：[手冊：接盤還是追高](../04-charts/catch-or-chase.md) · 教學：[K 線組合型態](../04-charts/candle-combinations.md)

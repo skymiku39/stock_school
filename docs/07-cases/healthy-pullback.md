@@ -4,7 +4,7 @@
 
 - 分辨「多頭回檔買點候選」與「空頭接盤」
 - 同樣是「往下買」，零軸與均線環境完全不同
-- 適用模式：[短線](../08-investing/swing-short.md) · [中線](../08-investing/swing-mid.md) · 專章：[接盤還是追高](../04-charts/catch-or-chase.md)（情境 3）
+- 適用模式：[短線](../08-investing/swing-short.md) · [中線](../08-investing/swing-mid.md) · 專章：[手冊：接盤還是追高](../04-charts/catch-or-chase.md)（情境 3）
 
 !!! warning "免責聲明"
     教學示意，非投資建議。數據為合成。
@@ -72,4 +72,4 @@ flowchart TD
 ## 重點回顧
 
 - 「往下買」之前先問：**我是在接回檔，還是接刀子？**
-- 相關：[接盤還是追高](../04-charts/catch-or-chase.md) · [均線](../04-charts/ma.md) · [回檔](../02-glossary/trading-terms.md#回檔)
+- 相關：[手冊：接盤還是追高](../04-charts/catch-or-chase.md) · [均線](../04-charts/ma.md) · 定義：[定義：回檔](../02-glossary/trading-terms.md#回檔)
