@@ -179,7 +179,9 @@ flowchart LR
 | 5-7 | [rsi](04-charts/rsi.md) | 教學 | ☐ |
 | 5-8 | [kd](04-charts/kd.md) | 教學 | ☐ |
 | 5-9 | [bollinger](04-charts/bollinger.md) | 教學 | ☐ |
-| 5-10 | [index](02-glossary/index.md) | 樞紐 | ☐ |
+| 5-10 | [catch-or-chase](04-charts/catch-or-chase.md) | 教學 | ☐ |
+| 5-10b | [catch-chase-quickref](04-charts/catch-chase-quickref.md) | 速查 | ☐ |
+| 5-11 | [index](02-glossary/index.md) | 樞紐 | ☐ |
 
 ---
 
@@ -294,6 +296,11 @@ flowchart LR
 | 11-15 | [odd-lot-mistake](07-cases/odd-lot-mistake.md) | 小資 | ☐ |
 | 11-16 | [ex-dividend-mistake](07-cases/ex-dividend-mistake.md) | 除息 | ☐ |
 | 11-17 | [disposal-stock-trap](07-cases/disposal-stock-trap.md) | 限制 | ☐ |
+| 11-18 | [weak-rebound-trap](07-cases/weak-rebound-trap.md) | 技術 | ☐ |
+| 11-19 | [chase-high-trap](07-cases/chase-high-trap.md) | 技術 | ☐ |
+| 11-20 | [healthy-pullback](07-cases/healthy-pullback.md) | 技術 | ☐ |
+| 11-21 | [bottom-confirm](07-cases/bottom-confirm.md) | 技術 | ☐ |
+| 11-22 | [breakout-hold](07-cases/breakout-hold.md) | 技術 | ☐ |
 
 案例批：逐篇確認 SVG 存在、手算數字與正文一致。
 

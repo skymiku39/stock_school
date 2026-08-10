@@ -54,7 +54,7 @@
 |------|------------|--------------|
 | **分析** | LLM 法說解讀、成長驅動、風險、言行反查 | [法說會](../05-analysis/conference.md) |
 | **基本面** | 月營收、估值、產業比較 | [營收](revenue.md)、[估值](valuation.md) |
-| **技術面** | 日 K、均線、MACD、RSI、KD、型態 | [K 線](../04-charts/kline-basics.md)、[指標](../04-charts/indicator-quickref.md) |
+| **技術面** | 日 K、均線、MACD、RSI、KD、型態；接盤／追高綜合判讀 | [K 線](../04-charts/kline-basics.md)、[指標](../04-charts/indicator-quickref.md)、[手冊：接盤還是追高](../04-charts/catch-or-chase.md) |
 | **籌碼面** | 三大法人、融資融券、鉅額、集保 | [法人](institutional.md)、[融資融券](margin.md)、[鉅額](block-trade.md) |
 | **股利政策** | 歷年配息、除權息日程 | [除權息入門](../01-basics/dividend.md)、[日程表](dividend-schedule.md) |
 | **季報 Q1–Q4** | 每股盈餘、三率、年增 | [財報摘要](financials.md) |

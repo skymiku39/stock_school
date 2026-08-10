@@ -30,7 +30,9 @@
 
 ## 相關
 
-- [連結一](...) · [連結二](...)
+- 手冊／速查：[手冊：…](...) · [速查：…](...)
+- 定義：[定義：…](...#錨點)
+- 案例：[案例：…](...)
 ```
 
 例外頁（不套用此模板）：
@@ -224,13 +226,24 @@ canonical 範本見 [月營收表](03-tables/revenue.md) 與 [估值表](03-tabl
 | 洗盤 | Shakeout |
 | 套牢 / 解套 | Locked-in (underwater) / break even recovery |
 | 抄底 | Bottom fishing |
+| 接盤 / 接刀 | Catching a falling knife |
 | 追高殺低 | Chasing highs, selling lows |
+| 攤平 | Averaging down |
+| 半山腰 | Halfway entry |
+| FOMO | Fear Of Missing Out |
 | 打底 | Bottoming |
 | 破底 | Breakdown to new low |
 | 盤堅 / 盤軟 | Grinding up / Grinding down |
 | 主力 | Big player (market mover) |
 | 利多出盡 | Buy the rumor, sell the news |
 | 量價背離 | Price-volume divergence |
+| 動能背離（頂／底） | Momentum divergence |
+| 假突破 | False breakout / fakeout |
+| 突破 | Breakout |
+| 盤整 | Consolidation / range |
+| 零軸 | MACD zero line |
+| 鈍化 | Extreme-zone persistence |
+| 乖離率 | Bias / MA deviation |
 | 回補缺口 | Gap fill |
 | 抬轎 / 坐轎 | Riding the move |
 | 內盤 / 外盤 | Sell-side hit / Buy-side lift |
@@ -240,6 +253,8 @@ canonical 範本見 [月營收表](03-tables/revenue.md) 與 [估值表](03-tabl
 | 集保大戶 | Major holders (TDCC) |
 | 存股 | Dividend buy-and-hold |
 | 對號入座 | Persona matching |
+| 閘門 | Gate (entry guard) |
+| 緊急停機 | Kill switch |
 
 ---
 
@@ -257,6 +272,38 @@ canonical 範本見 [月營收表](03-tables/revenue.md) 與 [估值表](03-tabl
 - 站內連結一律使用相對路徑（如 `../02-glossary/chips.md`），可帶錨點。
 - 潤稿時**不重複展開**權威章節的完整內容；摘要頁只留重點 + 連結。權威來源對照見 [架構說明](ARCHITECTURE.md)。
 - 改動任何標題文字後，務必重跑 `uv run mkdocs build --strict` 驗證錨點未斷。
+- `dictionary.md`「詳見」欄：連到**詞典分類頁時必須帶 `{#錨點}`**；連到整篇教學頁（該頁即該詞主檔）可不帶錨點。
+
+### 三層連結慣例（詞義 → 判讀 → 練習）
+
+| 需求 | 應連向 | **顯示文字（學員可見）** |
+|------|--------|--------------------------|
+| **詞義／定義** | `02-glossary/*#凍結錨點` | `[定義：接盤](…#接盤)` |
+| **操作判讀（canonical）** | 權威專章 | `[手冊：接盤還是追高](catch-or-chase.md)` |
+| **盤中速查** | 速查頁（非詳解） | `[速查：接盤／追高](catch-chase-quickref.md)`（勿裸寫「速查」） |
+| **情境練習** | 對應案例 | `[案例：弱勢反彈接盤](…weak-rebound-trap.md)` |
+
+連結文字要讓學員**點擊前就知道層級**。詞義連詞典時勿寫成「完整手冊」；操作框架連專章時勿只連詞典摘要。
+
+### 顯示文字 UX 規則（必守）
+
+1. **同詞不同層，必須加前綴**：`定義：`／`手冊：`／`速查：`／`案例：`（或 `案例十七：`）。禁止同一顯示字（如「假突破」「頂背離」「接盤」）在站內有時連詞典、有時連案例。
+2. **canonical 手冊統一短標**：正文一律 `[手冊：接盤還是追高]`；勿再混用「接盤框架」「完整手冊」「指標綜合判讀」等別名（首段介紹可保留一次長標題）。
+3. **「速查」必須帶主題**：`[指標速查]` vs `[速查：接盤／追高]`，兩者並存時禁止裸寫 `[速查]`。
+4. **章末「相關」分組**：先手冊／速查，再定義，再案例（見上方模板）；不要一條扁列混層。
+5. **dictionary「詳見」欄**：連詞典錨點時，連結文字用**詞條名**（如 `[MACD]`），勿寫整頁名「技術面詞典」。
+6. **例外**：章節標題「詞條速鏈」表格內、純索引列，可用裸詞條連定義錨點（語境已表明是定義）。
+
+### 易混詞族（必須分清目標）
+
+| 口語／顯示文字 | 正確目標 | 勿連成 |
+|----------------|----------|--------|
+| 金叉／黃金交叉 | `technical.md#黃金交叉` | 勿自創新錨點 `#金叉` |
+| 動能背離／頂背離／底背離 | 定義→`technical.md#動能背離`；教學→`macd.md#背離進階`；案例→`macd-divergence.md`（顯示分別加前綴） | 勿與量價背離互代；勿裸寫「頂背離」連案例 |
+| 量價背離 | `market-terms.md#量價背離` | 勿連 MACD 背離案例當定義 |
+| 突破（詞義） | `定義：突破` → `technical.md#突破` | 勿把一般「突破」只連 `market-terms#缺口` |
+| 假突破 | 定義→`#假突破`；案例→`gap-breakout.md`（顯示 `案例：缺口假突破`） | 禁止裸「假突破」連案例 |
+| 接盤／追高 | 定義→`trading-terms`；判讀→`手冊：接盤還是追高`；練習→具名案例 | 禁止 FAQ／正文裸「接盤」連案例 |
 
 ---
 
@@ -275,7 +322,8 @@ canonical 範本見 [月營收表](03-tables/revenue.md) 與 [估值表](03-tabl
 - [ ] 無簡體字、無裸英文術語（詞典頁除外）
 - [ ] 詞典分類頁為五列表格、`dictionary.md` 為四欄索引、英文分級正確
 - [ ] 詞典標題 `{#錨點}` 未變動
-- [ ] 重點回顧 + 相關連結齊全
+- [ ] 重點回顧 + 相關連結齊全（相關分組：手冊／速查 → 定義 → 案例）
+- [ ] 易混詞連結顯示文字已加層級前綴（定義／手冊／速查／案例）
 - [ ] canonical 章節只摘要、不重複
 - [ ] 看表頁符合 [看表頁 A 模板](#看表頁-a-模板)；其餘教學頁達 A 級（案例或章末自檢）
 - [ ] 已更新 [內容覆蓋矩陣](CONTENT-COVERAGE-MATRIX.md) 對應列等級

@@ -159,7 +159,7 @@ flowchart TD
 | 概念 | ① 入門（是什麼） | ② 深入（怎麼用） | ③ 實戰（案例） |
 |------|------------------|------------------|----------------|
 | 回檔 / 反彈 | [交易術語](../02-glossary/trading-terms.md#回檔) | [均線](../04-charts/ma.md)、依模式見上表 | [鎚子案例](../07-cases/hammer-ma.md) |
-| 跳空 / 缺口 | [市場術語](../02-glossary/market-terms.md#跳空) | [組合型態](../04-charts/candle-combinations.md) | [假突破](../07-cases/gap-breakout.md) |
+| 跳空 / 缺口 | [定義：跳空](../02-glossary/market-terms.md#跳空) | [組合型態](../04-charts/candle-combinations.md) | [案例：缺口假突破](../07-cases/gap-breakout.md) |
 | 本益比 | [基本面術語](../02-glossary/fundamentals.md#per本益比) | [基本面框架](../05-analysis/fundamental-framework.md#本益比怎麼讀) | [估值陷阱](../07-cases/valuation-trap.md) |
 | 軋空 | [市場術語](../02-glossary/market-terms.md#軋空) | [融資融券表](../03-tables/margin.md) | [軋空案例](../07-cases/short-squeeze.md) |
 | 三大支柱 | [影片索引](../appendix/video-resources.md) | [三大支柱](../05-analysis/three-pillars.md) | 依模式選案例 |

@@ -18,7 +18,7 @@
 | 分類 | 連結 | 涵蓋範圍 |
 |------|------|----------|
 | 行情與報價 | [quotes.md](quotes.md) | 開高低收、開高開低、前高前低、上市上櫃 |
-| 交易行為與心態 | [trading-terms.md](trading-terms.md) | 開倉平倉、追高殺低、套牢、分批、類股 |
+| 交易行為與心態 | [trading-terms.md](trading-terms.md) | 開倉平倉、抄底、接盤、追高、攤平、半山腰、FOMO、套牢、分批 |
 | 損益與停損 | [pnl.md](pnl.md) | 淨利、毛價差、停損、停利、移動停利 |
 | 持倉與交易 | [position.md](position.md) | 持倉、庫存、當沖、張數、零股 |
 | 法人與籌碼 | [chips.md](chips.md) | 三大法人、融資融券、借券、集保 |

@@ -2,7 +2,7 @@
 
 ## 本篇你會學到
 
-- 16 篇案例各自示範什麼判斷
+- 21 篇案例各自示範什麼判斷
 - 哪些案例對應你的 [投資模式](../08-investing/index.md) 與**主題群**
 - 案例的共通拆解結構
 
@@ -38,7 +38,7 @@ flowchart LR
 | 五 | [估值陷阱（高殖利率）](valuation-trap.md) | 估值判讀 | 長線 / 存股 | [估值表](../03-tables/valuation.md) |
 | 六 | [MACD 頂背離](macd-divergence.md) | 指標背離 | 短中線 | [MACD](../04-charts/macd.md) |
 | 七 | [法說樂觀 vs 法人賣超](conference-chips.md) | 說法 vs 行為 | 中線 | [法說會](../05-analysis/conference.md) |
-| 八 | [突破缺口與假突破](gap-breakout.md) | 缺口辨識 | 短線 | [缺口](../02-glossary/market-terms.md#缺口) |
+| 八 | [突破缺口與假突破](gap-breakout.md) | 缺口辨識 | 短線 | [定義：缺口](../02-glossary/market-terms.md#缺口) |
 | 九 | [融券與軋空](short-squeeze.md) | 軋空機制 | 短線 | [融資融券](../03-tables/margin.md) |
 | 十 | [除權息參與與填息](dividend-play.md) | 除權息 | 存股 | [除權息日程](../03-tables/dividend-schedule.md) |
 | 十一 | [0050 定期定額遇到大跌](etf-dca-drawdown.md) | 定額心態 | ETF / 長線 | [0050 與定期定額](../08-investing/etf-passive-dca.md) |
@@ -47,6 +47,11 @@ flowchart LR
 | 十四 | [零股小資踩雷](odd-lot-mistake.md) | 零股成本 | 小資 / 長線 | [零股](../01-basics/trading-flow.md#零股) |
 | 十五 | [除權息誤操作](ex-dividend-mistake.md) | 除息誤判 | 存股 | [除權息日程](../03-tables/dividend-schedule.md) |
 | 十六 | [追飆股追進處置股](disposal-stock-trap.md) | 交易限制 | 當沖 / 短線 | [交易限制](../01-basics/trading-restrictions.md) |
+| 十七 | [弱勢反彈接盤陷阱](weak-rebound-trap.md) | 接盤 vs 追高 | 短線 | [手冊：接盤還是追高](../04-charts/catch-or-chase.md) |
+| 十八 | [追高陷阱](chase-high-trap.md) | 量縮創高追價 | 短線 | [手冊：接盤還是追高](../04-charts/catch-or-chase.md) |
+| 十九 | [健康回檔](healthy-pullback.md) | 回檔≠接盤 | 短中線 | [手冊：接盤還是追高](../04-charts/catch-or-chase.md) |
+| 二十 | [止跌轉強確認](bottom-confirm.md) | 情境2確認 | 短中線 | [手冊：接盤還是追高](../04-charts/catch-or-chase.md) |
+| 二十一 | [突破站穩](breakout-hold.md) | 情境5 vs 假突破 | 短線 | [手冊：接盤還是追高](../04-charts/catch-or-chase.md) |
 
 ---
 
@@ -58,7 +63,7 @@ flowchart LR
 |--------|------|----------|
 | **基本面轉折** | [月營收轉折](revenue-turn.md) | 營收由弱轉強的判讀 |
 | **估值** | [估值陷阱](valuation-trap.md)、[升息環境估值](macro-rates.md) | 高殖利率陷阱、利率對估值 |
-| **技術型態** | [鎚子線+均線](hammer-ma.md)、[MACD 背離](macd-divergence.md)、[突破缺口](gap-breakout.md) | 反轉、背離、缺口辨識 |
+| **技術型態** | [鎚子線+均線](hammer-ma.md)、[MACD 背離](macd-divergence.md)、[突破缺口](gap-breakout.md)、[弱勢反彈接盤](weak-rebound-trap.md)、[追高陷阱](chase-high-trap.md)、[健康回檔](healthy-pullback.md)、[止跌確認](bottom-confirm.md)、[突破站穩](breakout-hold.md) | 六情境全覆蓋 |
 | **籌碼法人** | [法人連續買超](institutional-flow.md)、[法說 vs 法人](conference-chips.md)、[融券軋空](short-squeeze.md) | 籌碼追蹤與軋空 |
 | **除權息** | [除權息參與](dividend-play.md)、[除權息誤操作](ex-dividend-mistake.md) | 填息與除息誤判 |
 | **ETF / 定額** | [0050 定額遇大跌](etf-dca-drawdown.md) | 定額心態 |

@@ -92,6 +92,7 @@ uv run python scripts/generate_all.py --only cases
 | 存股除權息 | `08-investing/dividend-investing.md` | 模式總述 |
 | 配股配息五策略 | `08-investing/dividend-strategies.md` | 滾息、填息、現金流等實戰框架 |
 | 全站學習路徑 | `docs/index.md` | 各章 `index` 只列本章順序 |
+| 接盤 vs 追高（指標綜合） | `04-charts/catch-or-chase.md` | `macd`／詞典只摘要 + 連結 |
 
 全站路徑見 [首頁](index.md)；入門章見 [入門導覽](01-basics/index.md)。
 

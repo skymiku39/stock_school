@@ -78,7 +78,7 @@ flowchart LR
     參考答案：不行。盤整區假交叉多，須看量、位置與 [多週期](../09-advanced/multi-timeframe.md)。
 
 ??? question "3.（情境題）價格站上 MA20 但量縮，你怎麼解讀？"
-    參考答案：突破可信度下降，警惕 [假突破](../07-cases/gap-breakout.md)。
+    參考答案：突破可信度下降，警惕 [案例：缺口假突破](../07-cases/gap-breakout.md)。
 
 ## 重點回顧
 

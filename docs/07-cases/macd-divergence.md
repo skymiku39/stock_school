@@ -50,4 +50,4 @@ flowchart LR
 ## 重點回顧
 
 - 背離需搭配位置（高檔較重要）、量、K 線。
-- 相關：[指標速查表](../04-charts/indicator-quickref.md) · [三招讀懂 K 線](../04-charts/kline-reading.md)
+- 相關：[指標速查](../04-charts/indicator-quickref.md) · [手冊：接盤還是追高](../04-charts/catch-or-chase.md) · [三招讀懂 K 線](../04-charts/kline-reading.md) · 對照接盤端：[案例：弱勢反彈](weak-rebound-trap.md)

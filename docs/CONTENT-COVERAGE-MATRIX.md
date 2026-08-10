@@ -15,7 +15,7 @@
 |------|------|------|
 | 詞典條目 | 0 個未處理 D/E（邊界除外） | **達成**（選擇權為邊界） |
 | 看表章節（10 篇） | 10 嚴格 A | **10/10 嚴格 A**（含手算／導覽練習，`test_table_coverage.py` 把關） |
-| 主題群案例 | 覆蓋率 100% | **達成**（16 篇，群群有案例） |
+| 主題群案例 | 覆蓋率 100% | **達成**（21 篇；進場風險六情境全覆蓋） |
 | 詞典外缺口 | 補入詞典或邊界化 | 國債/升降息/槓桿/對衝/liquidation/ROE/護城河/DCF/CPI/GDP/IPO/ADR 已補；選擇權邊界化 |
 | 外部官方資料源 | 關鍵主題接官方來源 | **已補**：TDCC、央行、FRED、DGBAS、MOPS 重訊、TWSE OpenAPI、第三方平台映射 |
 | P2 canonical 自檢 | 14 頁章末自檢 | **已補**（見下方 P2 清單） |
@@ -88,7 +88,8 @@
 | [kline-basics](04-charts/kline-basics.md) | 常見誤區 + 自檢 |
 | [kline-reading](04-charts/kline-reading.md) | 常見誤區 + 自檢 |
 | [ma](04-charts/ma.md) | 自檢 |
-| [macd](04-charts/macd.md) | 自檢 |
+| [macd](04-charts/macd.md) | 自檢 + 接盤／追高小節 |
+| [catch-or-chase](04-charts/catch-or-chase.md) | 六情境 + 三支柱 + 計分卡 + 在哪看 + 自檢 |
 | [rsi](04-charts/rsi.md) | 自檢 |
 | [kd](04-charts/kd.md) | 自檢 |
 | [bollinger](04-charts/bollinger.md) | 自檢 |
@@ -112,6 +113,30 @@
 |------|------|
 | [indicator-quickref](04-charts/indicator-quickref.md) | 精簡自檢（連結完整指標教學） |
 | [candle-quickref](04-charts/candle-quickref.md) | 精簡自檢（連結 candle-patterns） |
+| [catch-chase-quickref](04-charts/catch-chase-quickref.md) | 六情境＋詞族速鏈＋計分縮表 |
+
+### 進場風險判讀（接盤／追高）覆蓋清單 {#進場風險判讀覆蓋}
+
+目標：名詞 → 手冊 → 速查 → 六情境案例 **100%**。
+
+| 層 | 條目 | 狀態 |
+|----|------|------|
+| 詞典行為 | 抄底、接盤、追高殺低、回檔、反彈、攤平、半山腰、FOMO | A |
+| 詞典技術 | 零軸、DIF/柱、動能背離、金叉、乖離、鈍化、突破、盤整、超買超賣 | A |
+| Canonical | [catch-or-chase](04-charts/catch-or-chase.md) 完整手冊 | A |
+| 速查 | [catch-chase-quickref](04-charts/catch-chase-quickref.md) | C（速查定位） |
+| 情境1 | [weak-rebound-trap](07-cases/weak-rebound-trap.md) | 有 |
+| 情境2 | [bottom-confirm](07-cases/bottom-confirm.md)、[hammer-ma](07-cases/hammer-ma.md) | 有 |
+| 情境3 | [healthy-pullback](07-cases/healthy-pullback.md) | 有 |
+| 情境4 | [chase-high-trap](07-cases/chase-high-trap.md)、[macd-divergence](07-cases/macd-divergence.md) | 有 |
+| 情境5 | [breakout-hold](07-cases/breakout-hold.md) | 有 |
+| 情境6 | [gap-breakout](07-cases/gap-breakout.md) | 有 |
+| 檢查清單 | [investor-checklist](appendix/investor-checklist.md) 下單前接盤／追高項 | 有 |
+| FAQ | [faq](appendix/faq.md) Q14b | 有 |
+
+| 主題群案例覆蓋 | 原「技術型態」列 | 現況 |
+|----------------|------------------|------|
+| 技術型態／進場風險 | 8 篇相關案例 | **六情境全覆蓋** |
 
 ### Phase 6 投資模式（已補章末自檢）
 
@@ -281,7 +306,7 @@
 | 條目 | 等級 | canonical |
 |------|------|-----------|
 | 投資論點 thesis | A | research-workflow |
-| 開倉/平倉/加減碼/抄底/追高殺低/回檔/反彈/套牢/解套/分批/類股/觀察清單 | B | trading-terms、watchlist |
+| 開倉/平倉/加減碼/抄底/接盤/追高殺低/回檔/反彈/攤平/半山腰/FOMO/套牢/解套/分批/類股/觀察清單 | A | trading-terms、watchlist、[catch-or-chase](04-charts/catch-or-chase.md) |
 | 回測（策略） | C | trading-terms |
 
 ### 法人與籌碼
@@ -307,8 +332,8 @@
 
 | 條目 | 等級 | canonical |
 |------|------|-----------|
-| K線/量價/均線MA/MACD/RSI/KD/布林 | A | 04-charts、案例 |
-| 實體/影線/紅黑K/線圖/分時/日K週K/支撐壓力/超買超賣/黃金死亡交叉/頭肩頂/吞噬/晨暮星 | B | technical、04-charts |
+| K線/量價/均線MA/MACD/RSI/KD/布林/零軸/背離/乖離/突破/盤整 | A | 04-charts、technical、[catch-or-chase](04-charts/catch-or-chase.md)、案例 |
+| 實體/影線/紅黑K/線圖/分時/日K週K/支撐壓力/超買超賣/黃金死亡交叉/鈍化/頭肩頂/吞噬/晨暮星 | A | technical（已補錨點）、04-charts |
 
 ### 市場與進階
 
@@ -379,7 +404,7 @@
 | 主題群 | 案例 | 狀態 |
 |--------|------|------|
 | 營收轉折 | [revenue-turn](07-cases/revenue-turn.md) | 有 |
-| 技術型態 | [hammer-ma](07-cases/hammer-ma.md)、[macd-divergence](07-cases/macd-divergence.md)、[gap-breakout](07-cases/gap-breakout.md) | 有 |
+| 技術型態 | [hammer-ma](07-cases/hammer-ma.md)、[macd-divergence](07-cases/macd-divergence.md)、[gap-breakout](07-cases/gap-breakout.md)、[weak-rebound-trap](07-cases/weak-rebound-trap.md)、[chase-high-trap](07-cases/chase-high-trap.md)、[healthy-pullback](07-cases/healthy-pullback.md)、[bottom-confirm](07-cases/bottom-confirm.md)、[breakout-hold](07-cases/breakout-hold.md) | 有（六情境） |
 | 籌碼法人 | [institutional-flow](07-cases/institutional-flow.md)、[conference-chips](07-cases/conference-chips.md) | 有 |
 | 估值 | [valuation-trap](07-cases/valuation-trap.md) | 有 |
 | 當沖風控 | [day-trade-risk](07-cases/day-trade-risk.md) | 有 |
