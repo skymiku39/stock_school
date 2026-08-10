@@ -66,4 +66,5 @@ flowchart LR
 - 沒有萬用指標；當沖重 MA+量，波段重 MA+MACD。
 - 指標是滯後或統計工具，不能取代 [K 線位置](candle-patterns.md) 判斷。
 
-相關：[技術面術語](../02-glossary/technical.md) · [接盤還是追高](catch-or-chase.md) · [MACD 背離案例](../07-cases/macd-divergence.md)
+相關：[技術面術語](../02-glossary/technical.md) · [接盤還是追高完整手冊](catch-or-chase.md) · [MACD 背離案例](../07-cases/macd-divergence.md) · [追高／回檔案例](../07-cases/chase-high-trap.md)
+

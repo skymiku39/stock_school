@@ -19,7 +19,7 @@ sma = _calc.sma
 macd = _calc.macd
 
 T = DEFAULT_THEME
-BLUE, BORDER, GRAY, GREEN, ORANGE, PURPLE, RED = (
+BLUE, BORDER, GRAY, GREEN, ORANGE, PURPLE, RED, TEAL = (
     T.blue,
     T.border,
     T.gray,
@@ -27,6 +27,7 @@ BLUE, BORDER, GRAY, GREEN, ORANGE, PURPLE, RED = (
     T.orange,
     T.purple,
     T.red,
+    T.teal,
 )
 
 W, H = 640, 380
@@ -461,12 +462,177 @@ def weak_rebound_trap_svg() -> str:
     return svg_header("弱勢反彈接盤案例", W, H, "".join(parts))
 
 
+def chase_high_trap_bars() -> list[Bar]:
+    """Uptrend into chase zone: new price high with weakening thrust (volume fades)."""
+    prices: list[float] = []
+    # Warmup grind up for MACD
+    for i in range(30):
+        prices.append(80 + i * 0.9 + (0.3 if i % 4 == 0 else -0.15))
+    # Push to first peak ~118
+    prices.extend([112, 114, 116, 118, 117, 116])
+    # Dip then chase to 125 with quieter volume later
+    prices.extend([115, 117, 120, 122, 124, 125, 123, 121])
+    bars: list[Bar] = []
+    n = len(prices)
+    chase_start = n - 8
+    for i, c in enumerate(prices):
+        o = c - 0.5 if i % 2 == 0 else c + 0.4
+        h = max(o, c) + 0.9
+        l = min(o, c) - 0.7
+        if i >= chase_start:
+            vol = 2400  # 量縮追高
+        elif i >= chase_start - 6:
+            vol = 5200
+        else:
+            vol = 3400
+        bars.append(_bar(f"D{i - n}", o, h, l, c, vol))
+    return bars
+
+
+def chase_high_trap_svg() -> str:
+    bars = chase_high_trap_bars()
+    c = closes(bars)
+    dif, sig, hist = macd(c)
+    ma20 = sma(c, 20)
+    price_h = int(H * 0.55)
+    macd_h = H - price_h
+    pad_p = ChartPad(top=44, bottom=6)
+    pad_m = ChartPad(top=price_h + 6, bottom=32)
+    lo = min(b.low for b in bars) - 1
+    hi = max(b.high for b in bars) + 1
+    parts = title_block(
+        "案例：追高陷阱（合成數據）",
+        W,
+        "J 公司 · 價 118→125 新高 · DIF 未新高 · 創高量縮",
+    )
+    candle_parts, _, _ = draw_candles(bars, width=W, height=price_h, pad=pad_p, y_lo=lo, y_hi=hi)
+    parts.extend(candle_parts)
+    parts.append(
+        draw_line_series(ma20, color=TEAL, width=W, height=price_h, pad=pad_p, y_lo=lo, y_hi=hi)
+    )
+    n = len(bars)
+    gap = (W - 64) / n
+    for idx, label in ((n - 14, "高點1 ~118"), (n - 3, "追高 ~125")):
+        cx = 48 + gap * (idx + 0.5)
+        parts.append(
+            f'<text x="{cx:.1f}" y="{pad_p.top + 14}" font-size="9" fill="{RED}" '
+            f'text-anchor="middle">{label}</text>'
+        )
+    parts.append(f'<line x1="48" y1="{price_h}" x2="{W - 16}" y2="{price_h}" stroke="{BORDER}"/>')
+    hvals = [h for h in hist if h is not None]
+    dvals = [d for d in dif if d is not None]
+    svals = [s for s in sig if s is not None]
+    span_vals = hvals + dvals + svals + [0.0]
+    m_lo = min(span_vals) * 1.2
+    m_hi = max(span_vals) * 1.2
+    if abs(m_hi - m_lo) < 1e-9:
+        m_lo, m_hi = -1.0, 1.0
+    parts.append(
+        draw_line_series(dif, color=BLUE, width=W, height=macd_h, pad=pad_m, y_lo=m_lo, y_hi=m_hi)
+    )
+    parts.append(
+        draw_line_series(sig, color=ORANGE, width=W, height=macd_h, pad=pad_m, y_lo=m_lo, y_hi=m_hi)
+    )
+    parts.append(
+        f'<text x="52" y="{price_h + 18}" font-size="10" fill="{PURPLE}">'
+        f"頂背離 + 量縮創高 → 追高風險</text>"
+    )
+    parts.append(footer_note(W, H, "合成教學數據 · 非投資建議"))
+    return svg_header("追高陷阱案例", W, H, "".join(parts))
+
+
+def healthy_pullback_bars() -> list[Bar]:
+    """Uptrend, pullback to rising MA20 with quiet volume, then resume."""
+    prices: list[float] = []
+    for i in range(28):
+        prices.append(90 + i * 0.7 + (0.25 if i % 5 == 0 else -0.1))
+    # Extend toward 115
+    prices.extend([108, 110, 112, 114, 115, 113, 111])
+    # Pullback toward MA zone ~108-110
+    prices.extend([110, 109, 108, 108.5, 109.5, 111, 113, 115])
+    bars: list[Bar] = []
+    n = len(prices)
+    pull_start = n - 8
+    for i, c in enumerate(prices):
+        o = c - 0.4 if i % 2 == 0 else c + 0.3
+        h = max(o, c) + 0.8
+        l = min(o, c) - 0.6
+        if pull_start <= i < pull_start + 4:
+            vol = 2100  # 拉回縮量
+        elif i >= pull_start + 4:
+            vol = 4500  # 再攻放量
+        else:
+            vol = 3600
+        bars.append(_bar(f"D{i - n}", o, h, l, c, vol))
+    return bars
+
+
+def healthy_pullback_svg() -> str:
+    bars = healthy_pullback_bars()
+    c = closes(bars)
+    dif, sig, hist = macd(c)
+    ma20 = sma(c, 20)
+    price_h = int(H * 0.55)
+    macd_h = H - price_h
+    pad_p = ChartPad(top=44, bottom=6)
+    pad_m = ChartPad(top=price_h + 6, bottom=32)
+    lo = min(b.low for b in bars) - 1
+    hi = max(b.high for b in bars) + 1
+    parts = title_block(
+        "案例：健康回檔（合成數據）",
+        W,
+        "K 公司 · 多頭拉回 MA20 · MACD 仍在零軸上 · 縮量回檔",
+    )
+    candle_parts, _, _ = draw_candles(bars, width=W, height=price_h, pad=pad_p, y_lo=lo, y_hi=hi)
+    parts.extend(candle_parts)
+    parts.append(
+        draw_line_series(ma20, color=TEAL, width=W, height=price_h, pad=pad_p, y_lo=lo, y_hi=hi)
+    )
+    n = len(bars)
+    gap = (W - 64) / n
+    for idx, label in ((n - 8, "縮量回檔"), (n - 1, "再攻")):
+        cx = 48 + gap * (idx + 0.5)
+        parts.append(
+            f'<text x="{cx:.1f}" y="{pad_p.top + 14}" font-size="9" fill="{RED}" '
+            f'text-anchor="middle">{label}</text>'
+        )
+    parts.append(f'<line x1="48" y1="{price_h}" x2="{W - 16}" y2="{price_h}" stroke="{BORDER}"/>')
+    hvals = [h for h in hist if h is not None]
+    dvals = [d for d in dif if d is not None]
+    svals = [s for s in sig if s is not None]
+    span_vals = hvals + dvals + svals + [0.0]
+    m_lo = min(span_vals) * 1.2
+    m_hi = max(span_vals) * 1.2
+    if abs(m_hi - m_lo) < 1e-9:
+        m_lo, m_hi = -1.0, 1.0
+    parts.append(
+        draw_line_series(dif, color=BLUE, width=W, height=macd_h, pad=pad_m, y_lo=m_lo, y_hi=m_hi)
+    )
+    parts.append(
+        draw_line_series(sig, color=ORANGE, width=W, height=macd_h, pad=pad_m, y_lo=m_lo, y_hi=m_hi)
+    )
+    plot_h = macd_h - pad_m.top - pad_m.bottom
+    zero_y = pad_m.top + (m_hi - 0.0) / (m_hi - m_lo) * plot_h
+    parts.append(
+        f'<line x1="48" y1="{zero_y:.1f}" x2="{W - 16}" y2="{zero_y:.1f}" '
+        f'stroke="{GRAY}" stroke-dasharray="4 3"/>'
+    )
+    parts.append(
+        f'<text x="52" y="{price_h + 18}" font-size="10" fill="{PURPLE}">'
+        f"零軸上方 + 回測均線 → 回檔候選（非接盤）</text>"
+    )
+    parts.append(footer_note(W, H, "合成教學數據 · 回檔仍須停損"))
+    return svg_header("健康回檔案例", W, H, "".join(parts))
+
+
 def build_all_case_svgs() -> dict[str, str]:
     """Return filename → SVG content for case-study assets."""
     return {
         "hammer-ma.svg": hammer_ma_svg(),
         "macd-divergence.svg": macd_divergence_svg(),
         "weak-rebound-trap.svg": weak_rebound_trap_svg(),
+        "chase-high-trap.svg": chase_high_trap_svg(),
+        "healthy-pullback.svg": healthy_pullback_svg(),
         "gap-breakout.svg": gap_breakout_svg(),
         "etf-dca-drawdown.svg": dca_drawdown_svg(),
         "etf-vs-stock.svg": etf_vs_stock_svg(),

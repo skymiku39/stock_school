@@ -10,7 +10,7 @@
 
 ---
 
-## 一、下單前 10 項
+## 一、下單前 11 項
 
 - [ ] **交割能力**：交割戶的錢夠 T+2 扣款？（[交割與費用](../01-basics/settlement-fees.md)）
 - [ ] **委託方式**：限價還是市價？價格合理？
@@ -20,6 +20,7 @@
 - [ ] **交易標記**：有無 [注意／處置／全額交割](../01-basics/trading-restrictions.md)？
 - [ ] **成本估算**：手續費 + 證交稅後的 [損益兩平點](../02-glossary/pnl.md)？
 - [ ] **投資論點**：我為什麼買？一句話講得出來？（[研究流程](../09-advanced/research-workflow.md)）
+- [ ] **接盤／追高檢查**：已用六情境標籤＋計分卡？不是情緒追價或逆勢接刀？（[完整手冊](../04-charts/catch-or-chase.md)）
 - [ ] **資料佐證**：營收／籌碼／技術至少一面支持？（[怎麼看表](../03-tables/index.md)）
 - [ ] **這是閒錢嗎**：不是生活費或借來的錢？（[閒錢與生活費](../06-risk/capital.md#閒錢與生活費)）
 
@@ -68,7 +69,7 @@
 
 ## 重點回顧
 
-- 三個時點、各 10 項：下單前控風險、除息前防誤判、月複盤求進步。
+- 三個時點：下單前控風險（含接盤／追高檢查）、除息前防誤判、月複盤求進步。
 - 清單的價值在於**每次都用**，把紀律變成習慣。
 
-相關：[第一筆交易走一遍](../01-basics/first-trade-walkthrough.md) · [交易紀律](../06-risk/discipline.md) · [突發狀況手冊](../06-risk/emergency-playbook.md) · [常見問答](faq.md)
+相關：[第一筆交易走一遍](../01-basics/first-trade-walkthrough.md) · [接盤還是追高](../04-charts/catch-or-chase.md) · [交易紀律](../06-risk/discipline.md) · [突發狀況手冊](../06-risk/emergency-playbook.md) · [常見問答](faq.md)

@@ -222,7 +222,7 @@
 | [rsi](04-charts/rsi.md) | 教學 | 超買超賣、鈍化 |
 | [kd](04-charts/kd.md) | 教學 | 隨機指標、短線用途 |
 | [bollinger](04-charts/bollinger.md) | 教學 | 通道、波動放大 |
-| [catch-or-chase](04-charts/catch-or-chase.md) | 教學 | 接盤 vs 追高四層判讀、盤前清單 |
+| [catch-or-chase](04-charts/catch-or-chase.md) | 教學 | 六情境、三支柱、計分卡、在哪看、模式差異 |
 
 技術指標頁共通：**滯後性**、**強勢股例外**、**停損**連結、**自我檢查**。
 
@@ -311,6 +311,8 @@
 | [valuation-trap](07-cases/valuation-trap.md) | 估值 | 高殖利率陷阱 |
 | [macd-divergence](07-cases/macd-divergence.md) | 技術 | 頂背離 |
 | [weak-rebound-trap](07-cases/weak-rebound-trap.md) | 技術 | 弱勢反彈接盤 |
+| [chase-high-trap](07-cases/chase-high-trap.md) | 技術 | 追高陷阱 |
+| [healthy-pullback](07-cases/healthy-pullback.md) | 技術 | 健康回檔 |
 | [conference-chips](07-cases/conference-chips.md) | 籌碼 | 法說 vs 法人 |
 | [gap-breakout](07-cases/gap-breakout.md) | 技術 | 突破缺口 |
 | [short-squeeze](07-cases/short-squeeze.md) | 籌碼 | 軋空 |

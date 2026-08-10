@@ -63,7 +63,7 @@ flowchart TD
 
 若同一檔之後出現：放量站回 MA20、MACD 柱連續擴大並接近零軸、RSI 站上 50，才比較接近「止跌轉強候選」——仍須寫停損，見 [鎚子+均線](hammer-ma.md)。
 
-高檔另一端風險見：[MACD 頂背離](macd-divergence.md)（追高）。
+高檔另一端風險見：[追高陷阱](chase-high-trap.md)、[MACD 頂背離](macd-divergence.md)。多頭回檔對照：[健康回檔](healthy-pullback.md)。
 
 ## 重點回顧
 

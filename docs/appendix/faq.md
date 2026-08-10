@@ -62,7 +62,7 @@
     每根代表一段時間的開高低收。見 [K 線基礎](../04-charts/kline-basics.md)。
 
 ??? question "14b. 怎麼用 MACD 判斷是接盤還是追高？"
-    先看趨勢與零軸：零軸下金叉常是弱勢反彈（接盤風險）；頂背離／高檔量縮偏追高風險。完整框架見 [接盤還是追高](../04-charts/catch-or-chase.md)、[MACD](../04-charts/macd.md)。
+    不要只問兩個字：先標六情境（接盤、止跌、回檔、追高、突破、假突破），再用零軸、量價、計分卡。完整手冊：[接盤還是追高](../04-charts/catch-or-chase.md)；案例：[接盤](../07-cases/weak-rebound-trap.md)、[追高](../07-cases/chase-high-trap.md)、[回檔](../07-cases/healthy-pullback.md)。
 
 ---
 

@@ -84,6 +84,7 @@
 | 平倉 | Close position | 結束部位之反向操作 | [開倉平倉](trading-terms.md#開倉平倉) |
 | 加碼 / 減碼 | Scale in / Scale out | 增加或減少部位 | [交易行為詞典](trading-terms.md) |
 | 抄底 | Bottom fishing | 低點逆勢買進 | [抄底](trading-terms.md#抄底) |
+| 接盤 / 接刀 | Catching a falling knife | 下跌中低接承壓 | [接盤](trading-terms.md#接盤) |
 | 追高殺低 | Chasing highs, selling lows | 高買低賣 | [追高殺低](trading-terms.md#追高殺低) |
 | 回檔 / 拉回 | Pullback | 上漲中暫時下跌 | [回檔](trading-terms.md#回檔) |
 | 反彈 | Rebound | 下跌中暫時上漲 | [反彈](trading-terms.md#反彈) |

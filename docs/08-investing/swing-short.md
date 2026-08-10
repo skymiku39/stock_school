@@ -97,5 +97,5 @@ flowchart TD
 
 - 短線 = 技術 + 籌碼，停損要緊。
 - 影片中的 [回測支撐](../02-glossary/technical.md#回測支撐)、[頭肩頂](../02-glossary/technical.md#頭肩頂) 在本模式最常用。
-- 案例：[MACD 背離](../07-cases/macd-divergence.md) · [弱勢反彈接盤](../07-cases/weak-rebound-trap.md) · [軋空](../07-cases/short-squeeze.md)（高波動短線）
-- 綜合判讀：[接盤還是追高](../04-charts/catch-or-chase.md)
+- 案例：[MACD 背離](../07-cases/macd-divergence.md) · [弱勢反彈接盤](../07-cases/weak-rebound-trap.md) · [追高陷阱](../07-cases/chase-high-trap.md) · [健康回檔](../07-cases/healthy-pullback.md) · [軋空](../07-cases/short-squeeze.md)
+- 綜合判讀：[接盤還是追高完整手冊](../04-charts/catch-or-chase.md)

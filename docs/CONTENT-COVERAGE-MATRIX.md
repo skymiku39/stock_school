@@ -89,7 +89,7 @@
 | [kline-reading](04-charts/kline-reading.md) | 常見誤區 + 自檢 |
 | [ma](04-charts/ma.md) | 自檢 |
 | [macd](04-charts/macd.md) | 自檢 + 接盤／追高小節 |
-| [catch-or-chase](04-charts/catch-or-chase.md) | 四層框架 + 盤前清單 + 自檢 |
+| [catch-or-chase](04-charts/catch-or-chase.md) | 六情境 + 三支柱 + 計分卡 + 在哪看 + 自檢 |
 | [rsi](04-charts/rsi.md) | 自檢 |
 | [kd](04-charts/kd.md) | 自檢 |
 | [bollinger](04-charts/bollinger.md) | 自檢 |
@@ -380,7 +380,7 @@
 | 主題群 | 案例 | 狀態 |
 |--------|------|------|
 | 營收轉折 | [revenue-turn](07-cases/revenue-turn.md) | 有 |
-| 技術型態 | [hammer-ma](07-cases/hammer-ma.md)、[macd-divergence](07-cases/macd-divergence.md)、[gap-breakout](07-cases/gap-breakout.md)、[weak-rebound-trap](07-cases/weak-rebound-trap.md) | 有 |
+| 技術型態 | [hammer-ma](07-cases/hammer-ma.md)、[macd-divergence](07-cases/macd-divergence.md)、[gap-breakout](07-cases/gap-breakout.md)、[weak-rebound-trap](07-cases/weak-rebound-trap.md)、[chase-high-trap](07-cases/chase-high-trap.md)、[healthy-pullback](07-cases/healthy-pullback.md) | 有 |
 | 籌碼法人 | [institutional-flow](07-cases/institutional-flow.md)、[conference-chips](07-cases/conference-chips.md) | 有 |
 | 估值 | [valuation-trap](07-cases/valuation-trap.md) | 有 |
 | 當沖風控 | [day-trade-risk](07-cases/day-trade-risk.md) | 有 |
