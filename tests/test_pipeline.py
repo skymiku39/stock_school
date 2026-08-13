@@ -56,9 +56,10 @@ def test_pipeline_emits_lifecycle_events(tmp_path: Path) -> None:
     pipeline = GenerationPipeline(bus)
     gen = _StubGenerator(output_dir=tmp_path, artifacts={"ok.svg": "<svg>x</svg>"})
 
-    count = pipeline.run(gen)
+    count, errors = pipeline.run(gen)
 
     assert count == 1
+    assert errors == 0
     types = [type(e) for e in recorder.events]
     assert types == [
         GenerationStarted,
@@ -77,9 +78,10 @@ def test_pipeline_publishes_error_on_exception(tmp_path: Path) -> None:
     pipeline = GenerationPipeline(bus)
     gen = _StubGenerator(output_dir=tmp_path, fail=True)
 
-    count = pipeline.run(gen)
+    count, errors = pipeline.run(gen)
 
     assert count == 0
+    assert errors == 1
     assert any(isinstance(e, GenerationError) for e in recorder.events)
     assert recorder.events[-1].__class__ is GenerationFinished
 
@@ -91,12 +93,13 @@ def test_pipeline_publishes_error_on_empty_output(tmp_path: Path) -> None:
     pipeline = GenerationPipeline(bus)
     gen = _StubGenerator(output_dir=tmp_path, artifacts={})
 
-    count = pipeline.run(gen)
+    count, errors = pipeline.run(gen)
 
     assert count == 0
-    errors = [e for e in recorder.events if isinstance(e, GenerationError)]
-    assert len(errors) == 1
-    assert "未產出" in errors[0].message
+    assert errors == 1
+    error_events = [e for e in recorder.events if isinstance(e, GenerationError)]
+    assert len(error_events) == 1
+    assert "未產出" in error_events[0].message
 
 
 def test_pipeline_run_all_publishes_completed(tmp_path: Path) -> None:
@@ -109,13 +112,32 @@ def test_pipeline_run_all_publishes_completed(tmp_path: Path) -> None:
         _StubGenerator(output_dir=tmp_path, generator_id="b"),
     ]
 
-    total = pipeline.run_all(gens, output_dir=tmp_path)
+    result = pipeline.run_all(gens, output_dir=tmp_path)
 
-    assert total == 2
+    assert result.total_artifacts == 2
+    assert result.error_count == 0
+    assert result.success is True
     completed = [e for e in recorder.events if isinstance(e, PipelineCompleted)]
     assert len(completed) == 1
     assert completed[0].total_artifacts == 2
     assert completed[0].output_dir == tmp_path
+
+
+def test_pipeline_run_all_reports_errors(tmp_path: Path) -> None:
+    bus = EventBus()
+    recorder = _RecordingSubscriber()
+    bus.subscribe_subscriber(recorder)
+    pipeline = GenerationPipeline(bus)
+    gens = [
+        _StubGenerator(output_dir=tmp_path, generator_id="ok"),
+        _StubGenerator(output_dir=tmp_path, generator_id="bad", fail=True),
+    ]
+
+    result = pipeline.run_all(gens, output_dir=tmp_path)
+
+    assert result.total_artifacts == 1
+    assert result.error_count == 1
+    assert result.success is False
 
 
 def test_file_writer_subscriber_writes_artifact(tmp_path: Path) -> None:

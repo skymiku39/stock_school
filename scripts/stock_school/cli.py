@@ -61,8 +61,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.only:
         generators = [g for g in generators if g.generator_id == args.only]
 
-    pipeline.run_all(generators, output_dir=ASSETS)
-    return 0
+    result = pipeline.run_all(generators, output_dir=ASSETS)
+    return 0 if result.success else 1
 
 
 if __name__ == "__main__":

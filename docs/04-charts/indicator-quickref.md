@@ -61,14 +61,28 @@ flowchart LR
 ??? question "3.（情境題）當沖族優先盯哪幾個指標？"
     參考答案：**MA5/10、KD、成交量**；波段則重 MA+MACD，見本篇時間框架表。
 
+## 各指標深度教學
+
+每個指標的專章已包含**信號分級表**、**評估框架**與**搭配確認方法**：
+
+| 指標 | 新增深度內容 |
+|------|------------|
+| [MA](ma.md) | 多均線排列分級、乖離率、扣抵值、交叉五維度評分 |
+| [MACD](macd.md) | 三層解讀、柱狀圖縮頭領先信號、背離分級、多時間框架 |
+| [RSI](rsi.md) | 趨勢環境區間修正、失敗擺盪、信號強度評估表 |
+| [KD](kd.md) | 交叉位置分級、鈍化應對策略、J 值、雙指標搭配 |
+| [布林](bollinger.md) | %B 精確位置、帶寬量化、擠壓戰法、四種市場狀態 |
+
+學完各指標後 → **[圖表綜合評估框架](chart-evaluation.md)**：五層信號匯流系統。
+
 ## 重點回顧
 
 - 沒有萬用指標；當沖重 MA+量，波段重 MA+MACD。
 - 指標是滯後或統計工具，不能取代 [K 線位置](candle-patterns.md) 判斷。
+- 多指標同向（信號匯流）時可信度遠高於單一指標。
 
 ## 相關
 
-- 手冊／速查：[手冊：接盤還是追高](catch-or-chase.md) · [速查：接盤／追高](catch-chase-quickref.md)
-- 定義：[定義：技術面術語](../02-glossary/technical.md)
-- 案例：[案例：MACD 頂背離](../07-cases/macd-divergence.md) · [案例：追高陷阱](../07-cases/chase-high-trap.md) · [案例：健康回檔](../07-cases/healthy-pullback.md)
-
+- 手冊：[接盤還是追高](catch-or-chase.md) · [速查：接盤／追高](catch-chase-quickref.md) · [圖表綜合評估](chart-evaluation.md)
+- 定義：[技術面術語](../02-glossary/technical.md)
+- 案例：[MACD 頂背離](../07-cases/macd-divergence.md) · [追高陷阱](../07-cases/chase-high-trap.md) · [健康回檔](../07-cases/healthy-pullback.md)

@@ -3,17 +3,13 @@ from __future__ import annotations
 
 from collections.abc import Callable
 
+from stock_school.render.svg_primitives import svg_icon
+
 W, H, CX = 80, 120, 40
 
 
 def svg_wrap(body: str, title: str = "") -> str:
-    t = f'<title>{title}</title>' if title else ""
-    return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
-        f'role="img" aria-label="{title}">{t}'
-        f'<rect width="{W}" height="{H}" fill="none"/>'
-        f"{body}</svg>"
-    )
+    return svg_icon(title, W, H, body)
 
 
 def wick(y1: float, y2: float, color: str = "#666") -> str:
@@ -93,12 +89,7 @@ def flat_svg(title: str) -> str:
 
 
 def combo_wrap(body: str, title: str, width: int = 200) -> str:
-    return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {H}" '
-        f'role="img" aria-label="{title}"><title>{title}</title>'
-        f'<rect width="{width}" height="{H}" fill="none"/>'
-        f"{body}</svg>"
-    )
+    return svg_icon(title, width, H, body)
 
 
 def combo_candle(cx: int, open_y: float, close_y: float, high_y: float, low_y: float, bull: bool) -> str:

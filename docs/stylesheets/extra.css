@@ -1,0 +1,630 @@
+/* ============================================================
+   Stock School — 自訂樣式
+   目標：提升閱讀體驗、響應式佈局、行動裝置友善
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   1. 全域排版與色彩變數
+   ---------------------------------------------------------- */
+:root {
+  --ss-card-radius: 12px;
+  --ss-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --ss-card-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.12);
+  --ss-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --ss-accent: #3f51b5;
+  --ss-accent-light: #e8eaf6;
+  --ss-red: #e53935;
+  --ss-green: #00897b;
+  --ss-hero-gradient: linear-gradient(135deg, #1a237e 0%, #3f51b5 50%, #5c6bc0 100%);
+}
+
+[data-md-color-scheme="slate"] {
+  --ss-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --ss-card-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --ss-accent-light: rgba(92, 107, 192, 0.15);
+  --ss-hero-gradient: linear-gradient(135deg, #0d1117 0%, #1a237e 50%, #283593 100%);
+}
+
+/* ----------------------------------------------------------
+   2. 首頁 Hero 區塊
+   ---------------------------------------------------------- */
+.md-typeset .ss-hero {
+  background: var(--ss-hero-gradient);
+  color: #fff;
+  padding: 3rem 2rem;
+  border-radius: var(--ss-card-radius);
+  margin: -0.6rem -0.6rem 2rem;
+  text-align: center;
+}
+
+.md-typeset .ss-hero h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .ss-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.15rem;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.md-typeset .ss-hero .ss-hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.md-typeset .ss-hero .ss-hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.6rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--ss-transition);
+}
+
+.md-typeset .ss-hero .ss-hero-actions .ss-btn-primary {
+  background: #fff;
+  color: var(--ss-accent);
+}
+
+.md-typeset .ss-hero .ss-hero-actions .ss-btn-primary:hover {
+  background: var(--ss-accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.md-typeset .ss-hero .ss-hero-actions .ss-btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.md-typeset .ss-hero .ss-hero-actions .ss-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .md-typeset .ss-hero {
+    padding: 2rem 1.2rem;
+    margin: -0.4rem -0.4rem 1.5rem;
+  }
+
+  .md-typeset .ss-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .md-typeset .ss-hero p {
+    font-size: 1rem;
+  }
+
+  .md-typeset .ss-hero .ss-hero-actions a {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   3. 卡片式格線佈局（首頁章節導覽）
+   ---------------------------------------------------------- */
+.md-typeset .ss-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.md-typeset .ss-card {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: var(--ss-card-radius);
+  padding: 1.4rem 1.6rem;
+  transition: var(--ss-transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.md-typeset .ss-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--ss-accent);
+  border-radius: var(--ss-card-radius) var(--ss-card-radius) 0 0;
+  transform: scaleX(0);
+  transition: transform var(--ss-transition);
+}
+
+.md-typeset .ss-card:hover {
+  box-shadow: var(--ss-card-shadow-hover);
+  transform: translateY(-3px);
+}
+
+.md-typeset .ss-card:hover::before {
+  transform: scaleX(1);
+}
+
+.md-typeset .ss-card .ss-card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.md-typeset .ss-card h3 {
+  margin-top: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.md-typeset .ss-card p {
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .ss-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.md-typeset .ss-card a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+@media (max-width: 480px) {
+  .md-typeset .ss-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .md-typeset .ss-card {
+    padding: 1rem 1.2rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   4. 響應式表格
+   ---------------------------------------------------------- */
+.md-typeset table:not([class]) {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.88rem;
+}
+
+.md-typeset table:not([class]) thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--ss-accent-light);
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.7rem 1rem;
+  border-bottom: 2px solid var(--ss-accent);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: rgba(92, 107, 192, 0.2);
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  vertical-align: top;
+}
+
+.md-typeset table:not([class]) tbody tr {
+  transition: background var(--ss-transition);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: var(--ss-accent-light);
+}
+
+.md-typeset table:not([class]) tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .md-typeset table:not([class]) {
+    font-size: 0.82rem;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: 0.5rem 0.7rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   5. 提示框（Admonition）美化
+   ---------------------------------------------------------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  box-shadow: var(--ss-card-shadow);
+  border-left-width: 4px;
+  margin: 1.2em 0;
+}
+
+.md-typeset .admonition-title,
+.md-typeset details > summary {
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+}
+
+.md-typeset details[open] > summary {
+  border-radius: 8px 8px 0 0;
+}
+
+/* ----------------------------------------------------------
+   6. Tab 標籤美化
+   ---------------------------------------------------------- */
+.md-typeset .tabbed-labels {
+  border-bottom: 2px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .tabbed-labels > label {
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  transition: var(--ss-transition);
+  border-radius: 8px 8px 0 0;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  background: var(--ss-accent-light);
+}
+
+.md-typeset .tabbed-content {
+  padding-top: 1rem;
+}
+
+/* ----------------------------------------------------------
+   7. SVG 圖表響應式
+   ---------------------------------------------------------- */
+.md-typeset img[src$=".svg"] {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+.md-typeset td img[src$=".svg"] {
+  max-width: min(100%, 200px);
+  margin: 0.3rem auto;
+}
+
+@media (max-width: 768px) {
+  .md-typeset td img[src$=".svg"] {
+    max-width: min(100%, 140px);
+  }
+}
+
+/* ----------------------------------------------------------
+   8. 內容可讀性提升
+   ---------------------------------------------------------- */
+.md-typeset {
+  line-height: 1.8;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset h2 {
+  font-weight: 700;
+  margin-top: 2.2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.md-typeset a {
+  transition: color var(--ss-transition), opacity var(--ss-transition);
+}
+
+.md-typeset a:hover {
+  opacity: 0.85;
+}
+
+.md-typeset hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--md-default-fg-color--lightest),
+    transparent
+  );
+  margin: 2rem 0;
+}
+
+/* ----------------------------------------------------------
+   9. 程式碼區塊
+   ---------------------------------------------------------- */
+.md-typeset code {
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.88em;
+}
+
+.md-typeset pre {
+  border-radius: 8px;
+  box-shadow: var(--ss-card-shadow);
+}
+
+/* ----------------------------------------------------------
+   10. Mermaid 圖表響應式
+   ---------------------------------------------------------- */
+.md-typeset .mermaid {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  margin: 1.2rem 0;
+}
+
+.md-typeset .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----------------------------------------------------------
+   11. 手機導覽優化
+   ---------------------------------------------------------- */
+@media (max-width: 960px) {
+  .md-nav__link {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .md-typeset {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.5rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.2rem;
+    margin-top: 1.8rem;
+  }
+
+  .md-typeset h3 {
+    font-size: 1.05rem;
+  }
+
+  .md-content__inner {
+    padding: 0 0.8rem;
+  }
+
+  .md-typeset .tabbed-labels > label {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   12. 返回頂部按鈕美化
+   ---------------------------------------------------------- */
+.md-top {
+  border-radius: 2rem;
+  box-shadow: var(--ss-card-shadow-hover);
+  transition: var(--ss-transition);
+}
+
+.md-top:hover {
+  transform: translateY(-3px);
+}
+
+/* ----------------------------------------------------------
+   13. 搜尋列美化
+   ---------------------------------------------------------- */
+.md-search__form {
+  border-radius: 2rem;
+}
+
+/* ----------------------------------------------------------
+   14. 自我檢查題（collapsible details）
+   ---------------------------------------------------------- */
+.md-typeset details.question {
+  border-left-color: var(--ss-accent);
+}
+
+.md-typeset details.question > summary {
+  cursor: pointer;
+}
+
+.md-typeset details.question[open] {
+  box-shadow: var(--ss-card-shadow-hover);
+}
+
+/* ----------------------------------------------------------
+   15. 頁尾（footer）
+   ---------------------------------------------------------- */
+.md-footer {
+  margin-top: 3rem;
+}
+
+/* ----------------------------------------------------------
+   16. 首頁「本站特色」區塊
+   ---------------------------------------------------------- */
+.md-typeset .ss-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.md-typeset .ss-feature {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-radius: var(--ss-card-radius);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  transition: var(--ss-transition);
+}
+
+.md-typeset .ss-feature:hover {
+  box-shadow: var(--ss-card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.md-typeset .ss-feature .ss-feature-icon {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .ss-feature h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.md-typeset .ss-feature p {
+  font-size: 0.88rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+}
+
+/* ----------------------------------------------------------
+   17. 列印友善
+   ---------------------------------------------------------- */
+@media print {
+  .md-typeset .ss-hero {
+    background: #f5f5f5 !important;
+    color: #000 !important;
+  }
+
+  .md-typeset .ss-hero h1,
+  .md-typeset .ss-hero p {
+    color: #000 !important;
+  }
+
+  .md-typeset .ss-card,
+  .md-typeset .ss-feature {
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+
+  .md-typeset table:not([class]) {
+    display: table;
+  }
+}
+
+/* ----------------------------------------------------------
+   18. 滾動條美化（Webkit）
+   ---------------------------------------------------------- */
+.md-typeset table:not([class])::-webkit-scrollbar,
+.md-typeset .mermaid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.md-typeset table:not([class])::-webkit-scrollbar-track,
+.md-typeset .mermaid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.md-typeset table:not([class])::-webkit-scrollbar-thumb,
+.md-typeset .mermaid::-webkit-scrollbar-thumb {
+  background: var(--md-default-fg-color--lighter);
+  border-radius: 3px;
+}
+
+/* ----------------------------------------------------------
+   19. 淡入動畫
+   ---------------------------------------------------------- */
+@keyframes ss-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.md-content__inner {
+  animation: ss-fade-in 0.4s ease-out;
+}
+
+/* ----------------------------------------------------------
+   20. 頁面內連結群組（「相關」區塊）
+   ---------------------------------------------------------- */
+.md-typeset .ss-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.md-typeset .ss-related a {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: var(--ss-transition);
+}
+
+.md-typeset .ss-related a:hover {
+  background: var(--ss-accent-light);
+  border-color: var(--ss-accent);
+}
+
+/* ----------------------------------------------------------
+   21. 投資模式「漲/跌」色彩指示
+   ---------------------------------------------------------- */
+.md-typeset .ss-up {
+  color: var(--ss-red);
+  font-weight: 600;
+}
+
+.md-typeset .ss-down {
+  color: var(--ss-green);
+  font-weight: 600;
+}
+
+/* ----------------------------------------------------------
+   22. TOC (目次) 側欄改善
+   ---------------------------------------------------------- */
+.md-sidebar--secondary .md-nav__link {
+  font-size: 0.82rem;
+  transition: var(--ss-transition);
+}
+
+.md-sidebar--secondary .md-nav__link--active {
+  font-weight: 600;
+}

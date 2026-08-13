@@ -1,6 +1,19 @@
 # Stock School — 台股教學
 
-歡迎來到 Stock School。這裡用**學員看得懂**的方式，整理台股投資需要的名詞、表格、圖表與案例，不依賴任何交易程式也能完整學習。
+<div class="ss-hero" markdown>
+
+# :material-school: Stock School — 台股教學
+
+用**學員看得懂**的方式，整理台股投資需要的名詞、表格、圖表與案例。
+不依賴任何交易程式，也能完整學習。
+
+<div class="ss-hero-actions">
+  <a href="10-persona/index/" class="ss-btn-primary">:material-account-search: 對號入座</a>
+  <a href="08-investing/choose-style/" class="ss-btn-primary">:material-compass: 選定模式</a>
+  <a href="02-glossary/dictionary/" class="ss-btn-secondary">:material-book-open-variant: 查字典</a>
+</div>
+
+</div>
 
 !!! warning "免責聲明"
     本站內容僅供教學與參考，**不構成投資建議**。歷史案例與分析方法不代表未來績效，實務交易請自行評估並承擔風險。詳見 [免責聲明](appendix/disclaimer.md)。
@@ -22,15 +35,134 @@
 | [深入分析分頁](03-tables/deep-dive-tabs.md) | 單檔股票各分頁欄位地圖 |
 | [風險與紀律](06-risk/index.md) | 資金配置、停損停利、交易紀律、突發狀況手冊 |
 | [常見問答](appendix/faq.md) / [檢查清單](appendix/investor-checklist.md) | 新手 FAQ、下單前／除息前／月複盤清單 |
-| [實戰案例](07-cases/index.md) | **21 篇**案例（含接盤／追高六情境完整組） |
-| [**老手專區**](09-advanced/index.md) | 研究流程、多週期、組合、總經、進階籌碼、事件手冊 |
+<div class="ss-grid" markdown>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-school:</span>
+
+### 入門
+
+股票是什麼、股價市值、報價畫面、交割稅費
+
+[開始學習 :material-arrow-right:](01-basics/index.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-book-alphabet:</span>
+
+### 術語詞典
+
+**100+ 詞條總表**、分類詳解、公式與縮寫
+
+[查閱字典 :material-arrow-right:](02-glossary/dictionary.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-table-large:</span>
+
+### 怎麼看表
+
+營收、法人、融資融券、估值、財報
+
+[學習看表 :material-arrow-right:](03-tables/index.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-chart-line:</span>
+
+### 怎麼看圖
+
+**八大圖表分類**：K 線、分時、量價、籌碼、基本面、大盤、指標
+
+[學習看圖 :material-arrow-right:](04-charts/index.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-brain:</span>
+
+### 分析思維
+
+基本面 / 技術面 / 籌碼面、分析框架、跨市場
+
+[深入思考 :material-arrow-right:](05-analysis/index.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-swap-horizontal-bold:</span>
+
+### 投資模式
+
+當沖、隔日沖、短中長線、存股、ETF — **全站知識地圖**
+
+[選定模式 :material-arrow-right:](08-investing/index.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-account-group:</span>
+
+### 對號入座
+
+我是誰、該怎麼投？— **12 種身分圖鑑**
+
+[找到你的模式 :material-arrow-right:](10-persona/index.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-shield-alert:</span>
+
+### 風險與紀律
+
+資金配置、停損停利、交易紀律、突發狀況手冊
+
+[了解風控 :material-arrow-right:](06-risk/index.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-trophy:</span>
+
+### 實戰案例
+
+**21 篇**逐步拆解案例（含接盤／追高六情境）
+
+[看案例 :material-arrow-right:](07-cases/index.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-rocket-launch:</span>
+
+### 老手專區
+
+研究流程、多週期、組合、總經、進階籌碼、事件手冊
+
+[進階學習 :material-arrow-right:](09-advanced/index.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-calculator:</span>
+
+### 更多工具
+
+[評分量表](03-tables/scoring.md) · [公式速查](appendix/formulas.md) · [稅費總覽](appendix/taxes-for-costing.md) · [縮寫對照](appendix/abbreviations.md)
+</div>
+
+<div class="ss-card" markdown>
+<span class="ss-card-icon">:material-play-circle:</span>
+
+### 影片資源
+
+五支入門影片 → 術語 → 模式 → 案例
+
+[觀看影片 :material-arrow-right:](appendix/video-resources.md)
+</div>
+
+</div>
 
 ## 建議學習路徑
 
 !!! tip "融會貫通"
     不確定從哪讀起？先 [對號入座](10-persona/index.md) 找身分，或 [選定投資模式](08-investing/choose-style.md)，再依 [模式學習地圖](08-investing/index.md#模式學習地圖融會貫通) 深入各章。影片名詞請走：影片索引 → 術語 → 模式專章 → 案例。
 
-=== "完全新手"
+=== ":material-baby-face: 完全新手"
 
     1. [入門導覽](01-basics/index.md) → [股票是什麼](01-basics/what-is-stock.md)
     2. [報價畫面](01-basics/quote-screen.md) + [圖表總覽](04-charts/index.md)
@@ -43,7 +175,7 @@
     9. 依模式讀 [投資模式總覽](08-investing/index.md) 地圖
     10. 卡關時查 [常見問答](appendix/faq.md)；下單前對照 [投資檢查清單](appendix/investor-checklist.md)
 
-=== "已有基礎"
+=== ":material-account-check: 已有基礎"
 
     1. [投資模式總覽](08-investing/index.md)（對齊你的操作風格）
     2. [三大分析支柱](05-analysis/three-pillars.md) + [基本面框架](05-analysis/fundamental-framework.md)
@@ -51,7 +183,7 @@
     4. [實戰案例](07-cases/revenue-turn.md)
     5. [影片資源索引](appendix/video-resources.md)（查漏）
 
-=== "老手進階"
+=== ":material-star: 老手進階"
 
     1. [老手專區總覽](09-advanced/index.md)（確認基礎達標）
     2. [系統化研究流程](09-advanced/research-workflow.md)
@@ -59,16 +191,16 @@
     4. 依模式選讀：[組合管理](09-advanced/portfolio.md) / [進階籌碼](09-advanced/advanced-chips.md) / [期貨輔助](09-advanced/futures-signal.md)
     5. [事件操作手冊](09-advanced/event-playbook.md) + [老手陷阱](09-advanced/veteran-pitfalls.md)
 
-=== "當字典 / 工具書查"
+=== ":material-magnify: 當字典 / 工具書查"
 
-    1. [完整詞條總表](02-glossary/dictionary.md) — `Ctrl+F` 或站內搜尋
+    1. [完整詞條總表](02-glossary/dictionary.md) — ++ctrl+f++ 或站內搜尋
     2. [公式速查](appendix/formulas.md) — 漲跌幅、PER、損益
     3. [稅費總覽](appendix/taxes-for-costing.md) — 有哪些稅費、怎麼算成本
     4. [縮寫對照](appendix/abbreviations.md) — EPS、YoY、MACD…
     5. [圖表總覽](04-charts/index.md) — 八大圖表分類
     6. [基本資料書指南](appendix/reference-book.md) — 全站參考地圖
 
-=== "依模式速查"
+=== ":material-speedometer: 依模式速查"
 
     不確定從哪開始？→ [**對號入座**](10-persona/index.md)
 
@@ -83,8 +215,34 @@
 
 ## 本站特色
 
-- **純靜態**：Markdown 課程，可離線閱讀、搜尋全文。
-- **與實務對齊**：表格與圖表欄位對應常見看盤軟體與公開資料。
-- **案例導向**：每個案例都有「背景 → 資料 → 推理 → 結論 → 反思」結構。
+<div class="ss-features" markdown>
+
+<div class="ss-feature" markdown>
+<span class="ss-feature-icon">:material-file-document:</span>
+
+### 純靜態
+
+Markdown 課程，可離線閱讀、搜尋全文
+</div>
+
+<div class="ss-feature" markdown>
+<span class="ss-feature-icon">:material-check-decagram:</span>
+
+### 與實務對齊
+
+表格與圖表欄位對應常見看盤軟體與公開資料
+</div>
+
+<div class="ss-feature" markdown>
+<span class="ss-feature-icon">:material-lightbulb-on:</span>
+
+### 案例導向
+
+每個案例都有「背景 → 資料 → 推理 → 結論 → 反思」結構
+</div>
+
+</div>
+
+---
 
 開始學習請從左側導覽選擇章節，或搜尋關鍵字（例如「停損」「三大法人」「大紅K」）。

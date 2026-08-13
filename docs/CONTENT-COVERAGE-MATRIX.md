@@ -106,6 +106,7 @@
 | [fundamental-charts](04-charts/fundamental-charts.md) | 常見誤區 + 自檢 |
 | [chips-charts](04-charts/chips-charts.md) | 常見誤區 + 自檢 |
 | [market-charts](04-charts/market-charts.md) | 常見誤區 + 自檢 |
+| [chart-evaluation](04-charts/chart-evaluation.md) | **新增**：五層評估架構 + 信號匯流 + 評估模板 + 常見誤區 + 自檢 |
 
 ### 04-charts 速查頁（C 級 + 精簡自檢）
 

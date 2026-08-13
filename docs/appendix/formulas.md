@@ -86,3 +86,7 @@
 
 - 短線用**淨利**；估值用 **PER/PBR** 且需比同業。
 - 查詞 → [詞條總表](../02-glossary/dictionary.md)。
+
+## 相關
+
+[稅費總覽（成本試算）](taxes-for-costing.md) · [交易成本與期望值](../06-risk/trading-costs.md) · [損益術語](../02-glossary/pnl.md) · [基本面術語](../02-glossary/fundamentals.md)

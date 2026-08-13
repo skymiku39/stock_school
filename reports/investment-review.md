@@ -155,3 +155,21 @@
 | CPI 詞典對齊 | 標題缺「核心」觸發 INFO | — | `macro.md` 標題補「核心 CPI」 |
 | 連結稽核 INFO | 2 筆假陽性 | ✅ **INFO=0** | 已更新 `reports/link-audit.md` |
 | 審查報告篇數 | 118 篇過時 | — | 更新為 135 篇 Markdown |
+
+### 2026-08-13 — 專業性與完整度強化
+
+| 項目 | 站內現況 | 複審結果 | 動作 |
+|------|----------|----------|------|
+| 盤中零股撮合頻率 | 原寫「每隔數分鐘」 | ❌ **P0**：自 2024/12/2 起已縮為**每 5 秒** | 已修正 `trading-flow.md`（含時段、零股不可當沖） |
+| 融資維持率 120% 門檻 | 原寫 120% 斷頭 | ⚠️ **P1**：120% 非法定門檻；應以**整戶 130%** 為準 | 已修正 `margin-trading.md`（整戶維持率、2 營業日補繳、166% 取消追繳） |
+| 微台期貨代號 | 原寫 TM | ⚠️ **P1**：期交所官方代碼為 **TMF** | 已修正 `futures-intro.md` |
+| 期貨交易稅率 | 僅寫「依現行法規」 | ⚠️ **P1**：可補教學參考稅率 | 已補 `futures-intro.md`（十萬分之二） |
+| ETF 當沖證交稅 | 費用表未列 ETF 當沖 | ⚠️ **P1**：ETF 當沖仍為 0.1%，不另減半 | 已補 `trading-costs.md`、`taxes-for-costing.md` |
+| 債券型 ETF 免稅 | 費用表未提及 | ⚠️ **P1**：被動式債券 ETF 停徵至 2026 底（已預告延長至 2036） | 已補 `trading-costs.md`、`taxes-for-costing.md` |
+| revenue.md 自我檢查 | 看表頁缺自檢 | ⚠️ **P1**：依看表 A 模板應有 | 已補 3 題自我檢查（概念、手算、情境） |
+| revenue-turn.md 推理步驟 | 缺 `## 推理步驟` 標題 | ⚠️ **P1**：案例模板要求 | 已補標題 |
+| dividend-investing.md 稅費連結 | 僅模糊提及 | ⚠️ **P2**：存股族需知實領殖利率 | 已補 `taxes-for-costing.md` 連結 |
+| 多檔缺 `## 相關` | 文末無交叉連結 | ⚠️ **P2** | 已補 `trading-flow`、`formulas`、`taxes-for-costing` |
+| 斷連結（預存） | ma/macd/rsi 連 `chart-evaluation.md`（不存在） | ⚠️ **P2** | 已改連至 `indicator-quickref.md` |
+| 斷錨點（預存） | macd-divergence 連 `macd.md#背離進階`（不存在） | ⚠️ **P2** | 已改為 `#背離分級` |
+| 自動化測試 | pytest 98 + strict build | ✅ 通過（WARNING=0） | — |

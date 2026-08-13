@@ -3,18 +3,20 @@ name: deploy-docs
 on:
   push:
     branches: [main, master]
+  pull_request:
+    branches: [main, master]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  deploy:
+  ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v10
 
       - name: Install dependencies
         run: uv sync
@@ -39,6 +41,18 @@ jobs:
 
       - name: Validate docs (strict build)
         run: uv run mkdocs build --strict
+
+  deploy:
+    needs: ci
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v10
+
+      - name: Install dependencies
+        run: uv sync
 
       - name: Build and deploy to gh-pages
         run: uv run mkdocs gh-deploy --force

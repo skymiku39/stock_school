@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from stock_school.domain.bar import Bar
-from stock_school.render.svg_primitives import svg_header
+from stock_school.render.svg_primitives import ChartPad, draw_candles, svg_header
 from stock_school.render.theme import DEFAULT_THEME, Theme
 
 
@@ -18,49 +18,36 @@ def daily_k_svg(
     if not bars:
         return svg_header(f"{code} 日K（無資料）", width, height, "")
 
-    pad_l, pad_r, pad_t, pad_b = 48, 16, 36, 40
-    chart_w = width - pad_l - pad_r
-    chart_h = height - pad_t - pad_b
+    pad = ChartPad(left=48, right=16, top=36, bottom=40)
+    chart_h = height - pad.top - pad.bottom
     lo = min(b.low for b in bars)
     hi = max(b.high for b in bars)
     span = hi - lo or 1
     n = len(bars)
-    gap = chart_w / n
-    body_w = max(gap * 0.55, 2)
 
     def y_price(p: float) -> float:
-        return pad_t + chart_h * (hi - p) / span
+        return pad.top + chart_h * (hi - p) / span
 
     parts = [
         f'<rect width="{width}" height="{height}" fill="#ffffff"/>',
-        f'<text x="{pad_l}" y="22" font-size="14" font-weight="bold" fill="{theme.black}">'
+        f'<text x="{pad.left}" y="22" font-size="14" font-weight="bold" fill="{theme.black}">'
         f"{code} {name} — 日 K（近 {n} 個交易日，TWSE）</text>",
-        f'<line x1="{pad_l}" y1="{pad_t + chart_h}" x2="{width - pad_r}" y2="{pad_t + chart_h}" stroke="{theme.border}"/>',
+        f'<line x1="{pad.left}" y1="{pad.top + chart_h}" x2="{width - pad.right}" y2="{pad.top + chart_h}" stroke="{theme.border}"/>',
     ]
     for i in range(5):
         p = lo + span * i / 4
         y = y_price(p)
         parts.append(
-            f'<line x1="{pad_l}" y1="{y:.1f}" x2="{width - pad_r}" y2="{y:.1f}" stroke="#eeeeee"/>'
+            f'<line x1="{pad.left}" y1="{y:.1f}" x2="{width - pad.right}" y2="{y:.1f}" stroke="#eeeeee"/>'
         )
         parts.append(
-            f'<text x="{pad_l - 6}" y="{y + 4:.1f}" font-size="10" text-anchor="end" fill="{theme.gray}">{p:.0f}</text>'
+            f'<text x="{pad.left - 6}" y="{y + 4:.1f}" font-size="10" text-anchor="end" fill="{theme.gray}">{p:.0f}</text>'
         )
 
-    for i, b in enumerate(bars):
-        cx = pad_l + gap * i + gap / 2
-        bull = b.close >= b.open
-        color = theme.red if bull else theme.black
-        y_h, y_l = y_price(b.high), y_price(b.low)
-        y_o, y_c = y_price(b.open), y_price(b.close)
-        parts.append(
-            f'<line x1="{cx:.1f}" y1="{y_h:.1f}" x2="{cx:.1f}" y2="{y_l:.1f}" stroke="{color}" stroke-width="1"/>'
-        )
-        top, bot = min(y_o, y_c), max(y_o, y_c)
-        h = max(bot - top, 1)
-        parts.append(
-            f'<rect x="{cx - body_w / 2:.1f}" y="{top:.1f}" width="{body_w:.1f}" height="{h:.1f}" fill="{color}"/>'
-        )
+    candle_parts, _, _ = draw_candles(
+        bars, width=width, height=height, pad=pad, y_lo=lo, y_hi=hi, theme=theme,
+    )
+    parts.extend(candle_parts)
 
     last = bars[-1]
     prev = bars[-2] if len(bars) > 1 else last
@@ -68,11 +55,11 @@ def daily_k_svg(
     pct = chg / prev.close * 100 if prev.close else 0
     clr = theme.red if chg >= 0 else theme.green
     parts.append(
-        f'<text x="{width - pad_r}" y="22" font-size="12" text-anchor="end" fill="{clr}">'
+        f'<text x="{width - pad.right}" y="22" font-size="12" text-anchor="end" fill="{clr}">'
         f"收 {last.close:.2f}  ({chg:+.2f}, {pct:+.2f}%)</text>"
     )
     parts.append(
-        f'<text x="{pad_l}" y="{height - 8}" font-size="10" fill="{theme.gray}">'
+        f'<text x="{pad.left}" y="{height - 8}" font-size="10" fill="{theme.gray}">'
         f"資料：TWSE 日行情 · 教學用 · 非即時</text>"
     )
     return svg_header(f"{code} {name} 日K", width, height, "".join(parts))

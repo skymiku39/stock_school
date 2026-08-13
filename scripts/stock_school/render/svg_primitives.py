@@ -23,6 +23,17 @@ def svg_header(title: str, w: int, h: int, body: str) -> str:
     )
 
 
+def svg_icon(title: str, w: int, h: int, body: str) -> str:
+    """Like svg_header but adds a transparent background rect (for small icon SVGs)."""
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" '
+        f'role="img" aria-label="{title}">'
+        f"<title>{title}</title>"
+        f'<rect width="{w}" height="{h}" fill="none"/>'
+        f"{body}</svg>"
+    )
+
+
 def _x(i: int, n: int, pad: ChartPad, width: int) -> float:
     cw = width - pad.left - pad.right
     return pad.left + cw * (i + 0.5) / n

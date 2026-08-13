@@ -19,8 +19,8 @@
 
 | 項目 | 說明 |
 |------|------|
-| **總篇數** | **136** 篇 Markdown（含維護者頁） |
-| **學員正文** | **118** 篇（排除 8 維護規範 + 10 參考附錄中的純索引頁，依下方清單） |
+| **總篇數** | **138** 篇 Markdown（含維護者頁） |
+| **學員正文** | **119** 篇（排除 8 維護規範 + 11 參考附錄中的純索引頁，依下方清單） |
 | **完成定義** | 該篇勾選「結構 ✅ + 內容 ✅ + 連結 ✅」；若有修改則跑 CI 通過 |
 | **建議節奏** | 每批 **8～12 篇** → 修正 → `pytest` + `check_links` → commit → 勾選 |
 
@@ -58,7 +58,7 @@
 
 ```bash
 uv run pytest tests/ -q
-uv run python scripts/check_links.py --strict
+uv run stock-school-links --strict
 uv run mkdocs build --strict
 ```
 
@@ -166,7 +166,7 @@ flowchart LR
 
 ---
 
-### 批 5｜怎麼看圖（下）＋詞典（上）（10 篇）
+### 批 5｜怎麼看圖（下）＋詞典（上）（11 篇）
 
 | # | 頁面 | 類型 | 狀態 |
 |---|------|------|------|
@@ -179,9 +179,10 @@ flowchart LR
 | 5-7 | [rsi](04-charts/rsi.md) | 教學 | ☐ |
 | 5-8 | [kd](04-charts/kd.md) | 教學 | ☐ |
 | 5-9 | [bollinger](04-charts/bollinger.md) | 教學 | ☐ |
-| 5-10 | [catch-or-chase](04-charts/catch-or-chase.md) | 教學 | ☐ |
-| 5-10b | [catch-chase-quickref](04-charts/catch-chase-quickref.md) | 速查 | ☐ |
-| 5-11 | [index](02-glossary/index.md) | 樞紐 | ☐ |
+| 5-10 | [chart-evaluation](04-charts/chart-evaluation.md) | 教學 | ☐ |
+| 5-11 | [catch-or-chase](04-charts/catch-or-chase.md) | 教學 | ☐ |
+| 5-12 | [catch-chase-quickref](04-charts/catch-chase-quickref.md) | 速查 | ☐ |
+| 5-13 | [index](02-glossary/index.md) | 樞紐 | ☐ |
 
 ---
 
@@ -306,7 +307,7 @@ flowchart LR
 
 ---
 
-### 批 12｜附錄與維護者頁（14 篇）
+### 批 12｜附錄與維護者頁（16 篇）
 
 | # | 頁面 | 類型 | 狀態 |
 |---|------|------|------|
@@ -325,6 +326,7 @@ flowchart LR
 | 12-13 | [CHART-CHECKLIST](CHART-CHECKLIST.md) | 維護 | ☐ |
 | 12-14 | [INVESTMENT-REVIEW-CHECKLIST](INVESTMENT-REVIEW-CHECKLIST.md) | 維護 | ☐ |
 | 12-15 | [ARCHITECTURE](ARCHITECTURE.md) | 維護 | ☐ |
+| 12-16 | [ARTICLE-REVIEW-PLAN](ARTICLE-REVIEW-PLAN.md) | 維護 | ☐ |
 
 ---
 
@@ -335,7 +337,7 @@ flowchart LR
 - [ ] 該批所有頁面 `狀態` 已改 `✅`
 - [ ] P0/P1 已修正或記錄於 `reports/investment-review.md`
 - [ ] `uv run pytest tests/ -q` 通過
-- [ ] `uv run python scripts/check_links.py --strict` ERROR=0
+- [ ] `uv run stock-school-links --strict` ERROR=0
 - [ ] `uv run mkdocs build --strict` 成功
 - [ ] Git commit（一批一 commit，訊息註明批號）
 - [ ] [CONTENT-COVERAGE-MATRIX](CONTENT-COVERAGE-MATRIX.md) 有變動則更新
@@ -351,15 +353,15 @@ flowchart LR
 | 批 2 入門下 | 8 | 0/8 | |
 | 批 3 看表 | 11 | 0/11 | |
 | 批 4 看圖上 | 9 | 0/9 | |
-| 批 5 看圖下+詞典入 | 10 | 0/10 | |
+| 批 5 看圖下+詞典入 | 11 | 0/11 | |
 | 批 6 詞典 | 11 | 0/11 | |
 | 批 7 分析 | 7 | 0/7 | |
 | 批 8 模式 | 13* | 0/13 | |
 | 批 9 風控 | 4* | 0/4 | |
 | 批 10 老手+人設 | 14 | 0/14 | |
 | 批 11 案例 | 17 | 0/17 | |
-| 批 12 附錄維護 | 15 | 0/15 | |
-| **合計** | **136** | **0/136** | |
+| 批 12 附錄維護 | 16 | 0/16 | |
+| **合計** | **138** | **0/138** | |
 
 \*批 8、9 含與批 0 交叉檢查項，不重複計入 canonical 篇數。
 
@@ -393,7 +395,7 @@ flowchart LR
 
 ## 重點回顧
 
-- **136 篇**、**12 批**；先 canonical 再入門，最後案例與附錄。
+- **138 篇**、**12 批**；先 canonical 再入門，最後案例與附錄。
 - 每篇走 **類型 → 結構 → 內容 → 連結 → 登記** 五步。
 - 進度以本頁 `狀態` 欄與第五節總表追蹤。
 

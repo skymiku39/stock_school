@@ -1,4 +1,7 @@
 site_name: Stock School — 台股教學
+site_url: https://skymiku39.github.io/stock_school/
+repo_url: https://github.com/skymiku39/stock_school
+repo_name: skymiku39/stock_school
 site_description: 台股入門、術語、看表、看圖與實戰案例
 site_author: Stock School
 dev_addr: 127.0.0.1:8800
@@ -8,6 +11,15 @@ theme:
   language: zh
   logo: assets/logo.svg
   favicon: assets/logo.svg
+  font:
+    text: Noto Sans TC
+    code: Fira Code
+  icon:
+    admonition:
+      note: material/pencil-circle
+      tip: material/lightbulb-on
+      warning: material/alert
+      question: material/help-circle
   palette:
     - scheme: default
       primary: indigo
@@ -26,9 +38,16 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.indexes
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.tabs.link
     - toc.follow
 
 plugins:
@@ -48,9 +67,15 @@ markdown_extensions:
           format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.critic
+  - pymdownx.keys
   - tables
   - attr_list
   - md_in_html
+  - def_list
   - toc:
       permalink: true
 
@@ -123,6 +148,7 @@ nav:
       - 布林通道: 04-charts/bollinger.md
       - 接盤還是追高: 04-charts/catch-or-chase.md
       - 接盤追高速查: 04-charts/catch-chase-quickref.md
+    - 圖表綜合評估框架: 04-charts/chart-evaluation.md
   - 分析思維:
     - 05-analysis/index.md
     - 05-analysis/three-pillars.md
@@ -213,6 +239,9 @@ nav:
     - appendix/stock-tool-map.md
     - 開發詞彙（跨專案）: appendix/dev-glossary.md
     - appendix/video-resources.md
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   social: []

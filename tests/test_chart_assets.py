@@ -58,9 +58,17 @@ def test_indicator_generator_keys() -> None:
     assert set(files) == EXPECTED_INDICATOR_FILES
 
 
+def test_indicator_filenames_match_disk() -> None:
+    assert EXPECTED_INDICATOR_FILES == _disk_svgs("indicators")
+
+
 def test_quote_generator_keys() -> None:
     gen = QuoteSvgGenerator(data_source=FakeDataSource(count=30), output_dir=Path("."))
     assert set(gen.generate()) == EXPECTED_QUOTE_FILES
+
+
+def test_quote_filenames_match_disk() -> None:
+    assert EXPECTED_QUOTE_FILES == _disk_svgs("quotes")
 
 
 @pytest.mark.parametrize("svg_path", sorted(ASSETS_DIR.rglob("*.svg")), ids=lambda p: p.name)
