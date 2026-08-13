@@ -238,4 +238,4 @@ flowchart TD
 - 均線作為支撐的有效性取決於斜率、觸及次數、量與 K 線型態。
 - 速查：[指標速查表](indicator-quickref.md) · 搭配 [MACD](macd.md)
 
-相關：[技術面術語](../02-glossary/technical.md#均線-ma) · [指標速查表](indicator-quickref.md)
+相關：[技術面術語](../02-glossary/technical.md#均線-ma) · [指標速查表](indicator-quickref.md) · [圖表綜合評估](chart-evaluation.md) · [接盤還是追高](catch-or-chase.md)

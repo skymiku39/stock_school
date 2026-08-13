@@ -214,4 +214,4 @@ J = 3K − 2D，是 K 與 D 差距的放大版。
 - KD + RSI 雙重確認時，短線信號強度顯著提升。
 - 速查：[指標速查表](indicator-quickref.md)
 
-相關：[KD 術語](../02-glossary/technical.md#kd) · [RSI](rsi.md) · [圖表綜合評估](chart-evaluation.md)
+相關：[KD 術語](../02-glossary/technical.md#kd) · [RSI](rsi.md) · [圖表綜合評估](chart-evaluation.md) · [接盤還是追高](catch-or-chase.md)

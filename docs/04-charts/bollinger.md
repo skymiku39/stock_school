@@ -207,4 +207,4 @@ flowchart TD
 - 先辨識四種市場狀態，再選對應策略，避免「盤整策略用在趨勢市」。
 - 速查：[指標速查表](indicator-quickref.md) · 中軌即 [MA20](ma.md)
 
-相關：[布林通道術語](../02-glossary/technical.md#布林通道) · [圖表綜合評估](chart-evaluation.md)
+相關：[布林通道術語](../02-glossary/technical.md#布林通道) · [圖表綜合評估](chart-evaluation.md) · [接盤還是追高](catch-or-chase.md)

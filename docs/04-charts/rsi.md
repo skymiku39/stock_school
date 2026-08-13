@@ -189,4 +189,4 @@ flowchart LR
 - RSI 回檔的底部位置可以反推趨勢強弱（40 即止 = 多頭；跌到 20 = 空頭）。
 - 速查：[指標速查表](indicator-quickref.md) · 搭配 [KD](kd.md)
 
-相關：[RSI 術語](../02-glossary/technical.md#rsi) · [指標速查表](indicator-quickref.md)
+相關：[RSI 術語](../02-glossary/technical.md#rsi) · [指標速查表](indicator-quickref.md) · [圖表綜合評估](chart-evaluation.md) · [接盤還是追高](catch-or-chase.md)

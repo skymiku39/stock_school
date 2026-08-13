@@ -221,4 +221,4 @@ flowchart TD
 - **量能型態**（爆量/堆量/窒息/潮汐）比單純「量大量小」更有判讀價值。
 - 沒有量的突破要保守看待；爆量在不同位置意義相反。
 - **OBV** 是量能的累積趨勢線，可輔助判斷吸籌或出貨。
-- 延伸：[K 線基礎](kline-basics.md) · [籌碼圖](chips-charts.md) · [圖表綜合評估](chart-evaluation.md)
+- 延伸：[K 線基礎](kline-basics.md) · [籌碼圖](chips-charts.md) · [圖表綜合評估](chart-evaluation.md) · [接盤還是追高](catch-or-chase.md)
